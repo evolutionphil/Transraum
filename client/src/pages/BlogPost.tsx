@@ -3,12 +3,26 @@ import { Link, useLocation, useRoute } from 'wouter';
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Calendar, Clock, Tag, ChevronRight, Phone, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, Clock, Tag, ChevronRight, Phone, ArrowLeft, Share2, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { BlogPost as BlogPostType } from '@shared/schema';
 import { CONTACT_INFO } from '@/lib/constants';
 import NotFound from './not-found';
+
+const SERVICES_DE = [
+  { label: 'Wohnungsräumung Wien', slug: 'wohnungsraeumung' },
+  { label: 'Hausräumung Wien', slug: 'hausraeumung' },
+  { label: 'Transportservice Wien', slug: 'transportservice' },
+  { label: 'Kellerräumung Wien', slug: 'kellerraeumung' },
+  { label: 'Verlassenschaft & Ankauf', slug: 'verlassenschaft-ankauf' },
+];
+
+const SERVICES_EN = [
+  { label: 'Apartment Clearing Vienna', slug: 'apartment-clearing' },
+  { label: 'House Clearing Vienna', slug: 'house-clearing' },
+  { label: 'Transport Service Vienna', slug: 'transport-service' },
+];
 
 const TRANSLATIONS = {
   de: {
@@ -24,6 +38,7 @@ const TRANSLATIONS = {
     notFound: 'Artikel nicht gefunden',
     notFoundText: 'Dieser Artikel existiert nicht oder wurde verschoben.',
     loading: 'Artikel wird geladen...',
+    ourServices: 'Unsere Leistungen',
   },
   en: {
     back: 'Back to Blog',
@@ -38,6 +53,7 @@ const TRANSLATIONS = {
     notFound: 'Article not found',
     notFoundText: 'This article does not exist or has been moved.',
     loading: 'Loading article...',
+    ourServices: 'Our Services',
   },
 };
 
@@ -217,7 +233,11 @@ export default function BlogPost() {
               {/* Category & metadata */}
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <Badge variant="secondary" data-testid="badge-category">{post.category}</Badge>
-                {post.featured && <Badge variant="default" data-testid="badge-featured">Featured</Badge>}
+                {post.featured && (
+                  <Badge variant="default" data-testid="badge-featured">
+                    {lang === 'de' ? 'Empfohlen' : 'Featured'}
+                  </Badge>
+                )}
               </div>
 
               {/* Title */}
@@ -292,6 +312,25 @@ export default function BlogPost() {
                 <p className="text-center text-sm text-muted-foreground mt-3 font-medium" data-testid="text-sidebar-phone">
                   {CONTACT_INFO.phone}
                 </p>
+              </div>
+
+              {/* Our Services Links */}
+              <div className="bg-card border rounded-md p-6" data-testid="card-services-links">
+                <h3 className="font-bold text-foreground mb-4" data-testid="heading-services">{t.ourServices}</h3>
+                <ul className="space-y-2">
+                  {(lang === 'de' ? SERVICES_DE : SERVICES_EN).map((svc) => (
+                    <li key={svc.slug}>
+                      <Link
+                        href={lang === 'de' ? `/de/leistungen/${svc.slug}` : `/en/services/${svc.slug}`}
+                        className="flex items-center justify-between text-sm text-muted-foreground hover:text-primary transition-colors group py-1"
+                        data-testid={`link-service-${svc.slug}`}
+                      >
+                        <span>{svc.label}</span>
+                        <ArrowRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Related Posts */}

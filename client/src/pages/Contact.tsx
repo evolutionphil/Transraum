@@ -201,6 +201,42 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* Google Maps Section */}
+      <section className="py-12 bg-background" data-testid="section-map">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-foreground mb-6 text-center" data-testid="heading-map">
+            {language === 'de' ? 'Unser Standort' : 'Our Location'}
+          </h2>
+          <p className="text-center text-muted-foreground mb-8" data-testid="text-map-address">
+            {CONTACT_INFO.address.street}, {CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}
+          </p>
+          <div className="rounded-md overflow-hidden border shadow-sm" data-testid="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.1!2d16.6!3d48.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zR2V3ZXJiZXBhcmtzdHJhw59lIDIxLzIzLCAyMjMxIFN0cmFzc2hvZiBhbiBkZXIgTm9yZGJhaG4!5e0!3m2!1sde!2sat!4v1714300000000!5m2!1sde!2sat&q=Gewerbeparkstra%C3%9Fe+21%2F23%2C+2231+Strasshof+an+der+Nordbahn%2C+Austria"
+              width="100%"
+              height="420"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={language === 'de' ? 'Transraum Standort in Strasshof an der Nordbahn' : 'Transraum location in Strasshof an der Nordbahn'}
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href="https://maps.google.com/?q=Gewerbeparkstra%C3%9Fe+21%2F23,+2231+Strasshof+an+der+Nordbahn"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-open-maps"
+            >
+              <Button variant="outline" data-testid="button-open-maps">
+                {language === 'de' ? 'In Google Maps öffnen' : 'Open in Google Maps'}
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

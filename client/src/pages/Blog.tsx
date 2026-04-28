@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link, useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Calendar, Clock, Tag, ArrowRight, BookOpen, ChevronRight } from 'lucide-react';
+import { Calendar, Clock, Tag, ArrowRight, BookOpen, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { BlogPost } from '@shared/schema';
@@ -33,6 +34,11 @@ const TRANSLATIONS = {
     ctaButton: 'Jetzt anrufen',
     metaTitle: 'Blog & Ratgeber – Transport und Räumung Wien | Transraum',
     metaDescription: 'Nützliche Tipps, Preisinfos und Ratgeber rund um Transport, Räumung und Umzug in Wien. Expertenwissen von Transraum.',
+    page: 'Seite',
+    of: 'von',
+    nextPage: 'Nächste Seite',
+    prevPage: 'Vorherige Seite',
+    allArticles: 'Alle Artikel',
   },
   en: {
     title: 'Blog & Guide',
@@ -55,8 +61,15 @@ const TRANSLATIONS = {
     ctaButton: 'Call Now',
     metaTitle: 'Blog & Guide – Transport and Clearance Vienna | Transraum',
     metaDescription: 'Useful tips, price info and guides about transport, clearance and moving in Vienna. Expert knowledge from Transraum.',
+    page: 'Page',
+    of: 'of',
+    nextPage: 'Next Page',
+    prevPage: 'Previous Page',
+    allArticles: 'All Articles',
   },
 };
+
+const POSTS_PER_PAGE = 9;
 
 function BlogCard({ post, lang }: { post: BlogPost; lang: 'de' | 'en' }) {
   const t = TRANSLATIONS[lang];
@@ -124,6 +137,9 @@ export default function Blog() {
   const lang = location.startsWith('/en') ? 'en' : 'de';
   const t = TRANSLATIONS[lang];
 
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+
   const { data, isLoading } = useQuery<{ success: boolean; posts: BlogPost[]; total: number }>({
     queryKey: ['/api/blog', lang],
     queryFn: async () => {
@@ -132,18 +148,34 @@ export default function Blog() {
     },
   });
 
-  const posts = data?.posts ?? [];
-  const featuredPosts = posts.filter((p) => p.featured);
-  const regularPosts = posts.filter((p) => !p.featured);
+  const allPosts = data?.posts ?? [];
+  const categories = Array.from(new Set(allPosts.map((p) => p.category)));
 
-  const categories = Array.from(new Set(posts.map((p) => p.category)));
+  const filteredPosts = activeCategory
+    ? allPosts.filter((p) => p.category === activeCategory)
+    : allPosts;
+
+  const featuredPosts = activeCategory ? [] : filteredPosts.filter((p) => p.featured);
+  const regularPosts = activeCategory
+    ? filteredPosts
+    : filteredPosts.filter((p) => !p.featured);
+
+  const totalPages = Math.ceil(regularPosts.length / POSTS_PER_PAGE);
+  const paginatedPosts = regularPosts.slice(
+    (currentPage - 1) * POSTS_PER_PAGE,
+    currentPage * POSTS_PER_PAGE
+  );
+
+  const handleCategoryChange = (cat: string | null) => {
+    setActiveCategory(cat);
+    setCurrentPage(1);
+  };
 
   return (
     <>
-      {/* SEO Meta */}
       <title>{t.metaTitle}</title>
       <meta name="description" content={t.metaDescription} />
-      <link rel="canonical" href={`https://flaechenfrei.at/${lang}/blog`} />
+      <link rel="canonical" href={`https://transraum.at/${lang}/blog`} />
       <meta property="og:title" content={t.metaTitle} />
       <meta property="og:description" content={t.metaDescription} />
       <meta property="og:type" content="website" />
@@ -180,9 +212,22 @@ export default function Blog() {
           <section className="border-b bg-background sticky top-16 z-40">
             <div className="container mx-auto px-4 max-w-5xl py-3">
               <div className="flex flex-wrap gap-2" data-testid="list-category-filters">
-                <Badge variant="default" className="cursor-pointer" data-testid="filter-all">{t.all}</Badge>
+                <Badge
+                  variant={activeCategory === null ? 'default' : 'outline'}
+                  className="cursor-pointer"
+                  onClick={() => handleCategoryChange(null)}
+                  data-testid="filter-all"
+                >
+                  {t.all}
+                </Badge>
                 {categories.map((cat) => (
-                  <Badge key={cat} variant="outline" className="cursor-pointer hover-elevate" data-testid={`filter-${cat}`}>
+                  <Badge
+                    key={cat}
+                    variant={activeCategory === cat ? 'default' : 'outline'}
+                    className="cursor-pointer"
+                    onClick={() => handleCategoryChange(cat)}
+                    data-testid={`filter-${cat}`}
+                  >
                     {cat}
                   </Badge>
                 ))}
@@ -198,11 +243,11 @@ export default function Blog() {
                 <div key={i} className="bg-muted/40 rounded-md h-64 animate-pulse" data-testid={`skeleton-${i}`} />
               ))}
             </div>
-          ) : posts.length === 0 ? (
+          ) : filteredPosts.length === 0 ? (
             <p className="text-center text-muted-foreground py-16" data-testid="text-no-posts">{t.noPostsFound}</p>
           ) : (
             <>
-              {/* Featured posts */}
+              {/* Featured posts — only shown when no category filter active */}
               {featuredPosts.length > 0 && (
                 <section className="mb-12">
                   <h2 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2" data-testid="heading-featured">
@@ -217,17 +262,59 @@ export default function Blog() {
                 </section>
               )}
 
-              {/* All other posts */}
-              {regularPosts.length > 0 && (
+              {/* Paginated posts */}
+              {paginatedPosts.length > 0 && (
                 <section>
                   <h2 className="text-xl font-semibold text-foreground mb-6" data-testid="heading-all-articles">
-                    {t.all}
+                    {activeCategory ? activeCategory : t.allArticles}
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {regularPosts.map((post) => (
+                    {paginatedPosts.map((post) => (
                       <BlogCard key={post.id} post={post} lang={lang} />
                     ))}
                   </div>
+
+                  {/* Pagination */}
+                  {totalPages > 1 && (
+                    <div className="flex items-center justify-center gap-3 mt-10" data-testid="blog-pagination">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        disabled={currentPage === 1}
+                        onClick={() => setCurrentPage((p) => p - 1)}
+                        data-testid="button-prev-page"
+                      >
+                        <ChevronLeft className="w-4 h-4 mr-1" />
+                        {t.prevPage}
+                      </Button>
+
+                      <div className="flex items-center gap-1">
+                        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                          <Button
+                            key={page}
+                            variant={currentPage === page ? 'default' : 'outline'}
+                            size="sm"
+                            className="w-9"
+                            onClick={() => setCurrentPage(page)}
+                            data-testid={`button-page-${page}`}
+                          >
+                            {page}
+                          </Button>
+                        ))}
+                      </div>
+
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        disabled={currentPage === totalPages}
+                        onClick={() => setCurrentPage((p) => p + 1)}
+                        data-testid="button-next-page"
+                      >
+                        {t.nextPage}
+                        <ArrowRight className="w-4 h-4 ml-1" />
+                      </Button>
+                    </div>
+                  )}
                 </section>
               )}
             </>

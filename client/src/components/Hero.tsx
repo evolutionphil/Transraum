@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, Clock, Briefcase, Zap, BadgeCheck } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
-import heroImage from '@assets/generated_images/Cleaning_team_hero_image_83538c0b.png';
+import heroImage from '@assets/generated_images/Moving_service_Vienna_8eeb3795.png';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -69,13 +69,15 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { label: t.trust.available, icon: '🕒' },
-              { label: t.trust.freeVisit, icon: '💼' },
-              { label: t.trust.fastService, icon: '⚡' },
-              { label: 'Transparente Preise', icon: '💰' },
+              { label: t.trust.available, Icon: Clock },
+              { label: t.trust.freeVisit, Icon: Briefcase },
+              { label: t.trust.fastService, Icon: Zap },
+              { label: 'Transparente Preise', Icon: BadgeCheck },
             ].map((item, i) => (
               <div key={i} className="text-center" data-testid={`trust-indicator-${i}`}>
-                <div className="text-3xl mb-2">{item.icon}</div>
+                <div className="flex justify-center mb-2">
+                  <item.Icon className="w-7 h-7 text-secondary" />
+                </div>
                 <div className="text-sm font-medium text-white">{item.label}</div>
               </div>
             ))}

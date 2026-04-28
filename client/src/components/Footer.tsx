@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, BookOpen } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
@@ -15,6 +15,7 @@ export default function Footer() {
   const imprintPath = language === 'de' ? '/impressum' : '/en/imprint';
   const termsPath = language === 'de' ? '/agb' : '/en/terms';
   const faqPath = language === 'de' ? '/faq' : '/en/faq';
+  const blogPath = language === 'de' ? '/de/blog' : '/en/blog';
   const whatsappUrl = `https://wa.me/${CONTACT_INFO.phoneLink}?text=${encodeURIComponent(t.contact.whatsappMessage)}`;
 
   const allDistricts = getAllDistricts();
@@ -43,6 +44,12 @@ export default function Footer() {
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Hausräumung' : 'House Clearing'}</Link></li>
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Verlassenschaft' : 'Estate Clearing'}</Link></li>
               <li><Link href={`${servicesPath}/${language === 'de' ? 'transportservice' : 'transport-service'}`} className="hover:text-primary-foreground">{language === 'de' ? 'Transportservice' : 'Transport Service'}</Link></li>
+              <li className="pt-2 border-t border-primary-foreground/20">
+                <Link href={blogPath} className="hover:text-primary-foreground flex items-center gap-1.5">
+                  <BookOpen className="w-3.5 h-3.5" />
+                  {language === 'de' ? 'Blog & Ratgeber' : 'Blog & Guide'}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -116,6 +123,10 @@ export default function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
           <p data-testid="text-footer-copyright">{t.footer.copyright}</p>
           <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
+            <Link href={blogPath} className="hover:text-primary-foreground flex items-center gap-1" data-testid="link-footer-blog">
+              <BookOpen className="w-3.5 h-3.5" />
+              Blog
+            </Link>
             <Link href={faqPath} className="hover:text-primary-foreground" data-testid="link-footer-faq">{t.footer.faq}</Link>
             <Link href={privacyPath} className="hover:text-primary-foreground" data-testid="link-footer-privacy">{t.footer.privacy}</Link>
             <Link href={imprintPath} className="hover:text-primary-foreground" data-testid="link-footer-imprint">{t.footer.imprint}</Link>

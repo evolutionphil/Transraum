@@ -198,6 +198,26 @@ Preferred communication style: Simple, everyday language.
 
 **To activate AI auto-generation:** Add `OPENAI_API_KEY` to environment secrets
 
+#### Session: April 2026 - Design & UX Improvements
+
+**Hero Image Fix:**
+- Replaced "Vienna Pristine Clean" branded cleaning team image with proper transport/moving image (`Moving_service_Vienna_8eeb3795.png`) showing professional movers in Viennese architecture
+- Replaced emoji trust indicators (🕒💼⚡💰) with Lucide icons (Clock, Briefcase, Zap, BadgeCheck) per design guidelines
+
+**Blog Improvements:**
+- **Category filters now functional** — clicking a category badge filters posts; clicking "Alle Artikel" resets filter
+- **Pagination added** — 9 posts per page with Previous/Next + numbered page buttons
+- **"Featured" badge fixed** — was showing English "Featured" on German pages; now shows "Empfohlen" when `lang === 'de'`
+- **Service sidebar links added** to BlogPost — "Unsere Leistungen" block in sidebar with links to Wohnungsräumung, Hausräumung, Transportservice, Kellerräumung, Verlassenschaft
+
+**SEO: Sitemap updated** — Added `/de/blog`, `/en/blog`, and all 11 seed blog post URLs to `sitemap.xml` with `changefreq: daily` for blog index
+
+**Contact page: Google Maps embed** — Added "Unser Standort" section with iframe embed for Gewerbeparkstraße 21/23, 2231 Strasshof an der Nordbahn + "In Google Maps öffnen" button
+
+**Footer improvements:**
+- Added "Blog & Ratgeber" link with BookOpen icon to services section
+- Added "Blog" link with icon to bottom copyright bar
+
 #### Session: April 2026 - Brand Rename + Transport Service Page
 
 - **Brand Rename:** "Flächen Frei" → "Transraum" across ALL files (constants.ts, seo.ts, i18n.ts, index.html, all pages, components, data files — 0 remaining occurrences)
