@@ -165,6 +165,39 @@ Preferred communication style: Simple, everyday language.
 - **Critical Fix:** Added `nixpacks.toml` to fix Railway deployment failure (Node.js 20+ for `import.meta.dirname`)
 - **IndexNow Workflow:** Strict success criteria, status reporting, error handling
 
+#### Session: April 2026 - Blog System + SEO Improvements
+
+**Blog System (Complete):**
+- **`shared/schema.ts`:** Added `BlogPost` interface, `InsertBlogPost` type, `blogGenerateSchema`
+- **`server/storage.ts`:** Added full blog CRUD methods to `IStorage` + `MemStorage`; pre-seeded 10 SEO-optimized articles
+- **`server/openai.ts`:** New file — OpenAI GPT-4o-mini blog generation service; 20 topic pool; `generateBlogPost()` + `generateMultipleBlogPosts()`
+- **`server/routes.ts`:** Added blog API endpoints: `GET /api/blog`, `GET /api/blog/:slug`, `POST /api/blog/generate`
+- **`server/index.ts`:** Added node-cron daily job at 07:00 UTC — generates 5 German blog posts/day (requires `OPENAI_API_KEY`)
+- **`client/src/pages/Blog.tsx`:** Blog list page at `/de/blog` — featured section, category filters, SEO meta, breadcrumbs
+- **`client/src/pages/BlogPost.tsx`:** Blog detail page at `/de/blog/:slug` — Article + BreadcrumbList JSON-LD, sidebar CTA, related posts
+- **`client/src/App.tsx`:** Added routes: `/de/blog`, `/de/blog/:slug`, `/en/blog`, `/en/blog/:slug`, `/blog`, `/blog/:slug`
+- **`client/src/lib/i18n.ts`:** Added `nav.blog: 'Blog'` to both DE and EN
+- **`client/src/components/Header.tsx`:** Blog link added to navItems
+
+**10 Seed Blog Articles (German, SEO-optimized):**
+1. Transportservice Wien: Preise, Ablauf & Tipps für 2025
+2. Möbeltransport Wien: So klappt der Umzug sicher und günstig
+3. Haushaltsauflösung Wien: Kosten, Ablauf und wichtige Tipps
+4. Wohnungsräumung Wien: Schritt-für-Schritt-Anleitung 2025
+5. Kellerräumung Wien: Kosten, Ablauf und die besten Tipps
+6. Sperrmüll Wien: Abholung, Kosten und wichtige Regeln
+7. Entrümpelung Wien: Preise, Checkliste & was Sie wissen sollten
+8. Umzug Wien: Die ultimative Checkliste für einen stressfreien Umzug
+9. Büroauflösung Wien: Professionell, schnell und diskret
+10. Antike Möbel & Erbstücke in Wien verkaufen: Was sind sie wert?
+11. Dachbodenräumung Wien: Kosten, Ablauf und häufige Herausforderungen
+
+**SEO Improvements:**
+- **`client/src/lib/seo.ts`:** Corrected address (Gewerbeparkstraße 21/23, 2231 Strasshof), removed email from all schemas, expanded opening hours (Mo-Fr 8-20, Sa-So 8-18), updated sameAs URLs, added `availableChannel`, improved `potentialAction`
+- **Packages installed:** `openai`, `node-cron`, `@types/node-cron` (already had `@tailwindcss/typography`)
+
+**To activate AI auto-generation:** Add `OPENAI_API_KEY` to environment secrets
+
 #### Session: April 2026 - Brand Rename + Transport Service Page
 
 - **Brand Rename:** "Flächen Frei" → "Transraum" across ALL files (constants.ts, seo.ts, i18n.ts, index.html, all pages, components, data files — 0 remaining occurrences)

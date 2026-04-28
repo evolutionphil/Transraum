@@ -3,8 +3,9 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { sendContactEmail, type ContactFormData } from "./email";
 import { z } from "zod";
-import { contactFormSchema } from "@shared/schema";
+import { contactFormSchema, blogGenerateSchema } from "@shared/schema";
 import { submitUrlToIndexNow, submitUrlsToIndexNow, submitSitemapToIndexNow, logIndexNowResponse } from "./indexnow";
+import { generateMultipleBlogPosts } from "./openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // WWW redirect - redirect www.flaechenfrei.at to flaechenfrei.at (SEO best practice)
@@ -144,6 +145,84 @@ export async function registerRoutes(app: Express): Promise<Server> {
         success: false, 
         message: "Internal server error" 
       });
+    }
+  });
+
+  // =====================
+  // BLOG API ENDPOINTS
+  // =====================
+
+  // GET /api/blog - list all posts (with optional language filter)
+  app.get("/api/blog", async (req, res) => {
+    try {
+      const language = (req.query.language as 'de' | 'en') || 'de';
+      const category = req.query.category as string | undefined;
+      const featured = req.query.featured === 'true';
+
+      let posts;
+      if (featured) {
+        posts = await storage.getFeaturedBlogPosts(language);
+      } else if (category) {
+        posts = await storage.getBlogPostsByCategory(category, language);
+      } else {
+        posts = await storage.getAllBlogPosts(language);
+      }
+
+      res.json({ success: true, posts, total: posts.length });
+    } catch (err) {
+      console.error('[Blog] Error fetching posts:', err);
+      res.status(500).json({ success: false, message: 'Server error' });
+    }
+  });
+
+  // GET /api/blog/:slug - get single post
+  app.get("/api/blog/:slug", async (req, res) => {
+    try {
+      const { slug } = req.params;
+      const language = (req.query.language as 'de' | 'en') || 'de';
+      const post = await storage.getBlogPostBySlug(slug, language);
+      if (!post) {
+        return res.status(404).json({ success: false, message: 'Post not found' });
+      }
+      res.json({ success: true, post });
+    } catch (err) {
+      console.error('[Blog] Error fetching post:', err);
+      res.status(500).json({ success: false, message: 'Server error' });
+    }
+  });
+
+  // POST /api/blog/generate - trigger AI generation (requires OPENAI_API_KEY)
+  app.post("/api/blog/generate", async (req, res) => {
+    try {
+      const { language, count, topic } = blogGenerateSchema.parse(req.body);
+
+      if (!process.env.OPENAI_API_KEY) {
+        return res.status(503).json({
+          success: false,
+          message: 'OPENAI_API_KEY not configured. Please add it to environment variables.',
+        });
+      }
+
+      console.log(`[Blog] Generating ${count} posts in ${language}...`);
+      const generated = await generateMultipleBlogPosts(count, language, topic);
+
+      const saved = [];
+      for (const post of generated) {
+        const saved_post = await storage.createBlogPost(post);
+        saved.push(saved_post);
+      }
+
+      res.json({
+        success: true,
+        message: `Generated and saved ${saved.length} blog posts`,
+        posts: saved,
+      });
+    } catch (err) {
+      if (err instanceof z.ZodError) {
+        return res.status(400).json({ success: false, errors: err.errors });
+      }
+      console.error('[Blog] Generation error:', err);
+      res.status(500).json({ success: false, message: 'Generation failed' });
     }
   });
 

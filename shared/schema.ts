@@ -26,3 +26,31 @@ export const contactFormSchema = z.object({
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
+
+// Blog Post types (in-memory, pre-seeded)
+export interface BlogPost {
+  id: string;
+  slug: string;
+  language: 'de' | 'en';
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  excerpt: string;
+  content: string;
+  category: string;
+  tags: string[];
+  author: string;
+  publishedAt: string;
+  updatedAt: string;
+  readingTime: number;
+  featured: boolean;
+  imageUrl?: string;
+}
+
+export type InsertBlogPost = Omit<BlogPost, 'id'>;
+
+export const blogGenerateSchema = z.object({
+  language: z.enum(['de', 'en']).default('de'),
+  count: z.number().min(1).max(10).default(5),
+  topic: z.string().optional(),
+});

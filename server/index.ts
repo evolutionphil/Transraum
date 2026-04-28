@@ -2,6 +2,9 @@ import express, { type Request, Response, NextFunction } from "express";
 import compression from "compression";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import cron from "node-cron";
+import { generateMultipleBlogPosts } from "./openai";
+import { storage } from "./storage";
 
 const app = express();
 
@@ -119,5 +122,24 @@ app.use((req, res, next) => {
     reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
+    // Start daily blog auto-generation cron job
+    // Runs every day at 07:00 UTC (09:00 Vienna time)
+    cron.schedule('0 7 * * *', async () => {
+      if (!process.env.OPENAI_API_KEY) {
+        log('[Cron] Skipping blog generation – OPENAI_API_KEY not set');
+        return;
+      }
+      log('[Cron] Starting daily blog post generation (5 posts)...');
+      try {
+        const posts = await generateMultipleBlogPosts(5, 'de');
+        for (const post of posts) {
+          await storage.createBlogPost(post);
+        }
+        log(`[Cron] Generated and saved ${posts.length} blog posts`);
+      } catch (err) {
+        log(`[Cron] Blog generation failed: ${err}`);
+      }
+    });
+    log('[Cron] Daily blog generation scheduled at 07:00 UTC');
   });
 })();

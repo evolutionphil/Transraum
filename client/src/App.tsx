@@ -20,6 +20,8 @@ import Impressum from "@/pages/Impressum";
 import AGB from "@/pages/AGB";
 import FAQ from "@/pages/FAQ";
 import ServiceRegionPage from "@/pages/ServiceRegionPage";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -43,6 +45,8 @@ function Router() {
         <Route path="/de/impressum" component={Impressum} />
         <Route path="/de/agb" component={AGB} />
         <Route path="/de/faq" component={FAQ} />
+        <Route path="/de/blog" component={Blog} />
+        <Route path="/de/blog/:slug" component={BlogPost} />
         
         <Route path="/bezirke" component={Districts} />
         <Route path="/bezirke/:slug" component={DistrictPage} />
@@ -72,6 +76,10 @@ function Router() {
         <Route path="/en/imprint" component={Impressum} />
         <Route path="/en/terms" component={AGB} />
         <Route path="/en/faq" component={FAQ} />
+        <Route path="/en/blog" component={Blog} />
+        <Route path="/en/blog/:slug" component={BlogPost} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug" component={BlogPost} />
         
         <Route component={NotFound} />
       </Switch>

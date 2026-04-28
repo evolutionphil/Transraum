@@ -10,6 +10,7 @@ export const translations = {
       getQuote: 'Angebot einholen',
       callNow: 'Jetzt anrufen',
       estatePurchase: 'Verlassenschaftsankauf',
+      blog: 'Blog',
     },
     estatePurchase: {
       menu: 'Verlassenschaftsankauf',
@@ -414,6 +415,7 @@ export const translations = {
       getQuote: 'Get Quote',
       callNow: 'Call Now',
       estatePurchase: 'Estate Purchase',
+      blog: 'Blog',
     },
     estatePurchase: {
       menu: 'Estate Purchase',

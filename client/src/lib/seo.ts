@@ -128,8 +128,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
       : 'Professional clearing and transport services in Vienna and throughout Austria. Over 26 years of experience. Fast, reliable, and at fair prices.',
     'url': 'https://flaechenfrei.at',
     'telephone': '+43 660 6926375',
-    'email': 'info@flaechenfrei.at',
-    'foundingDate': '1999',
+    'foundingDate': '1998',
     'priceRange': language === 'de' ? 'Faire Preise auf Anfrage' : 'Fair prices on request',
     'currenciesAccepted': 'EUR',
     'paymentAccepted': language === 'de' 
@@ -163,31 +162,37 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
         ],
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Herndlgasse 7/17',
-      'addressLocality': 'Wien',
-      'addressRegion': 'Wien',
-      'postalCode': '1100',
+      'streetAddress': 'Gewerbeparkstraße 21/23',
+      'addressLocality': 'Strasshof an der Nordbahn',
+      'addressRegion': 'Niederösterreich',
+      'postalCode': '2231',
       'addressCountry': 'AT',
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': 48.2082,
-      'longitude': 16.3738,
+      'latitude': 48.3170,
+      'longitude': 16.6430,
     },
     'openingHoursSpecification': [
       {
         '@type': 'OpeningHoursSpecification',
         'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        'opens': '09:00',
-        'closes': '18:00',
+        'opens': '08:00',
+        'closes': '20:00',
       },
       {
         '@type': 'OpeningHoursSpecification',
-        'dayOfWeek': 'Saturday',
-        'opens': '09:00',
-        'closes': '12:00',
+        'dayOfWeek': ['Saturday', 'Sunday'],
+        'opens': '08:00',
+        'closes': '18:00',
       },
     ],
+    'availableChannel': {
+      '@type': 'ServiceChannel',
+      'serviceUrl': 'https://flaechenfrei.at/de/kontakt',
+      'servicePhone': '+43 660 6926375',
+      'availableLanguage': ['de', 'en'],
+    },
     'areaServed': [
       {
         '@type': 'City',
@@ -228,8 +233,9 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
       },
     ],
     'sameAs': [
-      'https://www.facebook.com/flaechenfrei',
-      'https://www.instagram.com/flaechenfrei',
+      'https://www.facebook.com/transraum',
+      'https://www.instagram.com/transraum',
+      'https://www.google.com/maps?cid=transraum',
     ],
     'aggregateRating': {
       '@type': 'AggregateRating',
@@ -314,11 +320,11 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
         },
       },
       {
-        '@type': 'EmailAction',
-        'name': language === 'de' ? 'E-Mail senden' : 'Send Email',
+        '@type': 'ReserveAction',
+        'name': language === 'de' ? 'Termin anfragen' : 'Request Appointment',
         'target': {
           '@type': 'EntryPoint',
-          'urlTemplate': 'mailto:info@flaechenfrei.at',
+          'urlTemplate': 'https://flaechenfrei.at/de/kontakt',
         },
       },
     ],
@@ -453,9 +459,9 @@ export function getOrganizationSchema() {
       '@type': 'ContactPoint',
       'telephone': '+43 660 6926375',
       'contactType': 'customer service',
-      'email': 'info@flaechenfrei.at',
       'areaServed': 'AT',
       'availableLanguage': ['de', 'en'],
+      'contactOption': 'TollFree',
     },
   };
 }
