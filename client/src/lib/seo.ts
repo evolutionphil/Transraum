@@ -127,7 +127,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
       ? 'Professionelle Räumung und Transportdienste in Wien und ganz Österreich. Über 26 Jahre Erfahrung. Schnell, zuverlässig und zu fairen Preisen.'
       : 'Professional clearing and transport services in Vienna and throughout Austria. Over 26 years of experience. Fast, reliable, and at fair prices.',
     'url': 'https://flaechenfrei.at',
-    'telephone': '+43 660 39 57 587',
+    'telephone': '+43 660 6926375',
     'email': 'info@flaechenfrei.at',
     'foundingDate': '1999',
     'priceRange': language === 'de' ? 'Faire Preise auf Anfrage' : 'Fair prices on request',
@@ -310,7 +310,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
         'name': language === 'de' ? 'Anrufen' : 'Call',
         'target': {
           '@type': 'EntryPoint',
-          'urlTemplate': 'tel:+436603957587',
+          'urlTemplate': 'tel:+436606926375',
         },
       },
       {
@@ -451,7 +451,7 @@ export function getOrganizationSchema() {
     },
     'contactPoint': {
       '@type': 'ContactPoint',
-      'telephone': '+43660 39 57 587',
+      'telephone': '+43 660 6926375',
       'contactType': 'customer service',
       'email': 'info@flaechenfrei.at',
       'areaServed': 'AT',

@@ -14,7 +14,6 @@ import SEOContent from '@/components/SEOContent';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
-import FloatingActions from '@/components/FloatingActions';
 import { updateMetaTags, addMultipleJsonLd, getLocalBusinessSchema, getOrganizationSchema } from '@/lib/seo';
 import { getAlternateUrls } from '@/lib/urlMapping';
 
@@ -28,7 +27,7 @@ export default function Home() {
       : 'Clearing Vienna & Austria - Flächen Frei since 1998';
 
     const description = language === 'de'
-      ? 'Professionelle Räumung in Wien & Österreich seit 1998. Faire Festpreise, 24h-Service, kostenlose Besichtigung. ☎ +43 660 3957587'
+      ? 'Professionelle Räumung in Wien & Österreich seit 1998. Faire Festpreise, 24h-Service, kostenlose Besichtigung. ☎ +43 660 6926375'
       : 'Professional clearing company in Vienna & throughout Austria ⭐ 26+ years experience ⚡ Fair fixed prices with no surprises ✓ Free on-site consultation ✓ Fast appointments within 24h ✓ Guaranteed broom-clean handover. Get your free quote now!';
 
     const keywords = language === 'de'
@@ -68,7 +67,6 @@ export default function Home() {
         <CTA />
       </main>
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

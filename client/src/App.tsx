@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "@/components/ScrollToTop";
+import FloatingActions from "@/components/FloatingActions";
 import Home from "@/pages/Home";
 import Districts from "@/pages/Districts";
 import DistrictPage from "@/pages/DistrictPage";
@@ -84,6 +85,7 @@ function App() {
       <TooltipProvider>
         <LanguageProvider>
           <Toaster />
+          <FloatingActions />
           <Router />
         </LanguageProvider>
       </TooltipProvider>

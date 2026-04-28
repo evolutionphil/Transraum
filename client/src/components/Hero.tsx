@@ -24,25 +24,25 @@ export default function Hero() {
               {t.hero.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#kontakt">
+              <a href={`tel:${CONTACT_INFO.phoneLink}`}>
                 <Button
                   size="lg"
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary w-full sm:w-auto"
-                  data-testid="button-hero-quote"
+                  className="bg-secondary text-secondary-foreground hover:bg-secondary w-full sm:w-auto text-base font-bold"
+                  data-testid="button-hero-call"
                 >
-                  {t.hero.cta1}
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <Phone className="mr-2 w-5 h-5" />
+                  {CONTACT_INFO.phone}
                 </Button>
               </a>
-              <a href={`tel:${CONTACT_INFO.phoneLink}`}>
+              <a href="#kontakt">
                 <Button
                   size="lg"
                   variant="outline"
                   className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm w-full sm:w-auto"
-                  data-testid="button-hero-call"
+                  data-testid="button-hero-quote"
                 >
-                  <Phone className="mr-2 w-5 h-5" />
-                  {t.hero.cta2}
+                  {t.hero.cta1}
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </a>
             </div>

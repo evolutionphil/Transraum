@@ -9,23 +9,23 @@ export default function FloatingActions() {
   const whatsappUrl = `https://wa.me/${CONTACT_INFO.phoneLink}?text=${encodeURIComponent(t.contact.whatsappMessage)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40 md:hidden">
+    <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
         <Button
-          size="icon"
-          className="w-14 h-14 rounded-full shadow-lg bg-green-500 hover:bg-green-600 text-white"
+          className="h-14 rounded-full shadow-xl bg-green-500 hover:bg-green-600 text-white pl-4 pr-5 gap-2"
           data-testid="button-float-whatsapp"
         >
-          <SiWhatsapp className="w-7 h-7" />
+          <SiWhatsapp className="w-6 h-6 shrink-0" />
+          <span className="hidden sm:inline font-semibold text-sm">WhatsApp</span>
         </Button>
       </a>
       <a href={`tel:${CONTACT_INFO.phoneLink}`}>
         <Button
-          size="icon"
-          className="w-14 h-14 rounded-full shadow-lg bg-secondary hover:bg-secondary text-secondary-foreground"
+          className="h-14 rounded-full shadow-xl bg-secondary text-secondary-foreground hover:bg-secondary pl-4 pr-5 gap-2"
           data-testid="button-float-phone"
         >
-          <Phone className="w-6 h-6" />
+          <Phone className="w-6 h-6 shrink-0" />
+          <span className="hidden sm:inline font-bold text-sm">{CONTACT_INFO.phone}</span>
         </Button>
       </a>
     </div>
