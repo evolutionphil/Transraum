@@ -19,12 +19,12 @@ export default function Contact() {
 
   useEffect(() => {
     const title = language === 'de' 
-      ? `Kontakt - Flächen Frei | Räumung Wien und Umgebung ☎ ${CONTACT_INFO.phone}`
-      : `Contact - Flächen Frei | Clearing Services Vienna ☎ ${CONTACT_INFO.phone}`;
+      ? `Kontakt - Transraum | Räumung Wien und Umgebung ☎ ${CONTACT_INFO.phone}`
+      : `Contact - Transraum | Clearing Services Vienna ☎ ${CONTACT_INFO.phone}`;
     
     const description = language === 'de'
-      ? `Kontaktieren Sie Flächen Frei für professionelle Räumung in Wien und ganz Österreich ✓ Kostenlose Beratung ✓ Schnelle Termine ✓ 24/7 Erreichbar ☎ ${CONTACT_INFO.phone}`
-      : `Contact Flächen Frei for professional clearing services in Vienna and throughout Austria ✓ Free consultation ✓ Fast appointments ✓ 24/7 available ☎ ${CONTACT_INFO.phone}`;
+      ? `Kontaktieren Sie Transraum für professionelle Räumung in Wien und ganz Österreich ✓ Kostenlose Beratung ✓ Schnelle Termine ✓ 24/7 Erreichbar ☎ ${CONTACT_INFO.phone}`
+      : `Contact Transraum for professional clearing services in Vienna and throughout Austria ✓ Free consultation ✓ Fast appointments ✓ 24/7 available ☎ ${CONTACT_INFO.phone}`;
 
     const alternateUrls = getAlternateUrls(location);
 

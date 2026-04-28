@@ -12,12 +12,12 @@ export default function AGB() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Allgemeine Geschäftsbedingungen (AGB) | Flächen Frei'
-      : 'Terms and Conditions | Flächen Frei';
+      ? 'Allgemeine Geschäftsbedingungen (AGB) | Transraum'
+      : 'Terms and Conditions | Transraum';
 
     const description = language === 'de'
-      ? 'Allgemeine Geschäftsbedingungen für Räumungs- und Transportdienstleistungen von Flächen Frei in Österreich.'
-      : 'Terms and Conditions for clearing and transport services by Flächen Frei in Austria.';
+      ? 'Allgemeine Geschäftsbedingungen für Räumungs- und Transportdienstleistungen von Transraum in Österreich.'
+      : 'Terms and Conditions for clearing and transport services by Transraum in Austria.';
 
     const alternateUrls = getAlternateUrls(location);
 
@@ -47,7 +47,7 @@ export default function AGB() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Geltungsbereich</h2>
           <p className="mb-4">
-            Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Leistungen der Flächen Frei im Bereich Räumung, Entrümpelung und Transport in Österreich. Mit der Beauftragung unserer Dienstleistungen akzeptiert der Auftraggeber diese AGB in ihrer jeweils gültigen Fassung.
+            Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Leistungen der Transraum im Bereich Räumung, Entrümpelung und Transport in Österreich. Mit der Beauftragung unserer Dienstleistungen akzeptiert der Auftraggeber diese AGB in ihrer jeweils gültigen Fassung.
           </p>
         </section>
 
@@ -169,7 +169,7 @@ export default function AGB() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Scope of Application</h2>
           <p className="mb-4">
-            These Terms and Conditions apply to all services provided by Flächen Frei in the field of clearing, removal, and transport in Austria. By commissioning our services, the client accepts these Terms and Conditions in their current version.
+            These Terms and Conditions apply to all services provided by Transraum in the field of clearing, removal, and transport in Austria. By commissioning our services, the client accepts these Terms and Conditions in their current version.
           </p>
         </section>
 

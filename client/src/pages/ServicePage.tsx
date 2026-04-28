@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Phone, CheckCircle, ArrowRight, Euro } from 'lucide-react';
+import { Phone, CheckCircle, ArrowRight, Euro, Truck } from 'lucide-react';
 import { getServiceBySlug, getServiceById, ServiceId, getLocalizedServicePath } from '@/data/services';
 import { updateMetaTags, addJsonLd, getFAQSchema, addMultipleJsonLd, getWebPageSchema } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -51,6 +51,7 @@ const serviceImages: Record<ServiceId, string> = {
   [ServiceId.TEPPICHANKAUF]: carpetImage,
   [ServiceId.BILDERANKAUF]: paintingImage,
   [ServiceId.ANTIKWARENANKAUF]: antiqueImage,
+  [ServiceId.TRANSPORTSERVICE]: movingTruckImage,
 };
 
 export default function ServicePage() {
@@ -67,7 +68,7 @@ export default function ServicePage() {
   useEffect(() => {
     if (service) {
       const content = service.content[language];
-      const title = `${content.name} Wien - Flächen Frei | Professionell & Schnell`;
+      const title = `${content.name} Wien - Transraum | Professionell & Schnell`;
       const alternateUrls = getAlternateUrls(location);
 
       updateMetaTags({
@@ -91,7 +92,7 @@ export default function ServicePage() {
         provider: {
           '@type': 'MovingCompany',
           '@id': 'https://flaechenfrei.at/#organization',
-          name: 'Flächen Frei',
+          name: 'Transraum',
           telephone: CONTACT_INFO.phone,
           address: {
             '@type': 'PostalAddress',

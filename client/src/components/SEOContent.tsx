@@ -21,7 +21,7 @@ export default function SEOContent() {
               
               <div className="text-muted-foreground space-y-4 leading-relaxed">
                 <p>
-                  <strong>Flächen Frei</strong> ist Ihr zuverlässiger Partner für professionelle{' '}
+                  <strong>Transraum</strong> ist Ihr zuverlässiger Partner für professionelle{' '}
                   <Link href={servicesPath} className="text-primary hover:underline font-semibold">
                     Räumungen in Wien und ganz Österreich
                   </Link>
@@ -119,7 +119,7 @@ export default function SEOContent() {
               
               <div className="text-muted-foreground space-y-4 leading-relaxed">
                 <p>
-                  <strong>Flächen Frei</strong> is your reliable partner for professional clearing services in Vienna and throughout Austria. 
+                  <strong>Transraum</strong> is your reliable partner for professional clearing services in Vienna and throughout Austria. 
                   With over 26 years of experience in apartment clearing, household dissolution, and decluttering, we have established ourselves 
                   as a leading clearing company in Austria. Our experienced team is here to help you clear your property quickly, cleanly, and 
                   professionally.

@@ -57,8 +57,8 @@ export default function Services() {
 
   useEffect(() => {
     const title = language === 'de' 
-      ? 'Unsere Leistungen - Räumung & Räumung in Wien | Flächen Frei'
-      : 'Our Services - Clearing & Removal in Vienna | Flächen Frei';
+      ? 'Unsere Leistungen - Räumung & Räumung in Wien | Transraum'
+      : 'Our Services - Clearing & Removal in Vienna | Transraum';
     
     const description = language === 'de'
       ? `Professionelle Räumungs-Services in Wien ✓ Wohnungsräumung ✓ Haushaltsauflösung ✓ Keller & Dachboden ✓ Messie-Hilfe ✓ Alle Bezirke ☎ ${CONTACT_INFO.phone}`

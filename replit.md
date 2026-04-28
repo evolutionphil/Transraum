@@ -165,6 +165,14 @@ Preferred communication style: Simple, everyday language.
 - **Critical Fix:** Added `nixpacks.toml` to fix Railway deployment failure (Node.js 20+ for `import.meta.dirname`)
 - **IndexNow Workflow:** Strict success criteria, status reporting, error handling
 
+#### Session: April 2026 - Brand Rename + Transport Service Page
+
+- **Brand Rename:** "Flächen Frei" → "Transraum" across ALL files (constants.ts, seo.ts, i18n.ts, index.html, all pages, components, data files — 0 remaining occurrences)
+- **Logo:** PNG logo replaced with CSS text-based "TRANSRAUM" yellow banner in Header.tsx — header height reduced from h-32 to h-16
+- **Transport Service Page:** Added `ServiceId.TRANSPORTSERVICE` with full DE/EN content (name, shortDescription, description, metaDescription, benefits, process, pricing, FAQ) — URL: `/de/leistungen/transportservice`
+- **Footer Fix:** Transport link now correctly points to `/de/leistungen/transportservice` (or `/en/services/transport-service`)
+- **ServicePage Image Map:** TRANSPORTSERVICE mapped to movingTruckImage
+
 #### Session: April 2026 - Contact Strategy & Company Identity Update
 - **Phone Number:** +43 660 3957587 → +43 660 6926375 (120+ locations updated)
 - **Company Identity:** Impressum — Golden Trend Armaturen GmbH / Flächen Frei, Gewerbeparkstraße 21/23, 2231 Strasshof an der Nordbahn, FN 61715m

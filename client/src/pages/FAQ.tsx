@@ -127,8 +127,8 @@ export default function FAQ() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Häufig gestellte Fragen (FAQ) | Flächen Frei'
-      : 'Frequently Asked Questions (FAQ) | Flächen Frei';
+      ? 'Häufig gestellte Fragen (FAQ) | Transraum'
+      : 'Frequently Asked Questions (FAQ) | Transraum';
 
     const description = language === 'de'
       ? 'Antworten auf häufig gestellte Fragen zu Räumung, Entrümpelung und Transport in Österreich. Preise, Ablauf, Termine und mehr.'

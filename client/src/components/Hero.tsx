@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img
                 src={heroImage}
-                alt="Flächen Frei Team"
+                alt="Transraum Team"
                 className="w-full h-auto"
                 data-testid="img-hero"
               />

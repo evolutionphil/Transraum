@@ -13,12 +13,12 @@ export default function Impressum() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Impressum | Flächen Frei'
-      : 'Imprint | Flächen Frei';
+      ? 'Impressum | Transraum'
+      : 'Imprint | Transraum';
 
     const description = language === 'de'
-      ? 'Impressum und rechtliche Angaben von Flächen Frei - Ihr Partner für Räumung und Transport in Österreich.'
-      : 'Imprint and legal information of Flächen Frei - Your partner for clearing and transport in Austria.';
+      ? 'Impressum und rechtliche Angaben von Transraum - Ihr Partner für Räumung und Transport in Österreich.'
+      : 'Imprint and legal information of Transraum - Your partner for clearing and transport in Austria.';
 
     const alternateUrls = getAlternateUrls(location);
 

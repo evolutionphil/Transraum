@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div>
             <Link href={language === 'de' ? '/de' : '/en'} className="hover:opacity-80 transition-opacity">
-              <h3 className="text-xl font-bold mb-4" data-testid="link-footer-home">Flächen Frei</h3>
+              <h3 className="text-xl font-bold mb-4" data-testid="link-footer-home">Transraum</h3>
             </Link>
             <p className="text-sm text-primary-foreground/80 mb-4">
               {t.footer.companyDescription}
@@ -42,7 +42,7 @@ export default function Footer() {
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Wohnungsräumung' : 'Apartment Clearing'}</Link></li>
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Hausräumung' : 'House Clearing'}</Link></li>
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Verlassenschaft' : 'Estate Clearing'}</Link></li>
-              <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Transport' : 'Transport'}</Link></li>
+              <li><Link href={`${servicesPath}/${language === 'de' ? 'transportservice' : 'transport-service'}`} className="hover:text-primary-foreground">{language === 'de' ? 'Transportservice' : 'Transport Service'}</Link></li>
             </ul>
           </div>
 

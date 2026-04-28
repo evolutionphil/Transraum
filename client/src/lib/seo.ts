@@ -24,7 +24,7 @@ export function updateMetaTags(config: {
     { property: 'og:url', content: fullUrl },
     { property: 'og:type', content: config.type || 'website' },
     { property: 'og:image', content: config.image || defaultImage },
-    { property: 'og:site_name', content: 'Flächen Frei' },
+    { property: 'og:site_name', content: 'Transraum' },
     { property: 'og:locale', content: locale },
     { property: 'og:locale:alternate', content: language === 'de' ? 'en_US' : 'de_AT' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -118,8 +118,8 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
     '@context': 'https://schema.org',
     '@type': 'MovingCompany',
     '@id': 'https://flaechenfrei.at/#business',
-    'name': 'Flächen Frei',
-    'alternateName': 'Flächen Frei Räumung',
+    'name': 'Transraum',
+    'alternateName': 'Transraum Räumung',
     'slogan': language === 'de'
       ? 'Professionelle Räumung - Schnell, zuverlässig, fair'
       : 'Professional Clearing - Fast, reliable, fair',
@@ -379,7 +379,7 @@ export function getCollectionPageSchema(
     'inLanguage': language,
     'isPartOf': {
       '@type': 'WebSite',
-      'name': 'Flächen Frei',
+      'name': 'Transraum',
       'url': 'https://flaechenfrei.at',
     },
     'mainEntity': {
@@ -395,7 +395,7 @@ export function getCollectionPageSchema(
           ...(isServiceType && {
             'provider': {
               '@type': 'MovingCompany',
-              'name': 'Flächen Frei',
+              'name': 'Transraum',
               'url': 'https://flaechenfrei.at',
             },
           }),
@@ -423,12 +423,12 @@ export function getWebPageSchema(
     'inLanguage': language,
     'isPartOf': {
       '@type': 'WebSite',
-      'name': 'Flächen Frei',
+      'name': 'Transraum',
       'url': 'https://flaechenfrei.at',
     },
     'publisher': {
       '@type': 'Organization',
-      'name': 'Flächen Frei',
+      'name': 'Transraum',
       'url': 'https://flaechenfrei.at',
       'logo': {
         '@type': 'ImageObject',
@@ -443,7 +443,7 @@ export function getOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': 'https://flaechenfrei.at/#organization',
-    'name': 'Flächen Frei',
+    'name': 'Transraum',
     'url': 'https://flaechenfrei.at',
     'logo': {
       '@type': 'ImageObject',

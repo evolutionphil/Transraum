@@ -16,6 +16,7 @@ export enum ServiceId {
   TEPPICHANKAUF = 'teppichankauf',
   BILDERANKAUF = 'bilderankauf',
   ANTIKWARENANKAUF = 'antikwarenankauf',
+  TRANSPORTSERVICE = 'transportservice',
 }
 
 export interface ServiceContent {
@@ -2334,6 +2335,153 @@ export const servicesData: ServiceEntry[] = [
           {
             question: 'How is the value of my antiques determined?',
             answer: 'We examine age (often through style features, craftsman marks), origin, material, condition and compare with current market prices of similar pieces. Appraisal is done transparently on-site.',
+          },
+        ],
+      },
+    },
+  },
+  {
+    id: ServiceId.TRANSPORTSERVICE,
+    slugs: { de: 'transportservice', en: 'transport-service' },
+    relatedServices: [ServiceId.UMZUGSSERVICE, ServiceId.SPERRMULLABHOLUNG, ServiceId.CONTAINERSERVICE],
+    content: {
+      de: {
+        name: 'Transportservice',
+        shortDescription: 'Professioneller Transport in Wien und ganz Österreich – Möbel, Sperrgut, Maschinen und mehr. Schnell, sicher, versichert.',
+        description: 'Transraum bietet zuverlässigen Transportservice für Privatpersonen und Unternehmen in Wien und ganz Österreich. Ob Möbeltransport, Sperrguttransport, Maschinentransport oder Warentransport – unsere erfahrenen Teams und modernen Fahrzeuge sorgen für eine sichere und pünktliche Lieferung. Kein Auftrag ist zu groß oder zu klein.',
+        metaDescription: 'Transportservice Wien & Österreich ✓ Möbel-, Sperrgut- & Maschinentransport ✓ Versichert ✓ Festpreis ✓ 24h-Service ☎ +43 660 6926375',
+        benefits: [
+          'Transport für Privatpersonen & Unternehmen',
+          'Möbel, Sperrgut, Maschinen & Waren',
+          'Versicherter Transport – kein Risiko',
+          'Festpreis nach Besichtigung / telefonisch',
+          'Moderne Fahrzeuge bis 7,5t',
+          'Österreichweit & Wien-intern',
+          'Kurzfristige Termine möglich',
+          '26 Jahre Erfahrung',
+        ],
+        process: [
+          {
+            step: 1,
+            title: 'Kostenloses Angebot',
+            description: 'Rufen Sie uns an oder schreiben Sie per WhatsApp. Wir klären Umfang, Gewicht und Route – und erstellen sofort ein Festpreisangebot.',
+          },
+          {
+            step: 2,
+            title: 'Terminvereinbarung',
+            description: 'Wir vereinbaren einen passenden Termin – auch kurzfristig. Unser Team ist flexibel und kommt zu Ihnen.',
+          },
+          {
+            step: 3,
+            title: 'Professionelle Verladung',
+            description: 'Unsere Profis verladen Ihre Güter sicher und fachgerecht. Empfindliche Gegenstände werden gesondert verpackt.',
+          },
+          {
+            step: 4,
+            title: 'Sichere Zustellung',
+            description: 'Transport zum Zielort – pünktlich, versichert, ohne Überraschungen. Auf Wunsch mit Auf- und Abladeservice.',
+          },
+        ],
+        pricing: {
+          info: 'Die Transportkosten richten sich nach Entfernung, Gewicht und Aufwand. Nach kurzer Beschreibung erhalten Sie telefonisch einen verbindlichen Festpreis.',
+          factors: [
+            'Transportstrecke (Wien-intern oder österreichweit)',
+            'Gewicht und Volumen der Güter',
+            'Anzahl der benötigten Träger',
+            'Stockwerk und Liftvorhandensein',
+            'Verpackungs- und Montageleistungen',
+          ],
+        },
+        faq: [
+          {
+            question: 'Was kostet ein Transportservice in Wien?',
+            answer: 'Ein einfacher Möbeltransport innerhalb Wiens beginnt ab 150€. Der genaue Preis hängt von Entfernung, Gewicht und Stockwerk ab. Nach kurzer Beschreibung erhalten Sie telefonisch einen Festpreis.',
+          },
+          {
+            question: 'Welche Güter transportieren Sie?',
+            answer: 'Wir transportieren Möbel, Haushaltsgeräte, Sperrgut, Maschinen, Paletten, Baumaterialien und Waren aller Art – sowohl für Privat- als auch für Geschäftskunden.',
+          },
+          {
+            question: 'Ist mein Transportgut versichert?',
+            answer: 'Ja. Alle Güter sind während des Transports versichert. Bei empfindlichen oder besonders wertvollen Gegenständen sprechen wir im Vorfeld über geeignete Schutzmaßnahmen.',
+          },
+          {
+            question: 'Transportieren Sie auch österreichweit?',
+            answer: 'Ja, wir sind österreichweit tätig – von Wien nach Linz, Graz, Salzburg, Innsbruck und überall dazwischen. Gerne erstellen wir ein Angebot für Ihre gewünschte Route.',
+          },
+          {
+            question: 'Wie kurzfristig kann ich einen Transporttermin buchen?',
+            answer: 'Sehr kurzfristig – oft auch noch am selben oder nächsten Tag. Rufen Sie uns einfach an oder schreiben Sie per WhatsApp, wir finden eine Lösung.',
+          },
+        ],
+      },
+      en: {
+        name: 'Transport Service',
+        shortDescription: 'Professional transport throughout Vienna and all of Austria – furniture, bulky goods, machinery and more. Fast, safe, insured.',
+        description: 'Transraum provides reliable transport services for private individuals and businesses in Vienna and throughout Austria. Whether furniture, bulky goods, machinery or goods – our experienced teams and modern vehicles ensure safe and punctual delivery. No job is too big or too small.',
+        metaDescription: 'Transport Service Vienna & Austria ✓ Furniture, Bulky Goods & Machinery Transport ✓ Insured ✓ Fixed Price ✓ 24h Service ☎ +43 660 6926375',
+        benefits: [
+          'Transport for private individuals & businesses',
+          'Furniture, bulky goods, machinery & goods',
+          'Insured transport – no risk',
+          'Fixed price by phone or after inspection',
+          'Modern vehicles up to 7.5t',
+          'Throughout Austria & within Vienna',
+          'Short-notice appointments possible',
+          '26 years of experience',
+        ],
+        process: [
+          {
+            step: 1,
+            title: 'Free Quote',
+            description: 'Call us or write via WhatsApp. We clarify scope, weight and route – and create a fixed price quote immediately.',
+          },
+          {
+            step: 2,
+            title: 'Appointment',
+            description: 'We arrange a suitable appointment – also at short notice. Our team is flexible and comes to you.',
+          },
+          {
+            step: 3,
+            title: 'Professional Loading',
+            description: 'Our professionals load your goods safely and properly. Sensitive items are packed separately.',
+          },
+          {
+            step: 4,
+            title: 'Safe Delivery',
+            description: 'Transport to the destination – punctual, insured, without surprises. Loading and unloading service available on request.',
+          },
+        ],
+        pricing: {
+          info: 'Transport costs are based on distance, weight and effort. After a brief description, you receive a binding fixed price by phone.',
+          factors: [
+            'Transport distance (within Vienna or throughout Austria)',
+            'Weight and volume of goods',
+            'Number of helpers required',
+            'Floor level and elevator availability',
+            'Packing and assembly services',
+          ],
+        },
+        faq: [
+          {
+            question: 'How much does a transport service in Vienna cost?',
+            answer: 'A simple furniture transport within Vienna starts from €150. The exact price depends on distance, weight and floor level. After a brief description, you receive a fixed price by phone.',
+          },
+          {
+            question: 'What goods do you transport?',
+            answer: 'We transport furniture, household appliances, bulky goods, machinery, pallets, building materials and goods of all kinds – for both private and business customers.',
+          },
+          {
+            question: 'Is my transport cargo insured?',
+            answer: 'Yes. All goods are insured during transport. For sensitive or particularly valuable items, we discuss appropriate protective measures in advance.',
+          },
+          {
+            question: 'Do you also transport throughout Austria?',
+            answer: 'Yes, we operate throughout Austria – from Vienna to Linz, Graz, Salzburg, Innsbruck and everywhere in between. We are happy to provide a quote for your desired route.',
+          },
+          {
+            question: 'How short notice can I book a transport appointment?',
+            answer: 'Very short notice – often the same or next day. Just call us or write via WhatsApp, we will find a solution.',
           },
         ],
       },

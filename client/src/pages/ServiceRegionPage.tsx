@@ -118,7 +118,7 @@ export default function ServiceRegionPage() {
     }
 
     // Update meta tags
-    const title = `${locContent.headline} | Flächen Frei`;
+    const title = `${locContent.headline} | Transraum`;
     const description = locContent.subheadline;
 
     const alternateUrls = getAlternateUrls(location);
@@ -142,7 +142,7 @@ export default function ServiceRegionPage() {
       provider: {
         '@type': 'MovingCompany',
         '@id': 'https://flaechenfrei.at/#organization',
-        name: 'Flächen Frei',
+        name: 'Transraum',
       },
       areaServed: {
         '@type': 'Place',

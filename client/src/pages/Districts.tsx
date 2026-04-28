@@ -20,8 +20,8 @@ export default function Districts() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Räumung in allen Wiener Bezirken - Flächen Frei | 1010-1230 Wien'
-      : 'Clearing in All Vienna Districts - Flächen Frei | 1010-1230 Vienna';
+      ? 'Räumung in allen Wiener Bezirken - Transraum | 1010-1230 Wien'
+      : 'Clearing in All Vienna Districts - Transraum | 1010-1230 Vienna';
     
     const description = language === 'de'
       ? `Professionelle Räumung in allen 23 Wiener Bezirken ✓ Schnell ✓ Zuverlässig ✓ Faire Preise. Kostenlose Besichtigung in ganz Wien ☎ ${CONTACT_INFO.phone}`

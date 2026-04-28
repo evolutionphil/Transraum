@@ -10,7 +10,7 @@ export const CONTACT_INFO = {
     countryCode: 'AT',
   },
   company: {
-    brandName: 'Flächen Frei',
+    brandName: 'Transraum',
     legalName: 'Golden Trend Armaturen GmbH',
     firmenbuchnummer: 'FN 61715m',
     uidNr: 'ATU75891407',

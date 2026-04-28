@@ -53,13 +53,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-16">
           <Link href={language === 'de' ? '/' : '/en'} className="flex items-center gap-2" data-testid="link-logo">
-            <img 
-              src="/logo.png" 
-              alt="Flächen Frei Logo" 
-              className="h-28 w-auto"
-            />
+            <div className="bg-[hsl(46,100%,50%)] px-5 py-3 rounded-sm flex items-center">
+              <span className="text-black font-extrabold tracking-widest text-xl uppercase" style={{ fontFamily: 'Inter, sans-serif', letterSpacing: '0.12em' }}>
+                TRANSRAUM
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

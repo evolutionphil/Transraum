@@ -39,8 +39,8 @@ export default function DistrictPage() {
   useEffect(() => {
     if (district) {
       const title = language === 'de'
-        ? `Räumung ${district.postalCode} Wien ${districtName} - Flächen Frei | Professionell & Schnell`
-        : `Clearing ${district.postalCode} Vienna ${districtName} - Flächen Frei | Professional & Fast`;
+        ? `Räumung ${district.postalCode} Wien ${districtName} - Transraum | Professionell & Schnell`
+        : `Clearing ${district.postalCode} Vienna ${districtName} - Transraum | Professional & Fast`;
       const alternateUrls = getAlternateUrls(location);
 
       updateMetaTags({
@@ -86,7 +86,7 @@ export default function DistrictPage() {
         provider: {
           '@type': 'MovingCompany',
           '@id': 'https://flaechenfrei.at/#organization',
-          name: 'Flächen Frei',
+          name: 'Transraum',
           telephone: CONTACT_INFO.phone,
         },
         areaServed: {

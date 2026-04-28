@@ -13,16 +13,16 @@ export default function Testimonials() {
       name: 'Jonas M.',
       rating: 5,
       text: language === 'de' 
-        ? 'Top-Service! Ich bin begeistert von der professionellen und zuverlässigen Arbeit von Flächen Frei. Das Team war pünktlich, freundlich und hat meine Wohnung blitzschnell entrümpelt. Ich kann sie jedem wärmstens empfehlen!'
-        : 'Top service! I am thrilled with the professional and reliable work of Flächen Frei. The team was punctual, friendly and cleared my apartment in no time. I highly recommend them!',
+        ? 'Top-Service! Ich bin begeistert von der professionellen und zuverlässigen Arbeit von Transraum. Das Team war pünktlich, freundlich und hat meine Wohnung blitzschnell entrümpelt. Ich kann sie jedem wärmstens empfehlen!'
+        : 'Top service! I am thrilled with the professional and reliable work of Transraum. The team was punctual, friendly and cleared my apartment in no time. I highly recommend them!',
       image: jonasImage,
     },
     {
       name: 'Marcel R.',
       rating: 5,
       text: language === 'de'
-        ? 'Absolut empfehlenswert! Ich habe Flächen Frei für die Räumung meines Elternhauses engagiert und bin rundum zufrieden. Das Team war äußerst professionell, respektvoll und effizient. Sie haben einen herausragenden Job gemacht!'
-        : 'Absolutely recommendable! I hired Flächen Frei to clear my parents\' house and am completely satisfied. The team was extremely professional, respectful and efficient. They did an outstanding job!',
+        ? 'Absolut empfehlenswert! Ich habe Transraum für die Räumung meines Elternhauses engagiert und bin rundum zufrieden. Das Team war äußerst professionell, respektvoll und effizient. Sie haben einen herausragenden Job gemacht!'
+        : 'Absolutely recommendable! I hired Transraum to clear my parents\' house and am completely satisfied. The team was extremely professional, respectful and efficient. They did an outstanding job!',
       image: marcelImage,
     },
     {

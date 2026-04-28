@@ -23,8 +23,8 @@ export default function Home() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Räumung Wien & Österreich - Flächen Frei seit 1998'
-      : 'Clearing Vienna & Austria - Flächen Frei since 1998';
+      ? 'Räumung Wien & Österreich - Transraum seit 1998'
+      : 'Clearing Vienna & Austria - Transraum since 1998';
 
     const description = language === 'de'
       ? 'Professionelle Räumung in Wien & Österreich seit 1998. Faire Festpreise, 24h-Service, kostenlose Besichtigung. ☎ +43 660 6926375'

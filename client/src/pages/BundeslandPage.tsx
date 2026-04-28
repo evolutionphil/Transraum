@@ -56,7 +56,7 @@ export default function BundeslandPage() {
       'provider': {
         '@type': 'MovingCompany',
         '@id': 'https://flaechenfrei.at/#organization',
-        'name': 'Flächen Frei',
+        'name': 'Transraum',
         'telephone': CONTACT_INFO.phone,
         'url': 'https://flaechenfrei.at',
       },

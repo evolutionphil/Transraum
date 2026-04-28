@@ -13,12 +13,12 @@ export default function Datenschutz() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Datenschutzerklärung | Flächen Frei'
-      : 'Privacy Policy | Flächen Frei';
+      ? 'Datenschutzerklärung | Transraum'
+      : 'Privacy Policy | Transraum';
 
     const description = language === 'de'
-      ? 'Datenschutzerklärung von Flächen Frei - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.'
-      : 'Privacy Policy of Flächen Frei - Information on the processing of personal data in accordance with GDPR.';
+      ? 'Datenschutzerklärung von Transraum - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.'
+      : 'Privacy Policy of Transraum - Information on the processing of personal data in accordance with GDPR.';
 
     const alternateUrls = getAlternateUrls(location);
 
@@ -106,7 +106,7 @@ export default function Datenschutz() {
           <h3 className="text-xl font-semibold mb-3">Hinweis zur verantwortlichen Stelle</h3>
           <p className="mb-4">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
           <div className="mb-4 p-4 bg-muted rounded-md">
-            <p className="font-semibold">Flächen Frei</p>
+            <p className="font-semibold">Transraum</p>
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}</p>
             <p>Telefon: {CONTACT_INFO.phone}</p>
@@ -243,7 +243,7 @@ export default function Datenschutz() {
           <h3 className="text-xl font-semibold mb-3">Note on the Responsible Party</h3>
           <p className="mb-4">The responsible party for data processing on this website is:</p>
           <div className="mb-4 p-4 bg-muted rounded-md">
-            <p className="font-semibold">Flächen Frei</p>
+            <p className="font-semibold">Transraum</p>
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.cityEn}</p>
             <p>Phone: {CONTACT_INFO.phone}</p>

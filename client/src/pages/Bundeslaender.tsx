@@ -20,8 +20,8 @@ export default function Bundeslaender() {
 
   useEffect(() => {
     const title = language === 'de' 
-      ? 'Räumung in allen Bundesländern Österreichs | Flächen Frei'
-      : 'Clearing Services in All Austrian Federal States | Flächen Frei';
+      ? 'Räumung in allen Bundesländern Österreichs | Transraum'
+      : 'Clearing Services in All Austrian Federal States | Transraum';
     
     const description = language === 'de'
       ? 'Professionelle Räumung und Transport in allen 9 Bundesländern Österreichs. Von Wien bis Vorarlberg - zuverlässiger Service in ganz Österreich.'

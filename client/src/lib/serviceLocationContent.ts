@@ -141,7 +141,7 @@ export function generateServiceLocationContent(
 }
 
 function generateIntroDE(serviceName: string, regionName: string, regionType: RegionType, region: any): string {
-  const baseIntro = `Sie benötigen eine professionelle ${serviceName} in ${regionName}? Flächen Frei ist Ihr zuverlässiger Partner mit über 26 Jahren Erfahrung. `;
+  const baseIntro = `Sie benötigen eine professionelle ${serviceName} in ${regionName}? Transraum ist Ihr zuverlässiger Partner mit über 26 Jahren Erfahrung. `;
   
   let locationSpecific = '';
   if (regionType === 'bezirk') {
@@ -161,7 +161,7 @@ function generateIntroDE(serviceName: string, regionName: string, regionType: Re
 }
 
 function generateIntroEN(serviceName: string, regionName: string, regionType: RegionType, region: any): string {
-  const baseIntro = `Do you need professional ${serviceName} in ${regionName}? Flächen Frei is your reliable partner with over 26 years of experience. `;
+  const baseIntro = `Do you need professional ${serviceName} in ${regionName}? Transraum is your reliable partner with over 26 years of experience. `;
   
   let locationSpecific = '';
   if (regionType === 'bezirk') {
