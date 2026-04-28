@@ -57,10 +57,11 @@ export default function ServicePage() {
   const { t, language } = useLanguage();
   const [location] = useLocation();
   const [matchDe, paramsDe] = useRoute('/leistungen/:slug');
+  const [matchDe2, paramsDe2] = useRoute('/de/leistungen/:slug');
   const [matchEn, paramsEn] = useRoute('/en/services/:slug');
   
-  const match = matchDe || matchEn;
-  const params = paramsDe || paramsEn;
+  const match = matchDe || matchDe2 || matchEn;
+  const params = paramsDe || paramsDe2 || paramsEn;
   const service = params?.slug ? getServiceBySlug(params.slug, language) : null;
 
   useEffect(() => {

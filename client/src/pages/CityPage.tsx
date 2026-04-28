@@ -19,9 +19,10 @@ export default function CityPage() {
   const { t, language } = useLanguage();
   const [location] = useLocation();
   const [matchDe, paramsDe] = useRoute('/bundeslaender/:bundesland/:city');
+  const [matchDe2, paramsDe2] = useRoute('/de/bundeslaender/:bundesland/:city');
   const [matchEn, paramsEn] = useRoute('/en/federal-states/:bundesland/:city');
-  const match = matchDe || matchEn;
-  const params = matchDe ? paramsDe : paramsEn;
+  const match = matchDe || matchDe2 || matchEn;
+  const params = matchDe ? paramsDe : matchDe2 ? paramsDe2 : paramsEn;
   const bundeslaenderPath = getLocalizedBundeslaenderPath(language);
   const city = params?.bundesland && params?.city 
     ? getCityBySlug(params.bundesland, params.city) 

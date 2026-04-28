@@ -22,11 +22,13 @@ import { CONTACT_INFO } from '@/lib/constants';
 export default function ServiceRegionPage() {
   const { language } = useLanguage();
   const [location] = useLocation();
-  const [, params] = useRoute(
+  const [matchBase, paramsBase] = useRoute(
     language === 'de' 
       ? '/leistungen/:serviceSlug/:regionType/:regionSlug'
       : '/en/services/:serviceSlug/:regionType/:regionSlug'
   );
+  const [matchDe2, paramsDe2] = useRoute('/de/leistungen/:serviceSlug/:regionType/:regionSlug');
+  const params = matchBase ? paramsBase : (language === 'de' && matchDe2 ? paramsDe2 : null);
 
   const [content, setContent] = useState<ReturnType<typeof generateServiceLocationContent>>(null);
   const [loading, setLoading] = useState(true);

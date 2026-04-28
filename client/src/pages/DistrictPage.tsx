@@ -18,9 +18,10 @@ export default function DistrictPage() {
   const { t, language } = useLanguage();
   const [location] = useLocation();
   const [matchDe, paramsDe] = useRoute('/bezirke/:slug');
+  const [matchDe2, paramsDe2] = useRoute('/de/bezirke/:slug');
   const [matchEn, paramsEn] = useRoute('/en/districts/:slug');
-  const match = matchDe || matchEn;
-  const params = matchDe ? paramsDe : paramsEn;
+  const match = matchDe || matchDe2 || matchEn;
+  const params = matchDe ? paramsDe : matchDe2 ? paramsDe2 : paramsEn;
   const districtsPath = getLocalizedDistrictsPath(language);
   const district = params?.slug ? getDistrictBySlug(params.slug) : null;
 
