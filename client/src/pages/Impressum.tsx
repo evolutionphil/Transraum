@@ -48,7 +48,8 @@ export default function Impressum() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Angaben gemäß § 5 TMG</h2>
           <div className="space-y-2">
-            <p className="font-semibold text-lg">Flächen Frei</p>
+            <p className="font-semibold text-lg">{CONTACT_INFO.company.legalName}</p>
+            <p className="text-muted-foreground">(Markenname: {CONTACT_INFO.company.brandName})</p>
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}</p>
             <p>{CONTACT_INFO.address.country}</p>
@@ -59,7 +60,7 @@ export default function Impressum() {
           <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
           <div className="space-y-2">
             <p><strong>Telefon:</strong> {CONTACT_INFO.phone}</p>
-            <p><strong>E-Mail:</strong> <a href={CONTACT_INFO.emailLink} className="text-primary hover:underline">{CONTACT_INFO.email}</a></p>
+            <p><strong>WhatsApp:</strong> {CONTACT_INFO.phone}</p>
           </div>
         </section>
 
@@ -71,19 +72,19 @@ export default function Impressum() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Unternehmensrechtliche Angaben</h2>
           <div className="space-y-2">
-            <p><strong>Rechtsform:</strong> Einzelunternehmen</p>
-            <p><strong>UID-Nr:</strong> ATU75891407</p>
-            <p><strong>Firmenbuchnummer:</strong> FN 543210 x</p>
+            <p><strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (GmbH)</p>
+            <p><strong>UID-Nr:</strong> {CONTACT_INFO.company.uidNr}</p>
+            <p><strong>Firmenbuchnummer:</strong> {CONTACT_INFO.company.firmenbuchnummer}</p>
             <p><strong>Firmenbuchgericht:</strong> Handelsgericht Wien</p>
-            <p><strong>Kammer:</strong> Wirtschaftskammer Wien, Fachgruppe Transport und Verkehr</p>
+            <p><strong>Kammer:</strong> Wirtschaftskammer Niederösterreich, Fachgruppe Transport und Verkehr</p>
             <p><strong>Gewerbeordnung:</strong> <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.ris.bka.gv.at</a></p>
           </div>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Aufsichtsbehörde/Gewerbebehörde</h2>
-          <p>Magistratisches Bezirksamt für den 10., 11. und 23. Bezirk</p>
-          <p>1100 Wien</p>
+          <p>Bezirkshauptmannschaft Gänserndorf</p>
+          <p>2230 Gänserndorf</p>
         </section>
 
         <section>
@@ -94,7 +95,7 @@ export default function Impressum() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Medieninhaber</h2>
-          <p>Flächen Frei</p>
+          <p>{CONTACT_INFO.company.legalName}</p>
           <p>{CONTACT_INFO.address.street}</p>
           <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}</p>
         </section>
@@ -133,7 +134,7 @@ export default function Impressum() {
             Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://ec.europa.eu/consumers/odr</a>
           </p>
           <p className="mb-4">
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            Für Anfragen erreichen Sie uns unter der oben angegebenen Telefonnummer.
           </p>
         </section>
 
@@ -153,7 +154,8 @@ export default function Impressum() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Information according to § 5 TMG</h2>
           <div className="space-y-2">
-            <p className="font-semibold text-lg">Flächen Frei</p>
+            <p className="font-semibold text-lg">{CONTACT_INFO.company.legalName}</p>
+            <p className="text-muted-foreground">(Brand name: {CONTACT_INFO.company.brandName})</p>
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.cityEn}</p>
             <p>{CONTACT_INFO.address.country}</p>
@@ -164,7 +166,7 @@ export default function Impressum() {
           <h2 className="text-2xl font-semibold mb-4">Contact</h2>
           <div className="space-y-2">
             <p><strong>Phone:</strong> {CONTACT_INFO.phone}</p>
-            <p><strong>Email:</strong> <a href={CONTACT_INFO.emailLink} className="text-primary hover:underline">{CONTACT_INFO.email}</a></p>
+            <p><strong>WhatsApp:</strong> {CONTACT_INFO.phone}</p>
           </div>
         </section>
 
@@ -176,19 +178,19 @@ export default function Impressum() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Corporate Legal Information</h2>
           <div className="space-y-2">
-            <p><strong>Legal Form:</strong> Sole Proprietorship</p>
-            <p><strong>VAT ID:</strong> ATU75891407</p>
-            <p><strong>Company Register Number:</strong> FN 543210 x</p>
+            <p><strong>Legal Form:</strong> Limited Liability Company (GmbH)</p>
+            <p><strong>VAT ID:</strong> {CONTACT_INFO.company.uidNr}</p>
+            <p><strong>Company Register Number:</strong> {CONTACT_INFO.company.firmenbuchnummer}</p>
             <p><strong>Company Register Court:</strong> Commercial Court Vienna</p>
-            <p><strong>Chamber:</strong> Vienna Chamber of Commerce, Transport and Traffic Division</p>
+            <p><strong>Chamber:</strong> Lower Austrian Chamber of Commerce, Transport and Traffic Division</p>
             <p><strong>Trade Regulations:</strong> <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.ris.bka.gv.at</a></p>
           </div>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Supervisory Authority</h2>
-          <p>District Office for the 10th, 11th and 23rd Districts</p>
-          <p>1100 Vienna</p>
+          <p>District Authority Gänserndorf</p>
+          <p>2230 Gänserndorf</p>
         </section>
 
         <section>
@@ -199,7 +201,7 @@ export default function Impressum() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Media Owner</h2>
-          <p>Flächen Frei</p>
+          <p>{CONTACT_INFO.company.legalName}</p>
           <p>{CONTACT_INFO.address.street}</p>
           <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.cityEn}</p>
         </section>
@@ -229,7 +231,7 @@ export default function Impressum() {
             The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://ec.europa.eu/consumers/odr</a>
           </p>
           <p className="mb-4">
-            You can find our email address at the top of the imprint.
+            For inquiries, please contact us at the phone number listed above.
           </p>
         </section>
 

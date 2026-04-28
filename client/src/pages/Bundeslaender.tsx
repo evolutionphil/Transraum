@@ -142,7 +142,6 @@ export default function Bundeslaender() {
         </section>
       </main>
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

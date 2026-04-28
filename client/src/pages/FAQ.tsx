@@ -8,7 +8,7 @@ import { getAlternateUrls } from '@/lib/urlMapping';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail } from 'lucide-react';
+import { Phone, } from 'lucide-react';
 import { CONTACT_INFO } from '@/lib/constants';
 
 interface FAQItem {
@@ -28,7 +28,7 @@ export default function FAQ() {
     },
     {
       question: 'Wie schnell können Sie mit der Räumung beginnen?',
-      answer: 'In dringenden Fällen können wir oft schon am nächsten Werktag mit der Räumung beginnen. Bei besonders eiligen Aufträgen bieten wir auch einen Same-Day-Service an. Für die Terminvereinbarung kontaktieren Sie uns einfach telefonisch oder per E-Mail, und wir finden gemeinsam den passenden Zeitpunkt.'
+      answer: 'In dringenden Fällen können wir oft schon am nächsten Werktag mit der Räumung beginnen. Bei besonders eiligen Aufträgen bieten wir auch einen Same-Day-Service an. Für die Terminvereinbarung kontaktieren Sie uns einfach telefonisch oder per WhatsApp, und wir finden gemeinsam den passenden Zeitpunkt.'
     },
     {
       question: 'Muss ich bei der Räumung anwesend sein?',
@@ -68,7 +68,7 @@ export default function FAQ() {
     },
     {
       question: 'Wie kann ich Sie erreichen und einen Termin vereinbaren?',
-      answer: `Sie können uns telefonisch unter ${CONTACT_INFO.phone} erreichen oder eine E-Mail an ${CONTACT_INFO.email} senden. Wir melden uns schnellstmöglich bei Ihnen zurück, besprechen Ihre Anforderungen und vereinbaren einen kostenlosen Besichtigungstermin. Nach der Besichtigung erhalten Sie ein unverbindliches Festpreisangebot.`
+      answer: `Sie können uns telefonisch unter ${CONTACT_INFO.phone} erreichen oder eine E-Mail an ${CONTACT_INFO.phone} senden. Wir melden uns schnellstmöglich bei Ihnen zurück, besprechen Ihre Anforderungen und vereinbaren einen kostenlosen Besichtigungstermin. Nach der Besichtigung erhalten Sie ein unverbindliches Festpreisangebot.`
     }
   ];
 
@@ -79,7 +79,7 @@ export default function FAQ() {
     },
     {
       question: 'How quickly can you start the clearing?',
-      answer: 'In urgent cases, we can often start clearing as early as the next business day. For particularly urgent orders, we also offer same-day service. To schedule an appointment, simply contact us by phone or email, and we\'ll find a suitable time together.'
+      answer: 'In urgent cases, we can often start clearing as early as the next business day. For particularly urgent orders, we also offer same-day service. To schedule an appointment, simply contact us by phone or WhatsApp, and we\'ll find a suitable time together.'
     },
     {
       question: 'Do I need to be present during the clearing?',
@@ -119,7 +119,7 @@ export default function FAQ() {
     },
     {
       question: 'How can I reach you and schedule an appointment?',
-      answer: `You can reach us by phone at ${CONTACT_INFO.phone} or send an email to ${CONTACT_INFO.email}. We will get back to you as soon as possible, discuss your requirements, and arrange a free inspection appointment. After the inspection, you will receive a non-binding fixed-price quote.`
+      answer: `You can reach us by phone at ${CONTACT_INFO.phone} or send an email to ${CONTACT_INFO.phone}. We will get back to you as soon as possible, discuss your requirements, and arrange a free inspection appointment. After the inspection, you will receive a non-binding fixed-price quote.`
     }
   ];
 
@@ -199,7 +199,7 @@ export default function FAQ() {
                   {CONTACT_INFO.phone}
                 </Button>
               </a>
-              <a href={CONTACT_INFO.emailLink} className="flex-1">
+              <a href={`tel:${CONTACT_INFO.phoneLink}`} className="flex-1">
                 <Button variant="outline" className="w-full" data-testid="button-faq-email">
                   <Mail className="w-4 h-4 mr-2" />
                   {language === 'de' ? 'E-Mail senden' : 'Send Email'}

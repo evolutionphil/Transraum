@@ -154,17 +154,6 @@ export const translations = {
       districts: 'Bezirke',
       states: 'Bundesländer',
       contact: 'Kontakt',
-      otherProjects: 'Unsere weiteren Projekte',
-      projects: {
-        themegaradio: {
-          name: 'Megaradio',
-          description: 'Online-Radio & Streaming',
-        },
-        esimfo: {
-          name: 'ESimfo',
-          description: 'eSIM-Ratgeber & Vergleiche',
-        },
-      },
       copyright: '© 2024 Flächen Frei. Alle Rechte vorbehalten.',
       privacy: 'Datenschutz',
       imprint: 'Impressum',
@@ -569,17 +558,6 @@ export const translations = {
       districts: 'Districts',
       states: 'Federal States',
       contact: 'Contact',
-      otherProjects: 'Our Other Projects',
-      projects: {
-        themegaradio: {
-          name: 'Megaradio',
-          description: 'Online Radio & Streaming',
-        },
-        esimfo: {
-          name: 'ESimfo',
-          description: 'eSIM Guides & Comparisons',
-        },
-      },
       copyright: '© 2024 Flächen Frei. All rights reserved.',
       privacy: 'Privacy Policy',
       imprint: 'Imprint',

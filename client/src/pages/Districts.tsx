@@ -75,9 +75,9 @@ export default function Districts() {
                     {CONTACT_INFO.phone}
                   </Button>
                 </a>
-                <a href={CONTACT_INFO.emailLink}>
+                <a href={`https://wa.me/${CONTACT_INFO.phoneLink}`} target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm">
-                    {t.districtsPage.sendEmail}
+                    WhatsApp
                   </Button>
                 </a>
               </div>
@@ -163,7 +163,6 @@ export default function Districts() {
       </main>
 
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

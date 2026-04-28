@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 import { useRoute, useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingActions from '@/components/FloatingActions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Phone, Mail, MapPin, CheckCircle, Star, Building2, MapPinned } from 'lucide-react';
+import { Phone, MapPin, CheckCircle, Star, Building2, MapPinned } from 'lucide-react';
 import { getCityBySlug } from '@/data/cities';
 import { updateMetaTags, getFAQSchema, addMultipleJsonLd, getBreadcrumbSchema, getWebPageSchema } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -59,7 +58,6 @@ export default function CityPage() {
         '@id': location,
         url: `${window.location.origin}${location}`,
         telephone: CONTACT_INFO.phone,
-        email: CONTACT_INFO.email,
         address: {
           '@type': 'PostalAddress',
           addressLocality: cityName,
@@ -287,14 +285,14 @@ export default function CityPage() {
                     </a>
                     
                     <a 
-                      href={CONTACT_INFO.emailLink}
+                      href={`tel:${CONTACT_INFO.phoneLink}`}
                       className="flex items-center gap-3 p-3 hover-elevate active-elevate-2 rounded-md border"
                       data-testid="link-email"
                     >
-                      <Mail className="w-5 h-5 text-primary shrink-0" />
+                      <Phone className="w-5 h-5 text-primary shrink-0" />
                       <div>
                         <div className="font-medium">{t.cityPage.contactEmail}</div>
-                        <div className="text-sm text-muted-foreground">{CONTACT_INFO.email}</div>
+                        <div className="text-sm text-muted-foreground">{CONTACT_INFO.phone}</div>
                       </div>
                     </a>
 
@@ -352,9 +350,9 @@ export default function CityPage() {
                   {CONTACT_INFO.phone}
                 </Button>
               </a>
-              <a href={CONTACT_INFO.emailLink}>
+              <a href={`tel:${CONTACT_INFO.phoneLink}`}>
                 <Button size="lg" variant="outline" data-testid="button-cta-email">
-                  <Mail className="mr-2 w-5 h-5" />
+                  <Phone className="mr-2 w-5 h-5" />
                   {t.cityPage.ctaEmailButton}
                 </Button>
               </a>
@@ -364,7 +362,6 @@ export default function CityPage() {
       </main>
 
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

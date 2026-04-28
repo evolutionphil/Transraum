@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 import { useRoute, useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingActions from '@/components/FloatingActions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Phone, Mail, MapPin, CheckCircle, Star, Landmark, MapPinned } from 'lucide-react';
+import { Phone, MapPin, CheckCircle, Star, Landmark, MapPinned } from 'lucide-react';
 import { getDistrictBySlug } from '@/data/districts';
 import { updateMetaTags, addJsonLd, getFAQSchema, addMultipleJsonLd, getWebPageSchema } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -88,7 +87,6 @@ export default function DistrictPage() {
           '@id': 'https://flaechenfrei.at/#organization',
           name: 'Flächen Frei',
           telephone: CONTACT_INFO.phone,
-          email: CONTACT_INFO.email,
         },
         areaServed: {
           '@type': 'Place',
@@ -341,10 +339,10 @@ export default function DistrictPage() {
                           {CONTACT_INFO.phone}
                         </Button>
                       </a>
-                      <a href={CONTACT_INFO.emailLink}>
+                      <a href={`tel:${CONTACT_INFO.phoneLink}`}>
                         <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm w-full sm:w-auto">
-                          <Mail className="mr-2 w-5 h-5" />
-                          {t.common.sendEmail}
+                          <Phone className="mr-2 w-5 h-5" />
+                          WhatsApp
                         </Button>
                       </a>
                     </div>
@@ -371,11 +369,11 @@ export default function DistrictPage() {
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <Mail className="w-5 h-5 text-primary shrink-0" />
+                      <Phone className="w-5 h-5 text-primary shrink-0" />
                       <div>
-                        <div className="text-sm text-muted-foreground">{t.common.email}</div>
-                        <a href={CONTACT_INFO.emailLink} className="font-medium hover:text-primary break-all">
-                          {CONTACT_INFO.email}
+                        <div className="text-sm text-muted-foreground">WhatsApp</div>
+                        <a href={`tel:${CONTACT_INFO.phoneLink}`} className="font-medium hover:text-primary break-all">
+                          {CONTACT_INFO.phone}
                         </a>
                       </div>
                     </div>
@@ -393,10 +391,10 @@ export default function DistrictPage() {
                           {t.common.callNow}
                         </Button>
                       </a>
-                      <a href={CONTACT_INFO.emailLink} className="block">
+                      <a href={`tel:${CONTACT_INFO.phoneLink}`} className="block">
                         <Button variant="outline" className="w-full" data-testid="button-district-email">
-                          <Mail className="mr-2 w-4 h-4" />
-                          {t.common.sendEmail}
+                          <Phone className="mr-2 w-4 h-4" />
+                          WhatsApp
                         </Button>
                       </a>
                     </div>
@@ -435,7 +433,6 @@ export default function DistrictPage() {
       </main>
 
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

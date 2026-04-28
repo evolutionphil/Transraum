@@ -110,7 +110,7 @@ export default function Datenschutz() {
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}</p>
             <p>Telefon: {CONTACT_INFO.phone}</p>
-            <p>E-Mail: {CONTACT_INFO.email}</p>
+            <p>Telefon: {CONTACT_INFO.phone}</p>
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Speicherdauer</h3>
@@ -247,7 +247,7 @@ export default function Datenschutz() {
             <p>{CONTACT_INFO.address.street}</p>
             <p>{CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.cityEn}</p>
             <p>Phone: {CONTACT_INFO.phone}</p>
-            <p>Email: {CONTACT_INFO.email}</p>
+            <p>Phone: {CONTACT_INFO.phone}</p>
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Storage Duration</h3>

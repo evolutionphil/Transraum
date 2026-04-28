@@ -15,7 +15,7 @@ import { getCityBySlug } from '@/data/cities';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Phone, Mail, MapPin, Star, Clock } from 'lucide-react';
+import { CheckCircle, Phone, MapPin, Star, Clock } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CONTACT_INFO } from '@/lib/constants';
 
@@ -246,9 +246,9 @@ export default function ServiceRegionPage() {
                     {CONTACT_INFO.phone}
                   </Button>
                 </a>
-                <a href={CONTACT_INFO.emailLink}>
+                <a href={`tel:${CONTACT_INFO.phoneLink}`}>
                   <Button size="lg" variant="outline" className="bg-primary-foreground/10 hover:bg-primary-foreground/20 border-primary-foreground/30" data-testid="button-email">
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Phone className="w-5 h-5 mr-2" />
                     {language === 'de' ? 'Anfrage senden' : 'Send Inquiry'}
                   </Button>
                 </a>

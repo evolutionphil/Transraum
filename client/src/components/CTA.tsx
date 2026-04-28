@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Phone, Mail } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
@@ -25,22 +25,11 @@ export default function CTA() {
           <a href={`tel:${CONTACT_INFO.phoneLink}`}>
             <Button
               size="lg"
-              className="bg-secondary text-secondary-foreground hover:bg-secondary w-full sm:w-auto"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary w-full sm:w-auto text-base font-bold"
               data-testid="button-cta-phone"
             >
               <Phone className="mr-2 w-5 h-5" />
               {CONTACT_INFO.phone}
-            </Button>
-          </a>
-          <a href={CONTACT_INFO.emailLink}>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm w-full sm:w-auto"
-              data-testid="button-cta-email"
-            >
-              <Mail className="mr-2 w-5 h-5" />
-              E-Mail senden
             </Button>
           </a>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 import { useRoute, Link, useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingActions from '@/components/FloatingActions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Phone, Mail, CheckCircle, ArrowRight, Euro } from 'lucide-react';
+import { Phone, CheckCircle, ArrowRight, Euro } from 'lucide-react';
 import { getServiceBySlug, getServiceById, ServiceId, getLocalizedServicePath } from '@/data/services';
 import { updateMetaTags, addJsonLd, getFAQSchema, addMultipleJsonLd, getWebPageSchema } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -93,7 +92,6 @@ export default function ServicePage() {
           '@id': 'https://flaechenfrei.at/#organization',
           name: 'Flächen Frei',
           telephone: CONTACT_INFO.phone,
-          email: CONTACT_INFO.email,
           address: {
             '@type': 'PostalAddress',
             streetAddress: 'Herndlgasse 7/17',
@@ -215,9 +213,9 @@ export default function ServicePage() {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm">
-                  <a href={CONTACT_INFO.emailLink}>
-                    <Mail className="mr-2 w-5 h-5" />
-                    {t.common.emailInquiry}
+                  <a href={`tel:${CONTACT_INFO.phoneLink}`}>
+                    <Phone className="mr-2 w-5 h-5" />
+                    WhatsApp
                   </a>
                 </Button>
               </div>
@@ -350,8 +348,8 @@ export default function ServicePage() {
                         </a>
                       </Button>
                       <Button asChild size="lg" variant="outline" className="w-full bg-white/10 text-white border-white/30 hover:bg-white/20">
-                        <a href={CONTACT_INFO.emailLink}>
-                          <Mail className="mr-2 w-5 h-5" />
+                        <a href={`tel:${CONTACT_INFO.phoneLink}`}>
+                          <Phone className="mr-2 w-5 h-5" />
                           {t.servicePage.sendEmail}
                         </a>
                       </Button>
@@ -401,7 +399,6 @@ export default function ServicePage() {
       </main>
 
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

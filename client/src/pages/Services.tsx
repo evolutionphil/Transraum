@@ -110,8 +110,8 @@ export default function Services() {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 backdrop-blur-sm">
-                  <a href={CONTACT_INFO.emailLink}>
-                    {t.servicesPage.emailInquiry}
+                  <a href={`tel:${CONTACT_INFO.phoneLink}`}>
+                    WhatsApp
                   </a>
                 </Button>
               </div>
@@ -183,8 +183,8 @@ export default function Services() {
                   {t.servicesPage.cta.freeConsultation}: {CONTACT_INFO.phone}
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" data-testid="button-cta-email">
-                <a href={CONTACT_INFO.emailLink}>
+              <Button asChild size="lg" variant="outline" data-testid="button-cta-whatsapp">
+                <a href={`tel:${CONTACT_INFO.phoneLink}`}>
                   {t.servicesPage.cta.sendEmail}
                 </a>
               </Button>
@@ -194,7 +194,6 @@ export default function Services() {
       </main>
 
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

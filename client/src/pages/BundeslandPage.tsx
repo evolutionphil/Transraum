@@ -3,14 +3,13 @@ import { useParams, Link, useLocation } from 'wouter';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { MapPin, Phone, Mail, CheckCircle, Building2, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, CheckCircle, Building2, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { states } from '@/data/states';
 import { getCitiesByBundesland } from '@/data/cities';
 import { ServiceId } from '@/data/services';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import FloatingActions from '@/components/FloatingActions';
 import { updateMetaTags, addJsonLd, getFAQSchema, addMultipleJsonLd, getWebPageSchema } from '@/lib/seo';
 import { getLocalizedBundeslaenderPath, getLocalizedContactPath, getLocalizedServicePath, getAlternateUrls } from '@/lib/urlMapping';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -59,7 +58,6 @@ export default function BundeslandPage() {
         '@id': 'https://flaechenfrei.at/#organization',
         'name': 'Flächen Frei',
         'telephone': CONTACT_INFO.phone,
-        'email': CONTACT_INFO.email,
         'url': 'https://flaechenfrei.at',
       },
       'areaServed': {
@@ -142,7 +140,7 @@ export default function BundeslandPage() {
                 </a>
                 <Link href={contactPath}>
                   <Button variant="outline" size="lg" data-testid="button-contact">
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Phone className="w-5 h-5 mr-2" />
                     {t.bundeslandPage.sendInquiry}
                   </Button>
                 </Link>
@@ -470,7 +468,7 @@ export default function BundeslandPage() {
                 </a>
                 <Link href={contactPath}>
                   <Button variant="outline" size="lg" data-testid="button-contact-cta">
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Phone className="w-5 h-5 mr-2" />
                     {t.bundeslandPage.sendInquiry}
                   </Button>
                 </Link>
@@ -480,7 +478,6 @@ export default function BundeslandPage() {
         </section>
       </main>
       <Footer />
-      <FloatingActions />
     </div>
   );
 }

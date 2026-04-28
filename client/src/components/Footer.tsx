@@ -1,5 +1,6 @@
 import { Link } from 'wouter';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
 import { states } from '@/data/states';
@@ -14,6 +15,7 @@ export default function Footer() {
   const imprintPath = language === 'de' ? '/impressum' : '/en/imprint';
   const termsPath = language === 'de' ? '/agb' : '/en/terms';
   const faqPath = language === 'de' ? '/faq' : '/en/faq';
+  const whatsappUrl = `https://wa.me/${CONTACT_INFO.phoneLink}?text=${encodeURIComponent(t.contact.whatsappMessage)}`;
 
   const allDistricts = getAllDistricts();
   const displayDistricts = allDistricts.slice(0, 8);
@@ -81,15 +83,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href={`tel:${CONTACT_INFO.phoneLink}`} className="hover:text-primary-foreground">{CONTACT_INFO.phone}</a>
+                <a href={`tel:${CONTACT_INFO.phoneLink}`} className="hover:text-primary-foreground font-semibold">{CONTACT_INFO.phone}</a>
               </li>
               <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href={CONTACT_INFO.emailLink} className="hover:text-primary-foreground">{CONTACT_INFO.email}</a>
+                <SiWhatsapp className="w-4 h-4 mt-0.5 shrink-0" />
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground">WhatsApp</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>Herndlgasse 7/17, 1100 Wien</span>
+                <span>{CONTACT_INFO.address.street}, {CONTACT_INFO.address.postalCode} {CONTACT_INFO.address.city}</span>
               </li>
               <li className="flex items-start gap-2 mt-4 pt-3 border-t border-primary-foreground/20">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" />
@@ -114,24 +116,6 @@ export default function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
           <p data-testid="text-footer-copyright">{t.footer.copyright}</p>
           <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
-            <a 
-              href="https://themegaradio.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-primary-foreground" 
-              data-testid="link-footer-themegaradio"
-            >
-              {t.footer.projects.themegaradio.name}
-            </a>
-            <a 
-              href="https://esimfo.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-primary-foreground" 
-              data-testid="link-footer-esimfo"
-            >
-              {t.footer.projects.esimfo.name}
-            </a>
             <Link href={faqPath} className="hover:text-primary-foreground" data-testid="link-footer-faq">{t.footer.faq}</Link>
             <Link href={privacyPath} className="hover:text-primary-foreground" data-testid="link-footer-privacy">{t.footer.privacy}</Link>
             <Link href={imprintPath} className="hover:text-primary-foreground" data-testid="link-footer-imprint">{t.footer.imprint}</Link>
