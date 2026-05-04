@@ -123,14 +123,15 @@ app.use((req, res, next) => {
   }, () => {
     log(`serving on port ${port}`);
     // Daily blog auto-generation cron job
-    // Runs every day at 07:00 UTC (09:00 Vienna time)
+    // Runs every day at 22:00 UTC = 00:00 Vienna time (CEST, UTC+2)
     // Generates 3 DE + 2 EN posts with DALL-E 3 images (5 total per day)
-    cron.schedule('0 7 * * *', async () => {
+    // Each post includes internal links to service pages
+    cron.schedule('0 22 * * *', async () => {
       if (!process.env.OPENAI_API_KEY) {
         log('[Cron] Skipping blog generation – OPENAI_API_KEY not set');
         return;
       }
-      log('[Cron] Starting daily blog post generation (3 DE + 2 EN with images)...');
+      log('[Cron] Starting nightly blog post generation (3 DE + 2 EN with images + internal links)...');
       try {
         // Generate 3 German posts
         const dePosts = await generateMultipleBlogPosts(3, 'de', undefined, true);
@@ -154,6 +155,6 @@ app.use((req, res, next) => {
         log(`[Cron] Blog generation failed: ${err}`);
       }
     });
-    log('[Cron] Daily blog generation scheduled at 07:00 UTC (3 DE + 2 EN with DALL-E images)');
+    log('[Cron] Nightly blog generation scheduled at 22:00 UTC = 00:00 Vienna time (3 DE + 2 EN with DALL-E images + internal links)');
   });
 })();

@@ -388,6 +388,43 @@ async function generateBlogImage(
 }
 
 // ============================================================
+// INTERNAL LINKS – used in prompts so GPT embeds real hrefs
+// ============================================================
+const INTERNAL_LINKS_DE = `
+INTERNE LINKS – verwende diese echten URLs als HTML-Ankerlinks <a href="..."> im Artikel:
+• Wohnungsräumung → <a href="/de/leistungen/wohnungsraeumung">Wohnungsräumung Wien</a>
+• Hausräumung → <a href="/de/leistungen/hausraeumung">Hausräumung Wien</a>
+• Transportservice → <a href="/de/leistungen/transportservice">Transportservice Wien</a>
+• Kellerräumung → <a href="/de/leistungen/kellerraeumung">Kellerräumung Wien</a>
+• Entrümpelung → <a href="/de/leistungen/entruempeln">Entrümpelung Wien</a>
+• Verlassenschaft & Ankauf → <a href="/de/leistungen/verlassenschaft-ankauf">Verlassenschaft Ankauf</a>
+• Haushaltsauflösung → <a href="/de/leistungen/haushaltsaufloesung">Haushaltsauflösung Wien</a>
+• Umzug → <a href="/de/leistungen/umzug">Umzug Wien</a>
+• Büroräumung → <a href="/de/leistungen/bueroraeumung">Büroräumung Wien</a>
+• Sperrgut → <a href="/de/leistungen/sperrgut">Sperrgut Abholung Wien</a>
+• Blog → <a href="/de/blog">Transraum Blog</a>
+• Kontakt → <a href="/de/kontakt">Kontakt Transraum</a>
+
+REGEL: Baue mindestens 4 dieser internen Links natürlich in den Fließtext ein (nicht alle auf einmal am Ende!). Jeder Link muss kontextbezogen stehen.`;
+
+const INTERNAL_LINKS_EN = `
+INTERNAL LINKS – use these real URLs as HTML anchor links <a href="..."> inside the article:
+• Apartment Clearing → <a href="/en/services/apartment-clearing">Apartment Clearing Vienna</a>
+• House Clearing → <a href="/en/services/house-clearing">House Clearing Vienna</a>
+• Transport Service → <a href="/en/services/transport-service">Transport Service Vienna</a>
+• Basement Clearing → <a href="/en/services/basement-clearing">Basement Clearing Vienna</a>
+• Decluttering → <a href="/en/services/decluttering">Decluttering Vienna</a>
+• Estate Clearance → <a href="/en/services/estate-clearance">Estate Clearance Vienna</a>
+• Household Clearance → <a href="/en/services/household-clearance">Household Clearance Vienna</a>
+• Moving → <a href="/en/services/moving">Moving Vienna</a>
+• Office Clearing → <a href="/en/services/office-clearing">Office Clearing Vienna</a>
+• Bulky Waste → <a href="/en/services/bulky-waste">Bulky Waste Collection Vienna</a>
+• Blog → <a href="/en/blog">Transraum Blog</a>
+• Contact → <a href="/en/contact">Contact Transraum</a>
+
+RULE: Embed at least 4 of these internal links naturally within the body text (not all at the end!). Each link must appear in context.`;
+
+// ============================================================
 // MASTER BLOG GENERATION PROMPTS (Elite SEO Quality)
 // ============================================================
 function buildSystemPrompt(language: 'de' | 'en'): string {
@@ -415,8 +452,10 @@ CONTENT-STRUKTUR (verpflichtend):
 SEO-REGELN:
 - Hauptkeyword im Titel, ersten 100 Wörtern, und 2-3x im Text
 - LSI-Keywords: Wien, Österreich, professionell, günstig, kostenlos, Angebot, Termin
-- Interne Verlinkungshinweise: natürliche Erwähnungen verwandter Services
-- Keine Keyword-Stuffing`;
+- Mindestens 4 interne Links aus der unten stehenden Liste natürlich einbauen
+- Keine Keyword-Stuffing
+
+${INTERNAL_LINKS_DE}`;
   } else {
     return `You are an Austrian SEO expert and copywriter for Transraum – a professional transport, clearance, estate liquidation and buying service in Vienna and throughout Austria (Golden Trend Armaturen GmbH, Gewerbeparkstraße 21/23, 2231 Strasshof an der Nordbahn).
 
@@ -441,8 +480,10 @@ CONTENT STRUCTURE (mandatory):
 SEO RULES:
 - Main keyword in title, first 100 words, and 2-3 times in text
 - LSI Keywords: Vienna, Austria, professional, affordable, free, quote, appointment
-- Mention related services naturally
-- No keyword stuffing`;
+- Embed at least 4 internal links from the list below naturally in the text
+- No keyword stuffing
+
+${INTERNAL_LINKS_EN}`;
   }
 }
 
@@ -465,6 +506,18 @@ PFLICHTINHALT – schreibe JEDEN dieser Abschnitte vollständig aus (mind. 150 W
 7. Häufige Fragen – FAQ (genau 4 Fragen mit ausführlichen Antworten)
 8. Fazit & CTA (Telefon +43 660 6926375)
 
+INTERNE LINKS PFLICHT: Baue mindestens 4 der folgenden <a href="...">-Links natürlich in den Fließtext ein:
+- <a href="/de/leistungen/wohnungsraeumung">Wohnungsräumung Wien</a>
+- <a href="/de/leistungen/hausraeumung">Hausräumung Wien</a>
+- <a href="/de/leistungen/transportservice">Transportservice Wien</a>
+- <a href="/de/leistungen/kellerraeumung">Kellerräumung Wien</a>
+- <a href="/de/leistungen/entruempeln">Entrümpelung Wien</a>
+- <a href="/de/leistungen/verlassenschaft-ankauf">Verlassenschaft Ankauf</a>
+- <a href="/de/leistungen/haushaltsaufloesung">Haushaltsauflösung Wien</a>
+- <a href="/de/leistungen/umzug">Umzug Wien</a>
+- <a href="/de/leistungen/bueroraeumung">Büroräumung Wien</a>
+- <a href="/de/leistungen/sperrgut">Sperrgut Abholung Wien</a>
+
 GESAMT: mindestens 900 Wörter im "content" Feld!
 
 JSON-Format (NUR JSON, kein Text davor/danach):
@@ -473,7 +526,7 @@ JSON-Format (NUR JSON, kein Text davor/danach):
   "metaTitle": "Google-Titel (max. 60 Zeichen) | Transraum",
   "metaDescription": "150-160 Zeichen mit Keyword + Preis + CTA, z.B. 'ab X€'",
   "excerpt": "Neugierig machender Einstieg (2 Sätze, max. 180 Zeichen)",
-  "content": "<h2>...</h2><p>... mindestens 900 Wörter HTML ...</p><h2>Häufige Fragen</h2><h3>Frage 1?</h3><p>Antwort 1</p>...",
+  "content": "<h2>...</h2><p>... mindestens 900 Wörter HTML mit internen <a href>-Links ...</p><h2>Häufige Fragen</h2><h3>Frage 1?</h3><p>Antwort 1</p>...",
   "tags": ["Keyword Wien", "Keyword Österreich", "Preis", "Kosten", "Anbieter"]
 }`;
   } else {
@@ -490,6 +543,18 @@ MANDATORY SECTIONS – write each section fully (min. 150 words each):
 7. Frequently Asked Questions – FAQ (exactly 4 questions with detailed answers)
 8. Conclusion & CTA (phone +43 660 6926375)
 
+INTERNAL LINKS REQUIRED: Embed at least 4 of these <a href="..."> links naturally in the body text:
+- <a href="/en/services/apartment-clearing">Apartment Clearing Vienna</a>
+- <a href="/en/services/house-clearing">House Clearing Vienna</a>
+- <a href="/en/services/transport-service">Transport Service Vienna</a>
+- <a href="/en/services/basement-clearing">Basement Clearing Vienna</a>
+- <a href="/en/services/decluttering">Decluttering Vienna</a>
+- <a href="/en/services/estate-clearance">Estate Clearance Vienna</a>
+- <a href="/en/services/household-clearance">Household Clearance Vienna</a>
+- <a href="/en/services/moving">Moving Vienna</a>
+- <a href="/en/services/office-clearing">Office Clearing Vienna</a>
+- <a href="/en/services/bulky-waste">Bulky Waste Collection Vienna</a>
+
 TOTAL: at least 900 words in the "content" field!
 
 JSON format (ONLY JSON, no text before/after):
@@ -498,7 +563,7 @@ JSON format (ONLY JSON, no text before/after):
   "metaTitle": "Google title (max. 60 chars) | Transraum",
   "metaDescription": "150-160 chars with keyword + price + CTA, e.g. 'from €X'",
   "excerpt": "Curiosity-inducing intro (2 sentences, max. 180 chars)",
-  "content": "<h2>...</h2><p>... at least 900 words of HTML ...</p><h2>Frequently Asked Questions</h2><h3>Question 1?</h3><p>Answer 1</p>...",
+  "content": "<h2>...</h2><p>... at least 900 words of HTML with internal <a href> links ...</p><h2>Frequently Asked Questions</h2><h3>Question 1?</h3><p>Answer 1</p>...",
   "tags": ["Keyword Vienna", "Keyword Austria", "Price", "Costs", "Provider"]
 }`;
   }
