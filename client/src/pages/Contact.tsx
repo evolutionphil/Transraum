@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { updateMetaTags, addJsonLd, addMultipleJsonLd, getLocalBusinessSchema, getWebPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getLocalBusinessSchema, getWebPageSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { CONTACT_INFO } from '@/lib/constants';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -37,6 +37,23 @@ export default function Contact() {
       alternateUrls,
     });
 
+    const faqData = language === 'de' ? [
+      { question: 'Wie kann ich Transraum kontaktieren?', answer: 'Sie erreichen uns telefonisch unter +43 660 6926375 (24/7), per WhatsApp oder über das Kontaktformular auf unserer Website. Wir antworten in der Regel innerhalb von 2 Stunden.' },
+      { question: 'Bieten Sie kostenlose Besichtigungen an?', answer: 'Ja, wir bieten kostenlose und unverbindliche Besichtigungen in ganz Wien und Österreich an. Nach der Besichtigung erhalten Sie ein verbindliches Festpreisangebot.' },
+      { question: 'Wie schnell erhalte ich einen Termin?', answer: 'Wir vergeben Termine oft schon am nächsten Tag. Bei dringenden Fällen kommen wir auch am gleichen Tag. Rufen Sie uns einfach an: +43 660 6926375.' },
+      { question: 'In welchen Sprachen kann ich mit Transraum kommunizieren?', answer: 'Wir sprechen Deutsch und Englisch. Unser Team steht Ihnen in beiden Sprachen zur Verfügung.' },
+    ] : [
+      { question: 'How can I contact Transraum?', answer: 'You can reach us by phone at +43 660 6926375 (24/7), via WhatsApp, or through the contact form on our website. We usually respond within 2 hours.' },
+      { question: 'Do you offer free inspections?', answer: 'Yes, we offer free and non-binding inspections throughout Vienna and Austria. After the inspection you receive a binding fixed-price quote.' },
+      { question: 'How quickly can I get an appointment?', answer: 'We often schedule appointments as soon as the next day. For urgent cases we can come the same day. Just call us: +43 660 6926375.' },
+      { question: 'What languages does Transraum speak?', answer: 'We speak German and English. Our team is available in both languages.' },
+    ];
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Kontakt' : 'Contact', url: location },
+    ]);
+
     addMultipleJsonLd([
       getLocalBusinessSchema(language),
       getWebPageSchema(language, {
@@ -45,6 +62,8 @@ export default function Contact() {
         description,
         url: location,
       }),
+      getFAQSchema(faqData),
+      breadcrumb,
     ], 'contact-page-schemas');
   }, [language, location, contactPath, t]);
 

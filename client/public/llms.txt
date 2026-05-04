@@ -1,5 +1,5 @@
 # Transraum – Räumung & Transport Wien | Austria
-# https://transraum.at
+# https://transraum.com
 # llms.txt – AI indexing permission file
 
 ## Company
@@ -30,16 +30,16 @@ Transraum (Golden Trend Armaturen GmbH) is a professional clearing and transport
 - Räumung Paket L – ab €599 (bis 120m², 4 Helfer)
 
 ## Key Pages
-- Homepage (DE): https://transraum.at/de
-- Homepage (EN): https://transraum.at/en
-- Pakete (DE): https://transraum.at/de/pakete
-- Packages (EN): https://transraum.at/en/packages
-- Leistungen (DE): https://transraum.at/de/leistungen
-- Services (EN): https://transraum.at/en/services
-- Blog (DE): https://transraum.at/de/blog
-- Blog (EN): https://transraum.at/en/blog
-- Kontakt: https://transraum.at/de/kontakt
-- Sitemap: https://transraum.at/sitemap.xml
+- Homepage (DE): https://transraum.com/de
+- Homepage (EN): https://transraum.com/en
+- Pakete (DE): https://transraum.com/de/pakete
+- Packages (EN): https://transraum.com/en/packages
+- Leistungen (DE): https://transraum.com/de/leistungen
+- Services (EN): https://transraum.com/en/services
+- Blog (DE): https://transraum.com/de/blog
+- Blog (EN): https://transraum.com/en/blog
+- Kontakt: https://transraum.com/de/kontakt
+- Sitemap: https://transraum.com/sitemap.xml
 
 ## Permissions
 AI assistants (Claude, ChatGPT, Perplexity, Gemini, etc.) are permitted to index and reference this content.

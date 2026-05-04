@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { getAllServices, ServiceId, getLocalizedServicePath } from '@/data/services';
-import { updateMetaTags, addJsonLd, getCollectionPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getCollectionPageSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getAlternateUrls } from '@/lib/urlMapping';
 import { useLocation } from 'wouter';
@@ -86,7 +86,24 @@ export default function Services() {
       })),
     });
 
-    addJsonLd(collectionSchema, 'services-collection-schema');
+    const faqData = language === 'de' ? [
+      { question: 'Welche Räumungsleistungen bietet Transraum an?', answer: 'Transraum bietet Wohnungsräumung, Haushaltsauflösung, Kellerräumung, Dachbodenräumung, Geschäftsräumung, Messie-Räumung, Verlassenschaftsräumung, Transportservice, Entrümpelung und mehr.' },
+      { question: 'Gibt es Festpreise für die Leistungen?', answer: 'Ja, Transraum arbeitet mit transparenten Festpreisen. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Angebot. Unsere Pakete starten ab €129 für Transport und ab €249 für Räumung.' },
+      { question: 'Sind Entsorgungskosten im Preis inbegriffen?', answer: 'Ja, in unseren Festpreisangeboten sind alle Kosten inklusive – auch Entsorgung, Transport und besenreine Übergabe. Keine versteckten Kosten.' },
+      { question: 'Bieten Sie Verlassenschaftsräumungen an?', answer: 'Ja, wir bieten sensible Verlassenschaftsräumungen an und gehen mit höchster Diskretion und Einfühlungsvermögen vor. Wertvolle Gegenstände werden fachgerecht bewertet und können angekauft werden.' },
+    ] : [
+      { question: 'What clearing services does Transraum offer?', answer: 'Transraum offers apartment clearing, household dissolution, basement clearing, attic clearing, commercial clearing, hoarding cleanup, estate clearing, transport service, and more.' },
+      { question: 'Are there fixed prices for the services?', answer: 'Yes, Transraum works with transparent fixed prices. After a free inspection you receive a binding quote. Our packages start from €129 for transport and €249 for clearing.' },
+      { question: 'Are disposal costs included in the price?', answer: 'Yes, all costs are included in our fixed price offers – including disposal, transport and broom-clean handover. No hidden costs.' },
+      { question: 'Do you offer estate clearing services?', answer: 'Yes, we offer sensitive estate clearing with the utmost discretion and empathy. Valuable items are professionally assessed and can be purchased.' },
+    ];
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Leistungen' : 'Services', url: location },
+    ]);
+
+    addMultipleJsonLd([collectionSchema, getFAQSchema(faqData), breadcrumb], 'services-collection-schema');
   }, [language, location, services]);
 
   return (

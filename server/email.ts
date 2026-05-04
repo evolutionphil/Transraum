@@ -78,7 +78,7 @@ export async function sendContactEmail(data: ContactFormData) {
       <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
       
       <p style="color: #666; font-size: 12px; text-align: center;">
-        Diese E-Mail wurde über das Kontaktformular auf transraum.at gesendet
+        Diese E-Mail wurde über das Kontaktformular auf transraum.com gesendet
       </p>
     </div>
   `;
@@ -94,12 +94,12 @@ Nachricht:
 ${data.message}
 
 ---
-Diese E-Mail wurde über das Kontaktformular auf transraum.at gesendet
+Diese E-Mail wurde über das Kontaktformular auf transraum.com gesendet
   `;
 
   const result = await client.emails.send({
     from: fromEmail,
-    to: 'info@transraum.at',
+    to: 'info@transraum.com',
     subject: `Neue Kontaktanfrage von ${data.name}`,
     html: htmlContent,
     text: textContent,

@@ -8,7 +8,7 @@ import { states } from '@/data/states';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
-import { updateMetaTags, addJsonLd, getCollectionPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getCollectionPageSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { getLocalizedBundeslaenderPath, getLocalizedContactPath, getAlternateUrls } from '@/lib/urlMapping';
 import { CONTACT_INFO } from '@/lib/constants';
 
@@ -49,7 +49,24 @@ export default function Bundeslaender() {
       })),
     });
 
-    addJsonLd(collectionSchema, 'bundeslaender-collection-schema');
+    const faqData = language === 'de' ? [
+      { question: 'Ist Transraum in ganz Österreich tätig?', answer: 'Ja, Transraum bietet Räumungs- und Transportleistungen in allen 9 österreichischen Bundesländern an – von Wien und Niederösterreich bis Tirol und Vorarlberg.' },
+      { question: 'Gibt es Fahrtkosten für Einsätze außerhalb Wiens?', answer: 'Bei Einsätzen außerhalb Wiens können geringe Anfahrtskosten anfallen. Diese werden bei der kostenlosen Besichtigung transparent kommuniziert und im Festpreisangebot ausgewiesen.' },
+      { question: 'Wie lange dauert die Anfahrt in andere Bundesländer?', answer: 'Je nach Bundesland planen wir entsprechend Anfahrtszeit ein. Für Niederösterreich und Burgenland sind wir oft noch am gleichen Tag vor Ort. Für weiter entfernte Bundesländer vereinbaren wir Termine im Voraus.' },
+      { question: 'Bieten Sie Räumungen auch in kleinen Gemeinden an?', answer: 'Ja, wir kommen auch in kleine Gemeinden und ländliche Gebiete in ganz Österreich. Kontaktieren Sie uns für eine kostenlose Beratung.' },
+    ] : [
+      { question: 'Does Transraum operate throughout Austria?', answer: 'Yes, Transraum offers clearing and transport services in all 9 Austrian federal states – from Vienna and Lower Austria to Tyrol and Vorarlberg.' },
+      { question: 'Are there travel costs for jobs outside Vienna?', answer: 'Small travel costs may apply for jobs outside Vienna. These are communicated transparently during the free inspection and are shown in the fixed-price quote.' },
+      { question: 'How long does it take to travel to other federal states?', answer: 'We plan travel time according to the federal state. For Lower Austria and Burgenland we are often on-site the same day. For more distant states we schedule appointments in advance.' },
+      { question: 'Do you offer clearing in small communities?', answer: 'Yes, we also travel to small communities and rural areas throughout Austria. Contact us for a free consultation.' },
+    ];
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Bundesländer' : 'Federal States', url: location },
+    ]);
+
+    addMultipleJsonLd([collectionSchema, getFAQSchema(faqData), breadcrumb], 'bundeslaender-collection-schema');
   }, [language, location, bundeslaenderPath]);
 
   return (

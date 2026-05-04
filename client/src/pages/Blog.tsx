@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link, useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { BlogPost } from '@shared/schema';
 import { CONTACT_INFO } from '@/lib/constants';
+import { updateMetaTags, addMultipleJsonLd, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 
 const TRANSLATIONS = {
   de: {
@@ -192,15 +193,33 @@ export default function Blog() {
     setCurrentPage(1);
   };
 
+  useEffect(() => {
+    updateMetaTags({
+      title: t.metaTitle,
+      description: t.metaDescription,
+      url: `/${lang}/blog`,
+      language: lang,
+      alternateUrls: { de: '/de/blog', en: '/en/blog' },
+    });
+
+    const faqData = lang === 'de' ? [
+      { question: 'Welche Themen behandelt der Transraum Blog?', answer: 'Der Transraum Blog bietet Ratgeber zu Räumung, Entrümpelung, Transport, Umzug, Verlassenschaft und Ankauf in Wien und Österreich. Mit praktischen Tipps und Preisinfos.' },
+      { question: 'Wie oft erscheinen neue Artikel?', answer: 'Wir veröffentlichen regelmäßig neue Artikel zu aktuellen Themen rund um Räumung und Transport in Wien. Besuchen Sie unseren Blog regelmäßig für neue Tipps.' },
+    ] : [
+      { question: 'What topics does the Transraum Blog cover?', answer: 'The Transraum Blog offers guides on clearing, decluttering, transport, moving, estate and purchase services in Vienna and Austria. With practical tips and price information.' },
+      { question: 'How often are new articles published?', answer: 'We regularly publish new articles on current topics around clearing and transport in Vienna. Visit our blog regularly for new tips.' },
+    ];
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: lang === 'de' ? 'Startseite' : 'Home', url: `/${lang}` },
+      { name: 'Blog', url: `/${lang}/blog` },
+    ]);
+
+    addMultipleJsonLd([getFAQSchema(faqData), breadcrumb], 'blog-page-schemas');
+  }, [lang]);
+
   return (
     <>
-      <title>{t.metaTitle}</title>
-      <meta name="description" content={t.metaDescription} />
-      <link rel="canonical" href={`https://transraum.at/${lang}/blog`} />
-      <meta property="og:title" content={t.metaTitle} />
-      <meta property="og:description" content={t.metaDescription} />
-      <meta property="og:type" content="website" />
-      <meta name="robots" content="index, follow" />
 
       <Header />
 

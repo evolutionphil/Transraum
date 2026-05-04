@@ -84,14 +84,14 @@ export default function ServicePage() {
       const serviceSchema = {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        '@id': `https://transraum.at${location}#service`,
+        '@id': `https://transraum.com${location}#service`,
         name: content.name,
         description: content.description,
         image: serviceImages[service.id],
-        url: `https://transraum.at${location}`,
+        url: `https://transraum.com${location}`,
         provider: {
           '@type': 'MovingCompany',
-          '@id': 'https://transraum.at/#organization',
+          '@id': 'https://transraum.com/#organization',
           name: 'Transraum',
           telephone: CONTACT_INFO.phone,
           address: {
@@ -101,7 +101,7 @@ export default function ServicePage() {
             postalCode: '1100',
             addressCountry: 'AT',
           },
-          url: 'https://transraum.at',
+          url: 'https://transraum.com',
         },
         areaServed: [
           {
@@ -128,7 +128,7 @@ export default function ServicePage() {
             '@type': 'ContactAction',
             target: {
               '@type': 'EntryPoint',
-              urlTemplate: `https://transraum.at${language === 'de' ? '/kontakt' : '/en/contact'}`,
+              urlTemplate: `https://transraum.com${language === 'de' ? '/kontakt' : '/en/contact'}`,
               actionPlatform: [
                 'http://schema.org/DesktopWebPlatform',
                 'http://schema.org/MobileWebPlatform'

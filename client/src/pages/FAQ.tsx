@@ -3,7 +3,7 @@ import { useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { updateMetaTags, addJsonLd, getFAQSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { getAlternateUrls } from '@/lib/urlMapping';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -144,7 +144,12 @@ export default function FAQ() {
       alternateUrls,
     });
 
-    addJsonLd(getFAQSchema(faqs), 'faq-page-schema');
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'FAQ' : 'FAQ', url: location },
+    ]);
+
+    addMultipleJsonLd([getFAQSchema(faqs), breadcrumb], 'faq-page-schema');
   }, [language, location, faqs]);
 
   return (

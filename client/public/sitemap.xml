@@ -928,17 +928,17 @@
   <!-- Blog & Ratgeber -->
   <!-- ============================================ -->
   <url>
-    <loc>https://transraum.at/de/blog</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.at/de/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.at/en/blog" />
+    <loc>https://transraum.com/de/blog</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog" />
     <lastmod>2025-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://transraum.at/en/blog</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.at/de/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.at/en/blog" />
+    <loc>https://transraum.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog" />
     <lastmod>2025-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -946,67 +946,67 @@
 
   <!-- Blog Posts (DE) – auto-generated daily, listed below are seed articles -->
   <url>
-    <loc>https://transraum.at/de/blog/transportservice-wien-preise-ablauf-tipps</loc>
+    <loc>https://transraum.com/de/blog/transportservice-wien-preise-ablauf-tipps</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/moebeltransport-wien-umzug-sicher-guenstig</loc>
+    <loc>https://transraum.com/de/blog/moebeltransport-wien-umzug-sicher-guenstig</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/haushaltsaufloesung-wien-kosten-ablauf-tipps</loc>
+    <loc>https://transraum.com/de/blog/haushaltsaufloesung-wien-kosten-ablauf-tipps</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/wohnungsraeumung-wien-schritt-fuer-schritt</loc>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-schritt-fuer-schritt</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/kellerraeumung-wien-kosten-ablauf-tipps</loc>
+    <loc>https://transraum.com/de/blog/kellerraeumung-wien-kosten-ablauf-tipps</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/sperrmüll-wien-abholung-kosten-regeln</loc>
+    <loc>https://transraum.com/de/blog/sperrmüll-wien-abholung-kosten-regeln</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/entruempelung-wien-preise-checkliste-tipps</loc>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-preise-checkliste-tipps</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/umzug-wien-ultimative-checkliste</loc>
+    <loc>https://transraum.com/de/blog/umzug-wien-ultimative-checkliste</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/bueroaufloesung-wien-professionell-diskret</loc>
+    <loc>https://transraum.com/de/blog/bueroaufloesung-wien-professionell-diskret</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/antike-moebel-wien-erben-verkaufen-wert</loc>
+    <loc>https://transraum.com/de/blog/antike-moebel-wien-erben-verkaufen-wert</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.at/de/blog/dachbodenraeumung-wien-kosten-ablauf</loc>
+    <loc>https://transraum.com/de/blog/dachbodenraeumung-wien-kosten-ablauf</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -10,8 +10,8 @@
 
 export const INDEXNOW_CONFIG = {
   apiKey: '4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32',
-  host: 'transraum.at',
-  keyLocation: 'https://transraum.at/4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32.txt',
+  host: 'transraum.com',
+  keyLocation: 'https://transraum.com/4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32.txt',
   endpoint: 'https://api.indexnow.org/indexnow',
   // Alternative Bing-specific endpoint: 'https://www.bing.com/indexnow'
 };

@@ -66,21 +66,21 @@ function ArticleSchema({ post, lang }: { post: BlogPostType; lang: string }) {
     author: {
       '@type': 'Organization',
       name: 'Transraum',
-      url: 'https://transraum.at',
+      url: 'https://transraum.com',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Transraum',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://transraum.at/logo.png',
+        url: 'https://transraum.com/logo.png',
       },
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://transraum.at/${lang}/blog/${post.slug}`,
+      '@id': `https://transraum.com/${lang}/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
     articleSection: post.category,
@@ -90,7 +90,7 @@ function ArticleSchema({ post, lang }: { post: BlogPostType; lang: string }) {
   if (post.imageUrl) {
     schema.image = {
       '@type': 'ImageObject',
-      url: post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.at${post.imageUrl}`,
+      url: post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.com${post.imageUrl}`,
       width: 1792,
       height: 1024,
     };
@@ -157,9 +157,9 @@ function BreadcrumbSchema({ post, lang }: { post: BlogPostType; lang: string }) 
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Startseite' : 'Home', item: `https://transraum.at/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://transraum.at/${lang}/blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `https://transraum.at/${lang}/blog/${post.slug}` },
+      { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Startseite' : 'Home', item: `https://transraum.com/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://transraum.com/${lang}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://transraum.com/${lang}/blog/${post.slug}` },
     ],
   };
 
@@ -236,17 +236,17 @@ export default function BlogPost() {
     <>
       <title>{post.metaTitle}</title>
       <meta name="description" content={post.metaDescription} />
-      <link rel="canonical" href={`https://transraum.at/${lang}/blog/${post.slug}`} />
-      <link rel="alternate" hrefLang="de" href={`https://transraum.at/de/blog/${post.slug}`} />
-      <link rel="alternate" hrefLang="en" href={`https://transraum.at/en/blog/${post.slug}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://transraum.at/de/blog/${post.slug}`} />
+      <link rel="canonical" href={`https://transraum.com/${lang}/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="de" href={`https://transraum.com/de/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="en" href={`https://transraum.com/en/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="x-default" href={`https://transraum.com/de/blog/${post.slug}`} />
       <meta property="og:title" content={post.metaTitle} />
       <meta property="og:description" content={post.metaDescription} />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content={`https://transraum.at/${lang}/blog/${post.slug}`} />
+      <meta property="og:url" content={`https://transraum.com/${lang}/blog/${post.slug}`} />
       <meta property="og:site_name" content="Transraum" />
       {post.imageUrl && (
-        <meta property="og:image" content={post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.at${post.imageUrl}`} />
+        <meta property="og:image" content={post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.com${post.imageUrl}`} />
       )}
       <meta property="article:published_time" content={post.publishedAt} />
       <meta property="article:modified_time" content={post.updatedAt} />

@@ -8,7 +8,7 @@ import { submitUrlToIndexNow, submitUrlsToIndexNow, submitSitemapToIndexNow, log
 import { generateMultipleBlogPosts, generateShopProductImage } from "./openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // WWW redirect - redirect www.transraum.at to transraum.at (SEO best practice)
+  // WWW redirect - redirect www.transraum.com to transraum.com (SEO best practice)
   app.use((req, res, next) => {
     const host = req.headers.host || '';
     if (host.startsWith('www.')) {
@@ -72,10 +72,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Validate URL belongs to this domain
-      if (!url.startsWith('https://transraum.at')) {
+      if (!url.startsWith('https://transraum.com')) {
         return res.status(422).json({ 
           success: false, 
-          message: "URL must belong to transraum.at domain" 
+          message: "URL must belong to transraum.com domain" 
         });
       }
 
@@ -107,11 +107,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Validate all URLs belong to this domain
-      const invalidUrls = urls.filter(url => !url.startsWith('https://transraum.at'));
+      const invalidUrls = urls.filter(url => !url.startsWith('https://transraum.com'));
       if (invalidUrls.length > 0) {
         return res.status(422).json({ 
           success: false, 
-          message: `${invalidUrls.length} URL(s) do not belong to transraum.at domain` 
+          message: `${invalidUrls.length} URL(s) do not belong to transraum.com domain` 
         });
       }
 
@@ -305,7 +305,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // DYNAMIC SITEMAP.XML  (overrides static file — always up-to-date with blog posts)
   // =====================
   app.get('/sitemap.xml', async (req, res) => {
-    const BASE = 'https://transraum.at';
+    const BASE = 'https://transraum.com';
     const now = new Date().toISOString().split('T')[0];
 
     interface SitemapEntry {

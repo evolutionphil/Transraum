@@ -13,7 +13,7 @@ import {
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
 import { getPackageBySlug, shopPackages, type ShopPackage } from '@/data/shopPackages';
-import { updateMetaTags, addJsonLd } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd } from '@/lib/seo';
 
 export default function ShopProduct() {
   const { language } = useLanguage();
@@ -83,18 +83,18 @@ export default function ShopProduct() {
       '@type': 'Product',
       name: content.name,
       description: content.description,
-      image: `https://transraum.at/shop-images/${pkg.imageFile}`,
+      image: `https://transraum.com/shop-images/${pkg.imageFile}`,
       brand: { '@type': 'Brand', name: 'Transraum' },
       sku: pkg.id,
       mpn: pkg.id,
-      url: `https://transraum.at${pageUrl}`,
+      url: `https://transraum.com${pageUrl}`,
       offers: {
         '@type': 'Offer',
         price: pkg.price.toString(),
         priceCurrency: 'EUR',
         priceValidUntil: '2025-12-31',
         availability: 'https://schema.org/InStock',
-        url: `https://transraum.at${pageUrl}`,
+        url: `https://transraum.com${pageUrl}`,
         seller: {
           '@type': 'Organization',
           name: 'Transraum – Golden Trend Armaturen GmbH',
@@ -127,19 +127,27 @@ export default function ShopProduct() {
         worstRating: '1',
       },
     };
-    addJsonLd(productSchema, 'shop-product-schema');
-
-    // BreadcrumbList
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: isDE ? 'Start' : 'Home', item: 'https://transraum.at' },
-        { '@type': 'ListItem', position: 2, name: isDE ? 'Pakete' : 'Packages', item: `https://transraum.at${basePath}` },
-        { '@type': 'ListItem', position: 3, name: content.name, item: `https://transraum.at${pageUrl}` },
+        { '@type': 'ListItem', position: 1, name: isDE ? 'Start' : 'Home', item: 'https://transraum.com' },
+        { '@type': 'ListItem', position: 2, name: isDE ? 'Pakete' : 'Packages', item: `https://transraum.com${basePath}` },
+        { '@type': 'ListItem', position: 3, name: content.name, item: `https://transraum.com${pageUrl}` },
       ],
     };
-    addJsonLd(breadcrumbSchema, 'shop-breadcrumb-schema');
+
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: (pkg.faq || []).map((item: { question: string; answer: string }) => ({
+        '@type': 'Question',
+        name: isDE ? item.question : item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    };
+
+    addMultipleJsonLd([productSchema, breadcrumbSchema, ...(pkg.faq?.length ? [faqSchema] : [])], 'shop-product-schemas');
   }, [pkg, language]);
 
   if (!pkg) {

@@ -117,7 +117,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
   return {
     '@context': 'https://schema.org',
     '@type': 'MovingCompany',
-    '@id': 'https://transraum.at/#business',
+    '@id': 'https://transraum.com/#business',
     'name': 'Transraum',
     'alternateName': 'Transraum Räumung',
     'slogan': language === 'de'
@@ -126,7 +126,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
     'description': language === 'de'
       ? 'Professionelle Räumung und Transportdienste in Wien und ganz Österreich. Über 26 Jahre Erfahrung. Schnell, zuverlässig und zu fairen Preisen.'
       : 'Professional clearing and transport services in Vienna and throughout Austria. Over 26 years of experience. Fast, reliable, and at fair prices.',
-    'url': 'https://transraum.at',
+    'url': 'https://transraum.com',
     'telephone': '+43 660 6926375',
     'foundingDate': '1998',
     'priceRange': language === 'de' ? 'Faire Preise auf Anfrage' : 'Fair prices on request',
@@ -134,10 +134,10 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
     'paymentAccepted': language === 'de' 
       ? 'Bar, Banküberweisung, Kreditkarte'
       : 'Cash, Bank Transfer, Credit Card',
-    'image': 'https://transraum.at/og-image.jpg',
+    'image': 'https://transraum.com/og-image.jpg',
     'logo': {
       '@type': 'ImageObject',
-      'url': 'https://transraum.at/logo.png',
+      'url': 'https://transraum.com/logo.png',
     },
     'knowsAbout': language === 'de'
       ? [
@@ -189,7 +189,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
     ],
     'availableChannel': {
       '@type': 'ServiceChannel',
-      'serviceUrl': 'https://transraum.at/de/kontakt',
+      'serviceUrl': 'https://transraum.com/de/kontakt',
       'servicePhone': '+43 660 6926375',
       'availableLanguage': ['de', 'en'],
     },
@@ -324,7 +324,7 @@ export function getLocalBusinessSchema(language: 'de' | 'en' = 'de') {
         'name': language === 'de' ? 'Termin anfragen' : 'Request Appointment',
         'target': {
           '@type': 'EntryPoint',
-          'urlTemplate': 'https://transraum.at/de/kontakt',
+          'urlTemplate': 'https://transraum.com/de/kontakt',
         },
       },
     ],
@@ -354,7 +354,7 @@ export function getBreadcrumbSchema(items: Array<{ name: string; url: string }>)
       '@type': 'ListItem',
       'position': index + 1,
       'name': item.name,
-      'item': `https://transraum.at${item.url}`,
+      'item': `https://transraum.com${item.url}`,
     })),
   };
 }
@@ -381,12 +381,12 @@ export function getCollectionPageSchema(
     '@type': 'CollectionPage',
     'name': config.name,
     'description': config.description,
-    'url': `https://transraum.at${config.url}`,
+    'url': `https://transraum.com${config.url}`,
     'inLanguage': language,
     'isPartOf': {
       '@type': 'WebSite',
       'name': 'Transraum',
-      'url': 'https://transraum.at',
+      'url': 'https://transraum.com',
     },
     'mainEntity': {
       '@type': 'ItemList',
@@ -397,12 +397,12 @@ export function getCollectionPageSchema(
           '@type': itemType,
           'name': item.name,
           'description': item.description,
-          'url': `https://transraum.at${item.url}`,
+          'url': `https://transraum.com${item.url}`,
           ...(isServiceType && {
             'provider': {
               '@type': 'MovingCompany',
               'name': 'Transraum',
-              'url': 'https://transraum.at',
+              'url': 'https://transraum.com',
             },
           }),
         },
@@ -425,20 +425,20 @@ export function getWebPageSchema(
     '@type': config.type,
     'name': config.name,
     'description': config.description,
-    'url': `https://transraum.at${config.url}`,
+    'url': `https://transraum.com${config.url}`,
     'inLanguage': language,
     'isPartOf': {
       '@type': 'WebSite',
       'name': 'Transraum',
-      'url': 'https://transraum.at',
+      'url': 'https://transraum.com',
     },
     'publisher': {
       '@type': 'Organization',
       'name': 'Transraum',
-      'url': 'https://transraum.at',
+      'url': 'https://transraum.com',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://transraum.at/logo.png',
+        'url': 'https://transraum.com/logo.png',
       },
     },
   };
@@ -448,12 +448,12 @@ export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://transraum.at/#organization',
+    '@id': 'https://transraum.com/#organization',
     'name': 'Transraum',
-    'url': 'https://transraum.at',
+    'url': 'https://transraum.com',
     'logo': {
       '@type': 'ImageObject',
-      'url': 'https://transraum.at/logo.png',
+      'url': 'https://transraum.com/logo.png',
     },
     'contactPoint': {
       '@type': 'ContactPoint',

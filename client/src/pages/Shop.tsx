@@ -12,7 +12,9 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { CONTACT_INFO } from '@/lib/constants';
 import { shopPackages, type PackageCategory } from '@/data/shopPackages';
 import { useEffect } from 'react';
-import { updateMetaTags } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getFAQSchema, getBreadcrumbSchema, getCollectionPageSchema } from '@/lib/seo';
+import { getAlternateUrls } from '@/lib/urlMapping';
+import { useLocation } from 'wouter';
 
 const categoryIcons = {
   transport: Truck,
@@ -59,15 +61,46 @@ export default function Shop() {
     ctaBtn: isDE ? 'Jetzt anrufen' : 'Call now',
   };
 
+  const [location] = useLocation();
+  const alternateUrls = getAlternateUrls(location);
+
   useEffect(() => {
-    updateMetaTags({
-      title: isDE ? 'Pakete & Festpreise – Transport & Räumung Wien | Transraum' : 'Packages & Fixed Prices – Transport & Clearance Vienna | Transraum',
-      description: isDE
-        ? 'Transraum Festpreis-Pakete: Transport ab €129, Räumung ab €249 – Wien & Österreich. Transparent, versichert, sofort buchbar.'
-        : 'Transraum fixed-price packages: Transport from €129, Clearance from €249 – Vienna & Austria. Transparent, insured, instant booking.',
+    const title = isDE ? 'Pakete & Festpreise – Transport & Räumung Wien | Transraum' : 'Packages & Fixed Prices – Transport & Clearance Vienna | Transraum';
+    const description = isDE
+      ? 'Transraum Festpreis-Pakete: Transport ab €129, Räumung ab €249 – Wien & Österreich. Transparent, versichert, sofort buchbar.'
+      : 'Transraum fixed-price packages: Transport from €129, Clearance from €249 – Vienna & Austria. Transparent, insured, instant booking.';
+
+    updateMetaTags({ title, description, url: shopPath, language, alternateUrls });
+
+    const faqData = isDE ? [
+      { question: 'Was beinhalten die Festpreis-Pakete?', answer: 'Unsere Pakete enthalten alle Leistungen im Festpreis – Arbeitskräfte, Fahrzeug, Entsorgung und besenreine Übergabe. Keine versteckten Kosten.' },
+      { question: 'Wie kann ich ein Paket buchen?', answer: 'Sie können uns anrufen (+43 660 6926375), per WhatsApp kontaktieren oder das Kontaktformular verwenden. Wir erstellen Ihnen innerhalb von 2 Stunden ein verbindliches Angebot.' },
+      { question: 'Was ist im Transportpaket ab €129 enthalten?', answer: 'Das Transportpaket beinhaltet 2 Helfer, ein geeignetes Fahrzeug für 2 Stunden und Transport innerhalb Wiens. Für größere Distanzen oder mehr Zeit passen wir das Angebot individuell an.' },
+      { question: 'Kann ich das Paket kurzfristig buchen?', answer: 'Ja, wir bieten oft noch am nächsten Tag verfügbare Termine. Bei besonders dringenden Anfragen versuchen wir auch am gleichen Tag zu helfen.' },
+    ] : [
+      { question: 'What do the fixed-price packages include?', answer: 'Our packages include all services at a fixed price – workers, vehicle, disposal and broom-clean handover. No hidden costs.' },
+      { question: 'How can I book a package?', answer: 'You can call us (+43 660 6926375), contact us via WhatsApp or use the contact form. We provide a binding quote within 2 hours.' },
+      { question: 'What is included in the transport package from €129?', answer: 'The transport package includes 2 helpers, a suitable vehicle for 2 hours and transport within Vienna. For larger distances or more time we adapt the offer individually.' },
+      { question: 'Can I book a package on short notice?', answer: 'Yes, we often have availability the next day. For urgent requests we try to help the same day.' },
+    ];
+
+    const collectionSchema = getCollectionPageSchema(language, {
+      name: isDE ? 'Festpreis-Pakete' : 'Fixed-Price Packages',
+      description,
       url: shopPath,
-      language,
+      items: shopPackages.map(p => ({
+        name: isDE ? p.de.name : p.en.name,
+        description: isDE ? p.de.description : p.en.description,
+        url: isDE ? `/de/pakete/${p.slugDe}` : `/en/packages/${p.slugEn}`,
+      })),
     });
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: isDE ? 'Startseite' : 'Home', url: isDE ? '/de' : '/en' },
+      { name: isDE ? 'Pakete' : 'Packages', url: shopPath },
+    ]);
+
+    addMultipleJsonLd([collectionSchema, getFAQSchema(faqData), breadcrumb], 'shop-page-schemas');
   }, [language]);
 
   const filtered = activeCategory === 'all'

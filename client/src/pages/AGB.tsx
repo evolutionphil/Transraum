@@ -3,7 +3,7 @@ import { useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { updateMetaTags, addJsonLd, getWebPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { getAlternateUrls } from '@/lib/urlMapping';
 
 export default function AGB() {
@@ -36,7 +36,12 @@ export default function AGB() {
       url: location,
     });
 
-    addJsonLd(webPageSchema, 'agb-webpage-schema');
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'AGB' : 'Terms', url: location },
+    ]);
+
+    addMultipleJsonLd([webPageSchema, breadcrumb], 'agb-webpage-schema');
   }, [language, location]);
 
   const content = language === 'de' ? (

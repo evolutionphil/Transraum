@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CTA from '@/components/CTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { updateMetaTags, addMultipleJsonLd, getWebPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { getAlternateUrls } from '@/lib/urlMapping';
 import { generateServiceLocationContent, getServiceLocationPath, type RegionType } from '@/lib/serviceLocationContent';
 import { servicesData, ServiceId } from '@/data/services';
@@ -135,13 +135,13 @@ export default function ServiceRegionPage() {
     const serviceSchema = {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      '@id': `https://transraum.at${location}#service`,
+      '@id': `https://transraum.com${location}#service`,
       name: locContent.headline,
       description: locContent.intro,
       serviceType: serviceContent.name,
       provider: {
         '@type': 'MovingCompany',
-        '@id': 'https://transraum.at/#organization',
+        '@id': 'https://transraum.com/#organization',
         name: 'Transraum',
       },
       areaServed: {
@@ -175,7 +175,13 @@ export default function ServiceRegionPage() {
       })),
     };
 
-    addMultipleJsonLd([serviceSchema, webPageSchema, faqSchema], `service-${mappedRegionType}-${regionSlug}-schemas`);
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Leistungen' : 'Services', url: language === 'de' ? '/de/leistungen' : '/en/services' },
+      { name: locContent.headline, url: location },
+    ]);
+
+    addMultipleJsonLd([serviceSchema, webPageSchema, faqSchema, breadcrumb], `service-${mappedRegionType}-${regionSlug}-schemas`);
   }, [language, location, params]);
 
   if (loading) {

@@ -55,7 +55,7 @@ export default function DistrictPage() {
       const placeSchema = {
         '@context': 'https://schema.org',
         '@type': 'Place',
-        '@id': `https://transraum.at${location}#place`,
+        '@id': `https://transraum.com${location}#place`,
         name: `${district.postalCode} ${districtName}`,
         description: districtDescription,
         address: {
@@ -78,20 +78,20 @@ export default function DistrictPage() {
       const serviceSchema = {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        '@id': `https://transraum.at${location}#service`,
+        '@id': `https://transraum.com${location}#service`,
         name: language === 'de' 
           ? `Räumung in ${districtName}`
           : `Clearing in ${districtName}`,
         description: districtMetaDescription,
         provider: {
           '@type': 'MovingCompany',
-          '@id': 'https://transraum.at/#organization',
+          '@id': 'https://transraum.com/#organization',
           name: 'Transraum',
           telephone: CONTACT_INFO.phone,
         },
         areaServed: {
           '@type': 'Place',
-          '@id': `https://transraum.at${location}#place`,
+          '@id': `https://transraum.com${location}#place`,
           name: `${district.postalCode} ${districtName}`,
         },
         hasOfferCatalog: {

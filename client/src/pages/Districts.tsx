@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { MapPin, ArrowRight } from 'lucide-react';
 import { getAllDistricts } from '@/data/districts';
 import { Button } from '@/components/ui/button';
-import { updateMetaTags, addJsonLd, getCollectionPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getCollectionPageSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { getLocalizedDistrictsPath, getAlternateUrls } from '@/lib/urlMapping';
 import { CONTACT_INFO } from '@/lib/constants';
@@ -52,7 +52,24 @@ export default function Districts() {
       })),
     });
 
-    addJsonLd(collectionSchema, 'districts-collection-schema');
+    const faqData = language === 'de' ? [
+      { question: 'In welchen Wiener Bezirken ist Transraum tätig?', answer: 'Transraum ist in allen 23 Wiener Bezirken tätig – von 1010 Innere Stadt bis 1230 Liesing. Wir kommen schnell und zuverlässig in jeden Bezirk.' },
+      { question: 'Gibt es einen Aufpreis für bestimmte Bezirke?', answer: 'Nein, wir berechnen keinen Aufpreis für bestimmte Bezirke in Wien. Der Preis richtet sich nach Umfang und Art der Räumung, nicht nach dem Bezirk.' },
+      { question: 'Wie schnell können Sie in meinen Bezirk kommen?', answer: 'In der Regel sind wir innerhalb von 24-48 Stunden in jedem Wiener Bezirk vor Ort. Bei Notfällen auch schneller. Kontaktieren Sie uns unter +43 660 6926375.' },
+      { question: 'Bieten Sie auch Räumungen im Wiener Umland an?', answer: 'Ja, neben allen 23 Wiener Bezirken bedienen wir auch Umlandgemeinden wie Mödling, Baden, Klosterneuburg, Schwechat und ganz Niederösterreich.' },
+    ] : [
+      { question: 'In which Vienna districts does Transraum operate?', answer: 'Transraum operates in all 23 Vienna districts – from 1010 Inner City to 1230 Liesing. We arrive quickly and reliably in every district.' },
+      { question: 'Is there a surcharge for certain districts?', answer: 'No, we do not charge a surcharge for specific districts in Vienna. The price depends on the scope and type of clearing, not the district.' },
+      { question: 'How quickly can you come to my district?', answer: 'We are usually on-site in any Vienna district within 24-48 hours. For emergencies even faster. Contact us at +43 660 6926375.' },
+      { question: 'Do you also offer clearing in the Vienna surroundings?', answer: 'Yes, besides all 23 Vienna districts we also serve surrounding communities like Mödling, Baden, Klosterneuburg, Schwechat and all of Lower Austria.' },
+    ];
+
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Wiener Bezirke' : 'Vienna Districts', url: location },
+    ]);
+
+    addMultipleJsonLd([collectionSchema, getFAQSchema(faqData), breadcrumb], 'districts-collection-schema');
   }, [language, location, districtsPath, districts]);
 
   return (

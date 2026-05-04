@@ -3,7 +3,7 @@ import { useLocation } from 'wouter';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { updateMetaTags, addJsonLd, getWebPageSchema } from '@/lib/seo';
+import { updateMetaTags, addMultipleJsonLd, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo';
 import { getAlternateUrls } from '@/lib/urlMapping';
 import { CONTACT_INFO } from '@/lib/constants';
 
@@ -37,7 +37,12 @@ export default function Impressum() {
       url: location,
     });
 
-    addJsonLd(webPageSchema, 'impressum-webpage-schema');
+    const breadcrumb = getBreadcrumbSchema([
+      { name: language === 'de' ? 'Startseite' : 'Home', url: language === 'de' ? '/de' : '/en' },
+      { name: language === 'de' ? 'Impressum' : 'Imprint', url: location },
+    ]);
+
+    addMultipleJsonLd([webPageSchema, breadcrumb], 'impressum-webpage-schema');
   }, [language, location]);
 
   const content = language === 'de' ? (

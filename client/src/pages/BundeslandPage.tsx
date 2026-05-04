@@ -48,17 +48,17 @@ export default function BundeslandPage() {
     const serviceSchema = {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      '@id': `https://transraum.at${location}#service`,
+      '@id': `https://transraum.com${location}#service`,
       'name': language === 'de'
         ? `Räumung in ${stateName}`
         : `Clearing in ${stateName}`,
       'serviceType': t.bundeslandPage.schemaServiceType,
       'provider': {
         '@type': 'MovingCompany',
-        '@id': 'https://transraum.at/#organization',
+        '@id': 'https://transraum.com/#organization',
         'name': 'Transraum',
         'telephone': CONTACT_INFO.phone,
-        'url': 'https://transraum.at',
+        'url': 'https://transraum.com',
       },
       'areaServed': {
         '@type': 'State',
