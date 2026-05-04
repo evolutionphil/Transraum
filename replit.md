@@ -1,7 +1,7 @@
-# Flächen Frei - Vienna Cleaning Services Website
+# Transraum - Vienna Transport & Clearance Website
 
 ## Overview
-Flächen Frei is a bilingual (German/English) marketing website for professional cleaning and clearance services in Vienna, Austria. It aims to showcase various services across Vienna's districts, featuring service listings, district-specific information, customer testimonials, and contact details. The project's ambition is to be a modern single-page application with server-side rendering, targeting the local Vienna market.
+Transraum (Golden Trend Armaturen GmbH) is a bilingual (German/English) marketing website for professional transport, clearance and removal services in Vienna, Austria. It aims to showcase various services across Vienna's districts, featuring service listings, district-specific information, customer testimonials, and contact details. The project's ambition is to be a modern single-page application with server-side rendering, targeting the local Vienna market.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.

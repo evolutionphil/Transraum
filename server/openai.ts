@@ -592,6 +592,43 @@ export async function generateBlogPost(
 }
 
 // ============================================================
+// SHOP PRODUCT IMAGE GENERATION
+// ============================================================
+export async function generateShopProductImage(
+  prompt: string,
+  filename: string,
+): Promise<string | null> {
+  const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  try {
+    console.log(`[Shop] Generating image for: ${filename}`);
+    const imageResponse = await openai.images.generate({
+      model: 'dall-e-3',
+      prompt: `${prompt}. High quality commercial photography style, professional, clean background, photorealistic.`,
+      n: 1,
+      size: '1792x1024',
+      quality: 'hd',
+      response_format: 'b64_json',
+    });
+
+    const b64 = imageResponse.data[0]?.b64_json;
+    if (!b64) return null;
+
+    const imageBuffer = Buffer.from(b64, 'base64');
+    const dir = path.join(process.cwd(), 'client', 'public', 'shop-images');
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+    const filePath = path.join(dir, filename);
+    fs.writeFileSync(filePath, imageBuffer);
+    const publicUrl = `/shop-images/${filename}`;
+    console.log(`[Shop] Image saved: ${publicUrl}`);
+    return publicUrl;
+  } catch (err) {
+    console.error(`[Shop] Image generation failed for ${filename}:`, err);
+    return null;
+  }
+}
+
+// ============================================================
 // BATCH GENERATION
 // ============================================================
 export async function generateMultipleBlogPosts(

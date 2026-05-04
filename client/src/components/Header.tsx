@@ -37,6 +37,7 @@ export default function Header() {
   const navItems = [
     { label: t.nav.home, path: language === 'de' ? '/' : '/en' },
     { label: t.nav.services, path: language === 'de' ? '/leistungen' : '/en/services' },
+    { label: language === 'de' ? 'Pakete' : 'Packages', path: language === 'de' ? '/de/pakete' : '/en/packages' },
     { label: t.nav.blog, path: language === 'de' ? '/de/blog' : '/en/blog' },
   ];
 

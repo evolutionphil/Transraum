@@ -5,7 +5,7 @@ import { sendContactEmail, type ContactFormData } from "./email";
 import { z } from "zod";
 import { contactFormSchema, blogGenerateSchema } from "@shared/schema";
 import { submitUrlToIndexNow, submitUrlsToIndexNow, submitSitemapToIndexNow, logIndexNowResponse } from "./indexnow";
-import { generateMultipleBlogPosts } from "./openai";
+import { generateMultipleBlogPosts, generateShopProductImage } from "./openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // WWW redirect - redirect www.flaechenfrei.at to flaechenfrei.at (SEO best practice)
@@ -265,6 +265,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // =====================
+  // SHOP IMAGE GENERATION
+  // =====================
+  app.post("/api/shop/generate-images-async", async (req, res) => {
+    if (!process.env.OPENAI_API_KEY) {
+      return res.status(503).json({ success: false, message: 'OPENAI_API_KEY not configured.' });
+    }
+    res.json({ success: true, message: 'Shop image generation started in background.' });
+
+    setImmediate(async () => {
+      const products = [
+        { filename: 'transport-paket-s.png', prompt: 'Professional Austrian moving service, compact white cargo van being loaded with furniture boxes on a Vienna street, two workers in yellow uniforms, clean modern look, bright daylight' },
+        { filename: 'transport-paket-m.png', prompt: 'Professional Austrian moving company, large white moving truck being loaded with furniture and boxes on a Vienna residential street, two workers in yellow safety vests carefully carrying sofa, sunny day' },
+        { filename: 'transport-paket-l.png', prompt: 'Large professional Austrian moving operation, big white moving truck fully loaded parked in front of Vienna historic building, three workers in matching uniforms efficiently moving large furniture' },
+        { filename: 'raeumung-paket-s.png', prompt: 'Professional Austrian apartment clearance service, two workers in yellow uniforms clearing a small compact studio apartment in Vienna, removing furniture and boxes, clean and organized work' },
+        { filename: 'raeumung-paket-m.png', prompt: 'Professional Austrian apartment clearance team, three workers in yellow vests clearing a medium-sized 2-bedroom apartment in Vienna, systematically removing furniture and household items, efficient teamwork' },
+        { filename: 'raeumung-paket-l.png', prompt: 'Large-scale professional Austrian house clearance, four workers in yellow uniforms clearing a large family home in Vienna, multiple rooms being emptied simultaneously, big truck outside, organized and efficient' },
+      ];
+
+      for (const p of products) {
+        await generateShopProductImage(p.prompt, p.filename);
+        await new Promise(r => setTimeout(r, 2000));
+      }
+      console.log('[Shop] All product images generated.');
+    });
+  });
+
+  // =====================
   // DYNAMIC SITEMAP.XML  (overrides static file — always up-to-date with blog posts)
   // =====================
   app.get('/sitemap.xml', async (req, res) => {
@@ -307,6 +334,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Blog index
       { loc: `${BASE}/de/blog`, priority: '0.9', changefreq: 'daily' },
       { loc: `${BASE}/en/blog`, priority: '0.8', changefreq: 'daily' },
+      // Shop / Pakete
+      { loc: `${BASE}/de/pakete`, priority: '0.95', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/transport-paket-s`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/transport-paket-m`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/transport-paket-l`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/raeumung-paket-s`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/raeumung-paket-m`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/de/pakete/raeumung-paket-l`, priority: '0.9', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/transport-package-s`, priority: '0.85', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/transport-package-m`, priority: '0.85', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/transport-package-l`, priority: '0.85', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/clearance-package-s`, priority: '0.85', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/clearance-package-m`, priority: '0.85', changefreq: 'weekly' },
+      { loc: `${BASE}/en/packages/clearance-package-l`, priority: '0.85', changefreq: 'weekly' },
     ];
 
     // Fetch all blog posts from storage
