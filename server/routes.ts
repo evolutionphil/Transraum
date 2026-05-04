@@ -20,12 +20,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   app.get("/", (req, res) => {
-    const acceptLanguage = req.headers['accept-language'] || '';
-    // Default to German (de), only use English if German is not present
-    // Priority: de > en > default to de
-    const preferredLang = acceptLanguage.toLowerCase().includes('de') ? 'de' : 
-                          acceptLanguage.toLowerCase().includes('en') ? 'en' : 'de';
-    res.redirect(302, `/${preferredLang}`);
+    // Default language is ALWAYS German (de) — this is an Austrian company
+    // English is secondary and only accessible via the language switcher
+    // We do NOT redirect based on browser language to avoid unwanted English redirects
+    res.redirect(302, '/de');
   });
 
   // Contact form endpoint

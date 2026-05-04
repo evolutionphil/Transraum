@@ -14,19 +14,21 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const urlLanguage = getLanguageFromPath(location);
-  const [language, setLanguageState] = useState<Language>(urlLanguage);
+  // Always default to 'de' — German is the primary language
+  const [language, setLanguageState] = useState<Language>(urlLanguage || 'de');
 
   useEffect(() => {
     const detectedLanguage = getLanguageFromPath(location);
-    if (detectedLanguage !== language) {
-      setLanguageState(detectedLanguage);
-      localStorage.setItem('language', detectedLanguage);
+    // Only update if URL explicitly contains /en or /de prefix
+    const hasExplicitLang = location.startsWith('/en') || location.startsWith('/de');
+    const newLang: Language = hasExplicitLang ? detectedLanguage : 'de';
+    if (newLang !== language) {
+      setLanguageState(newLang);
     }
-  }, [location, language]);
+  }, [location]);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('language', lang);
   };
 
   const t = translations[language];
