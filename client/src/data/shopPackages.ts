@@ -140,7 +140,7 @@ export const shopPackages: ShopPackage[] = [
     specs: {
       distance: 'ca. 60 km',
       workers: 2,
-      vehicle: 'LKW 20 m³',
+      vehicle: 'Transporter 20 m³',
       duration: 'bis 4 Std.',
     },
     de: {
@@ -148,9 +148,9 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'Der Klassiker – Wohnungsumzug Wien bis 60 km',
       badge: 'BESTSELLER',
       description:
-        'Unser meistgebuchtes Paket – ideal für einen typischen Wohnungsumzug. Mit einem 20 m³ LKW, 2 Helfern und bis zu 4 Stunden Arbeitszeit meistern wir Ihren Umzug innerhalb Wiens oder bis ca. 60 km Entfernung.',
+        'Unser meistgebuchtes Paket – ideal für einen typischen Wohnungsumzug. Mit einem 20 m³ Transporter, 2 Helfern und bis zu 4 Stunden Arbeitszeit meistern wir Ihren Umzug innerhalb Wiens oder bis ca. 60 km Entfernung.',
       includes: [
-        '1 LKW (20 m³) inkl. Fahrer',
+        '1 Transporter (20 m³) inkl. Fahrer',
         '2 erfahrene Helfer',
         'Bis zu 4 Arbeitsstunden',
         'Möbelschutzdecken & Spanngurte',
@@ -169,28 +169,28 @@ export const shopPackages: ShopPackage[] = [
       steps: [
         { title: 'Kostenlose Anfrage', description: 'Kontaktieren Sie uns – per Telefon oder Formular. Wir erstellen sofort ein Angebot.' },
         { title: 'Terminbestätigung', description: 'Wir senden eine Auftragsbestätigung mit allen Details: Datum, Uhrzeit, Adressen.' },
-        { title: 'Tag des Umzugs', description: 'Pünktlich erscheint unser Team, sichert alle Möbel fachgerecht und lädt den LKW effizient.' },
+        { title: 'Tag des Umzugs', description: 'Pünktlich erscheint unser Team, sichert alle Möbel fachgerecht und lädt den Transporter effizient.' },
         { title: 'Anlieferung & Aufstellung', description: 'Am Zielort stellen wir alle Möbel wunschgemäß auf und hinterlassen einen ordentlichen Eindruck.' },
       ],
       faq: [
-        { q: 'Was ist beim Paket M alles inklusive?', a: 'LKW (20 m³), 2 Helfer, bis 4 Arbeitsstunden, Möbelschutzdecken, Treppenhilfe, Be- und Entladen sowie Haftpflichtversicherung.' },
-        { q: 'Reicht ein 20 m³ LKW für meine 2-Zimmer-Wohnung?', a: 'In den meisten Fällen ja. Ein 20 m³ LKW fasst den typischen Hausrat einer 2–3 Zimmer Wohnung. Bei Unsicherheit beraten wir Sie kostenlos.' },
+        { q: 'Was ist beim Paket M alles inklusive?', a: 'Transporter (20 m³), 2 Helfer, bis 4 Arbeitsstunden, Möbelschutzdecken, Treppenhilfe, Be- und Entladen sowie Haftpflichtversicherung.' },
+        { q: 'Reicht ein 20 m³ Transporter für meine 2-Zimmer-Wohnung?', a: 'In den meisten Fällen ja. Ein 20 m³ Transporter fasst den typischen Hausrat einer 2–3 Zimmer Wohnung. Bei Unsicherheit beraten wir Sie kostenlos.' },
         { q: 'Was kostet es, wenn wir länger als 4 Stunden brauchen?', a: 'Jede weitere Stunde wird zum Satz von €45/Stunde abgerechnet und wird vorab kommuniziert.' },
         { q: 'Fahren Sie auch nach Niederösterreich oder ins Ausland?', a: 'Ja, für Fahrten über 60 km empfehlen wir Paket L oder ein individuelles Angebot.' },
         { q: 'Kann ich Umzugskartons dazubuchen?', a: 'Ja, Umzugskartons und Verpackungsmaterial sind auf Wunsch zubuchbar. Fragen Sie beim Buchen danach.' },
       ],
       metaTitle: 'Transport Paket M Wien – Wohnungsumzug ab €199 | Transraum',
-      metaDescription: 'Wohnungsumzug Wien ab €199: LKW 20 m³, 2 Helfer, bis 4 Stunden, bis 60 km. Bestseller für 2–3 Zimmer Wohnungen. Jetzt buchen!',
-      keywords: 'Wohnungsumzug Wien, Transport Paket M, Umzug Wien Festpreis, LKW mieten Wien mit Fahrer',
+      metaDescription: 'Wohnungsumzug Wien ab €199: Transporter 20 m³, 2 Helfer, bis 4 Stunden, bis 60 km. Bestseller für 2–3 Zimmer Wohnungen. Jetzt buchen!',
+      keywords: 'Wohnungsumzug Wien, Transport Paket M, Umzug Wien Festpreis, Transporter mieten Wien mit Fahrer',
     },
     en: {
       name: 'Transport Package M',
       tagline: 'The classic – apartment move Vienna up to 60 km',
       badge: 'BESTSELLER',
       description:
-        'Our most booked package – ideal for a typical apartment move. With a 20 m³ truck, 2 helpers, and up to 4 working hours, we handle your move within Vienna or up to approx. 60 km away.',
+        'Our most booked package – ideal for a typical apartment move. With a 20 m³ van, 2 helpers, and up to 4 working hours, we handle your move within Vienna or up to approx. 60 km away.',
       includes: [
-        '1 truck (20 m³) incl. driver',
+        '1 van (20 m³) incl. driver',
         '2 experienced helpers',
         'Up to 4 working hours',
         'Furniture protection blankets & straps',
@@ -209,19 +209,19 @@ export const shopPackages: ShopPackage[] = [
       steps: [
         { title: 'Free request', description: 'Contact us by phone or form. We provide an offer immediately.' },
         { title: 'Appointment confirmation', description: 'We send a booking confirmation with all details: date, time, addresses.' },
-        { title: 'Moving day', description: 'Our team arrives on time, secures all furniture properly and loads the truck efficiently.' },
+        { title: 'Moving day', description: 'Our team arrives on time, secures all furniture properly and loads the van efficiently.' },
         { title: 'Delivery & placement', description: 'At the destination we place all furniture as desired and leave a tidy impression.' },
       ],
       faq: [
         { q: 'What is included in Package M?', a: 'Truck (20 m³), 2 helpers, up to 4 working hours, furniture protection blankets, staircase assistance, loading/unloading and liability insurance.' },
-        { q: 'Is a 20 m³ truck enough for my 2-bedroom apartment?', a: 'In most cases yes. A 20 m³ truck holds the typical household contents of a 2–3 room apartment. If unsure, we advise you for free.' },
+        { q: 'Is a 20 m³ van enough for my 2-bedroom apartment?', a: 'In most cases yes. A 20 m³ van holds the typical household contents of a 2–3 room apartment. If unsure, we advise you for free.' },
         { q: 'What if we need more than 4 hours?', a: 'Each additional hour is charged at €45/hour, communicated in advance.' },
         { q: 'Do you travel to Lower Austria or abroad?', a: 'Yes, for trips over 60 km we recommend Package L or an individual quote.' },
         { q: 'Can I add moving boxes?', a: 'Yes, moving boxes and packing materials are available as an add-on. Just ask when booking.' },
       ],
       metaTitle: 'Transport Package M Vienna – Apartment Move from €199 | Transraum',
-      metaDescription: 'Apartment move Vienna from €199: truck 20 m³, 2 helpers, up to 4 hours, up to 60 km. Bestseller for 2–3 room apartments. Book now!',
-      keywords: 'apartment move Vienna, transport package M, move Vienna fixed price, truck hire Vienna with driver',
+      metaDescription: 'Apartment move Vienna from €199: van 20 m³, 2 helpers, up to 4 hours, up to 60 km. Bestseller for 2–3 room apartments. Book now!',
+      keywords: 'apartment move Vienna, transport package M, move Vienna fixed price, van hire Vienna with driver',
     },
   },
   {
@@ -236,7 +236,7 @@ export const shopPackages: ShopPackage[] = [
     specs: {
       distance: 'ca. 100 km',
       workers: 3,
-      vehicle: 'LKW 20 m³',
+      vehicle: 'Transporter 20 m³',
       duration: 'bis 6 Std.',
     },
     de: {
@@ -244,9 +244,9 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'Großumzug & Fernstransport bis 100 km – alles inklusive',
       badge: 'VOLLSERVICE',
       description:
-        'Für größere Haushalte, Mehrfamilienumzüge oder weitere Strecken. Mit 3 Helfern und bis zu 6 Stunden Arbeitszeit sowie einem 20 m³ LKW stemmen wir auch anspruchsvolle Umzüge bis ca. 100 km.',
+        'Für größere Haushalte, Mehrfamilienumzüge oder weitere Strecken. Mit 3 Helfern und bis zu 6 Stunden Arbeitszeit sowie einem 20 m³ Transporter stemmen wir auch anspruchsvolle Umzüge bis ca. 100 km.',
       includes: [
-        '1 LKW (20 m³) inkl. erfahrenem Fahrer',
+        '1 Transporter (20 m³) inkl. erfahrenem Fahrer',
         '3 erfahrene Helfer',
         'Bis zu 6 Arbeitsstunden',
         'Möbelschutzdecken & professionelle Spanngurte',
@@ -277,17 +277,17 @@ export const shopPackages: ShopPackage[] = [
         { q: 'Was passiert wenn mehr Zeit benötigt wird?', a: 'Zusätzliche Stunden werden zum Satz von €45/Std. abgerechnet und immer vorab besprochen.' },
       ],
       metaTitle: 'Transport Paket L Wien – Großumzug ab €299 | Transraum',
-      metaDescription: 'Großumzug Wien ab €299: LKW 20 m³, 3 Helfer, bis 6 Stunden, bis 100 km. Vollservice für große Haushalte und Büros. Jetzt anfragen!',
-      keywords: 'Großumzug Wien, Transport Paket L, Fernumzug Österreich, Büroumzug Wien Festpreis, LKW 3 Helfer Wien',
+      metaDescription: 'Großumzug Wien ab €299: Transporter 20 m³, 3 Helfer, bis 6 Stunden, bis 100 km. Vollservice für große Haushalte und Büros. Jetzt anfragen!',
+      keywords: 'Großumzug Wien, Transport Paket L, Fernumzug Österreich, Büroumzug Wien Festpreis, Transporter 3 Helfer Wien',
     },
     en: {
       name: 'Transport Package L',
       tagline: 'Large move & long-distance transport up to 100 km – all included',
       badge: 'FULL SERVICE',
       description:
-        'For larger households, multi-room moves or longer distances. With 3 helpers and up to 6 working hours plus a 20 m³ truck, we handle even demanding moves up to approx. 100 km.',
+        'For larger households, multi-room moves or longer distances. With 3 helpers and up to 6 working hours plus a 20 m³ van, we handle even demanding moves up to approx. 100 km.',
       includes: [
-        '1 truck (20 m³) incl. experienced driver',
+        '1 van (20 m³) incl. experienced driver',
         '3 experienced helpers',
         'Up to 6 working hours',
         'Furniture protection blankets & professional straps',
@@ -318,7 +318,7 @@ export const shopPackages: ShopPackage[] = [
         { q: 'What if more time is needed?', a: 'Additional hours are charged at €45/hour and always discussed in advance.' },
       ],
       metaTitle: 'Transport Package L Vienna – Large Move from €299 | Transraum',
-      metaDescription: 'Large move Vienna from €299: truck 20 m³, 3 helpers, up to 6 hours, up to 100 km. Full service for large households and offices. Request now!',
+      metaDescription: 'Large move Vienna from €299: van 20 m³, 3 helpers, up to 6 hours, up to 100 km. Full service for large households and offices. Request now!',
       keywords: 'large move Vienna, transport package L, long distance move Austria, office move Vienna fixed price',
     },
   },
@@ -426,7 +426,7 @@ export const shopPackages: ShopPackage[] = [
     specs: {
       area: 'bis 70 m²',
       workers: 3,
-      vehicle: 'LKW 20 m³',
+      vehicle: 'Transporter 20 m³',
       duration: 'ca. 5–7 Std.',
     },
     de: {
@@ -434,11 +434,11 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'Komplettlösung für 2–3 Zimmer Wohnungen in Wien',
       badge: 'BELIEBT',
       description:
-        'Das am häufigsten gebuchte Räumungspaket – perfekt für typische Wiener Wohnungen bis 70 m². Mit 3 Helfern, einem 20 m³ LKW und voller Haftpflichtversicherung übergeben wir Ihre Wohnung besenrein.',
+        'Das am häufigsten gebuchte Räumungspaket – perfekt für typische Wiener Wohnungen bis 70 m². Mit 3 Helfern, einem 20 m³ Transporter und voller Haftpflichtversicherung übergeben wir Ihre Wohnung besenrein.',
       includes: [
         'Vollständige Räumung bis 70 m²',
         '3 erfahrene Räumungshelfer',
-        '1 LKW (20 m³) für Abtransport',
+        '1 Transporter (20 m³) für Abtransport',
         'Abtransport aller Gegenstände',
         'Besenreiner Zustand garantiert',
         'Fachgerechte Entsorgung',
@@ -465,7 +465,7 @@ export const shopPackages: ShopPackage[] = [
         { q: 'Gibt es einen Ankaufservice für Wertgegenstände?', a: 'Ja, unsere Verlassenschaftsankauf-Abteilung bewertet und kauft Möbel, Schmuck, Teppiche und Antiquitäten.' },
       ],
       metaTitle: 'Räumung Paket M Wien – 2-3 Zimmer Wohnung ab €399 | Transraum',
-      metaDescription: 'Wohnungsräumung Wien ab €399: bis 70 m², 3 Helfer, besenrein, LKW inklusive. Perfekt für 2–3 Zimmer. Jetzt Festpreis anfragen!',
+      metaDescription: 'Wohnungsräumung Wien ab €399: bis 70 m², 3 Helfer, besenrein, Transporter inklusive. Perfekt für 2–3 Zimmer. Jetzt Festpreis anfragen!',
       keywords: 'Wohnungsräumung Wien 2 Zimmer, Räumung 70 m² Wien, Haushaltsauflösung Wien Pauschal, Räumungsfirma Wien',
     },
     en: {
@@ -473,11 +473,11 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'Complete solution for 2–3 room apartments in Vienna',
       badge: 'POPULAR',
       description:
-        'The most frequently booked clearance package – perfect for typical Viennese apartments up to 70 m². With 3 helpers, a 20 m³ truck and full liability insurance, we hand over your apartment broom-clean.',
+        'The most frequently booked clearance package – perfect for typical Viennese apartments up to 70 m². With 3 helpers, a 20 m³ van and full liability insurance, we hand over your apartment broom-clean.',
       includes: [
         'Complete clearance up to 70 m²',
         '3 experienced clearance helpers',
-        '1 truck (20 m³) for removal',
+        '1 van (20 m³) for removal',
         'Removal of all items',
         'Broom-clean condition guaranteed',
         'Proper disposal',
@@ -504,7 +504,7 @@ export const shopPackages: ShopPackage[] = [
         { q: 'Is there a purchase service for valuables?', a: 'Yes, our estate purchase department assesses and buys furniture, jewellery, carpets and antiques.' },
       ],
       metaTitle: 'Clearance Package M Vienna – 2-3 Room Apartment from €399 | Transraum',
-      metaDescription: 'Apartment clearance Vienna from €399: up to 70 m², 3 helpers, broom-clean, truck included. Perfect for 2–3 rooms. Request fixed price now!',
+      metaDescription: 'Apartment clearance Vienna from €399: up to 70 m², 3 helpers, broom-clean, van included. Perfect for 2–3 rooms. Request fixed price now!',
       keywords: 'apartment clearance Vienna 2 rooms, clearance 70 m² Vienna, household dissolution Vienna flat rate, clearance company Vienna',
     },
   },
@@ -520,7 +520,7 @@ export const shopPackages: ShopPackage[] = [
     specs: {
       area: 'bis 120 m²',
       workers: 4,
-      vehicle: 'LKW 20 m³ + Transporter',
+      vehicle: '2 Transporter',
       duration: 'ca. 1–2 Tage',
     },
     de: {
@@ -528,11 +528,11 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'Hausräumung & Großräumung – komplette Auflösung',
       badge: 'KOMPLETT',
       description:
-        'Für große Wohnungen, Häuser oder komplexe Räumungen bis 120 m². Mit 4 Helfern, LKW und Transporter liefern wir ein Rundumpaket – inklusive Vorabbesichtigung, vollständiger Entsorgung und besenreiner Übergabe.',
+        'Für große Wohnungen, Häuser oder komplexe Räumungen bis 120 m². Mit 4 Helfern, 2 Transportern liefern wir ein Rundumpaket – inklusive Vorabbesichtigung, vollständiger Entsorgung und besenreiner Übergabe.',
       includes: [
         'Vollständige Räumung bis 120 m²',
         '4 erfahrene Räumungshelfer',
-        'LKW (20 m³) + Transporter',
+        '2 Transporter',
         'Abtransport aller Gegenstände',
         'Besenreiner Zustand garantiert',
         'Fachgerechte Entsorgung inklusive',
@@ -553,14 +553,14 @@ export const shopPackages: ShopPackage[] = [
         { title: 'Besenreine Übergabe & Dokumentation', description: 'Vollständig geräumt und gereinigt. Auf Wunsch Fotoprotokoll für Vermieter/Nachlass.' },
       ],
       faq: [
-        { q: 'Was ist beim Paket L alles inklusive?', a: 'Bis 120 m² Wohnfläche, 4 Helfer, LKW + Transporter, vollständiger Abtransport, fachgerechte Entsorgung, Vorabbesichtigung und Haftpflichtversicherung.' },
+        { q: 'Was ist beim Paket L alles inklusive?', a: 'Bis 120 m² Wohnfläche, 4 Helfer, 2 Transporter, vollständiger Abtransport, fachgerechte Entsorgung, Vorabbesichtigung und Haftpflichtversicherung.' },
         { q: 'Können Sie auch Keller und Dachboden mitrechnen?', a: 'Bei Paket L sind Keller und Dachboden bis zu einer Gesamtfläche von 120 m² inklusive.' },
         { q: 'Wie lange dauert eine Hausräumung?', a: 'In der Regel 1–2 Tage, je nach Füllgrad und Zugänglichkeit. Bei der Besichtigung geben wir eine genaue Einschätzung.' },
         { q: 'Arbeiten Sie auch am Wochenende?', a: 'Ja, wir sind auch samstags und auf Wunsch sonntags verfügbar. Terminanfragen bitte telefonisch.' },
         { q: 'Kann ich einen Ankauf von Möbeln und Wertsachen dazubuchen?', a: 'Ja, unser Verlassenschaftsankauf-Team bewertet und kauft Möbel, Teppiche, Kunstwerke, Schmuck und mehr.' },
       ],
       metaTitle: 'Räumung Paket L Wien – Hausräumung ab €599 | Transraum',
-      metaDescription: 'Hausräumung Wien ab €599: bis 120 m², 4 Helfer, LKW + Transporter, Komplettservice. Wochenende möglich. Jetzt Festpreis anfragen!',
+      metaDescription: 'Hausräumung Wien ab €599: bis 120 m², 4 Helfer, 2 Transporter, Komplettservice. Wochenende möglich. Jetzt Festpreis anfragen!',
       keywords: 'Hausräumung Wien, Räumung Paket L Wien, Großräumung Wien Festpreis, Verlassenschaftsräumung Wien, Räumungsfirma Wien groß',
     },
     en: {
@@ -568,7 +568,7 @@ export const shopPackages: ShopPackage[] = [
       tagline: 'House clearance & large-scale clearance – complete dissolution',
       badge: 'COMPLETE',
       description:
-        'For large apartments, houses or complex clearances up to 120 m². With 4 helpers, truck and van, we deliver an all-round package – including preliminary inspection, complete disposal and broom-clean handover.',
+        'For large apartments, houses or complex clearances up to 120 m². With 4 helpers, 2 vans, we deliver an all-round package – including preliminary inspection, complete disposal and broom-clean handover.',
       includes: [
         'Complete clearance up to 120 m²',
         '4 experienced clearance helpers',
@@ -593,14 +593,14 @@ export const shopPackages: ShopPackage[] = [
         { title: 'Broom-clean handover & documentation', description: 'Completely cleared and cleaned. Photo protocol for landlord/estate on request.' },
       ],
       faq: [
-        { q: 'What is included in Package L?', a: 'Up to 120 m² living space, 4 helpers, truck + van, complete removal, proper disposal, preliminary inspection and liability insurance.' },
+        { q: 'What is included in Package L?', a: 'Up to 120 m² living space, 4 helpers, 2 vans, complete removal, proper disposal, preliminary inspection and liability insurance.' },
         { q: 'Can basement and attic be included?', a: 'In Package L, basement and attic are included up to a total area of 120 m².' },
         { q: 'How long does a house clearance take?', a: 'Usually 1–2 days, depending on fill level and accessibility. We provide an accurate estimate at the inspection.' },
         { q: 'Do you work on weekends?', a: 'Yes, we are available on Saturdays and Sundays on request. Please inquire by phone.' },
         { q: 'Can I add a purchase of furniture and valuables?', a: 'Yes, our estate purchase team assesses and buys furniture, carpets, artwork, jewellery and more.' },
       ],
       metaTitle: 'Clearance Package L Vienna – House Clearance from €599 | Transraum',
-      metaDescription: 'House clearance Vienna from €599: up to 120 m², 4 helpers, truck + van, complete service. Weekend possible. Request fixed price now!',
+      metaDescription: 'House clearance Vienna from €599: up to 120 m², 4 helpers, 2 vans, complete service. Weekend possible. Request fixed price now!',
       keywords: 'house clearance Vienna, clearance package L Vienna, large clearance Vienna fixed price, estate clearance Vienna, clearance company Vienna large',
     },
   },
