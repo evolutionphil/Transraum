@@ -386,36 +386,48 @@ export async function registerRoutes(app: Express): Promise<Server> {
       { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
       { loc: `${BASE}/de`, priority: '1.0', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
       { loc: `${BASE}/en`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
-      // DE Service pages
+      // DE Service pages (with EN alternates)
       { loc: `${BASE}/de/leistungen/wohnungsraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/wohnungsraeumung`, altEn: `${BASE}/en/services/apartment-clearing` },
       { loc: `${BASE}/de/leistungen/hausraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/hausraeumung`, altEn: `${BASE}/en/services/house-clearing` },
       { loc: `${BASE}/de/leistungen/transportservice`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/transportservice`, altEn: `${BASE}/en/services/transport-service` },
       { loc: `${BASE}/de/leistungen/kellerraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/kellerraeumung`, altEn: `${BASE}/en/services/basement-clearing` },
-      { loc: `${BASE}/de/leistungen/entr%C3%BCmpeln`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/entr%C3%BCmpeln` },
+      { loc: `${BASE}/de/leistungen/entr%C3%BCmpeln`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/entr%C3%BCmpeln`, altEn: `${BASE}/en/services/decluttering` },
       { loc: `${BASE}/de/leistungen/verlassenschaft-ankauf`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/verlassenschaft-ankauf`, altEn: `${BASE}/en/services/estate-clearance` },
-      { loc: `${BASE}/de/leistungen/haushaltsaufloesung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/haushaltsaufloesung` },
+      { loc: `${BASE}/de/leistungen/haushaltsaufloesung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/haushaltsaufloesung`, altEn: `${BASE}/en/services/household-clearance` },
       { loc: `${BASE}/de/leistungen/umzug`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/umzug`, altEn: `${BASE}/en/services/moving` },
-      { loc: `${BASE}/de/leistungen/bueroraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/bueroraeumung` },
-      { loc: `${BASE}/de/leistungen/sperrgut`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/sperrgut` },
-      { loc: `${BASE}/de/leistungen/dachbodenraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/dachbodenraeumung` },
-      { loc: `${BASE}/de/leistungen/garageraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/garageraeumung` },
+      { loc: `${BASE}/de/leistungen/bueroraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/bueroraeumung`, altEn: `${BASE}/en/services/office-clearing` },
+      { loc: `${BASE}/de/leistungen/sperrgut`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/sperrgut`, altEn: `${BASE}/en/services/bulky-waste` },
+      { loc: `${BASE}/de/leistungen/dachbodenraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/dachbodenraeumung`, altEn: `${BASE}/en/services/attic-clearing` },
+      { loc: `${BASE}/de/leistungen/garageraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/garageraeumung`, altEn: `${BASE}/en/services/garage-clearing` },
       // EN Service pages
       { loc: `${BASE}/en/services/apartment-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/wohnungsraeumung`, altEn: `${BASE}/en/services/apartment-clearing` },
       { loc: `${BASE}/en/services/house-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/hausraeumung`, altEn: `${BASE}/en/services/house-clearing` },
       { loc: `${BASE}/en/services/transport-service`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/transportservice`, altEn: `${BASE}/en/services/transport-service` },
       { loc: `${BASE}/en/services/basement-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/kellerraeumung`, altEn: `${BASE}/en/services/basement-clearing` },
+      { loc: `${BASE}/en/services/decluttering`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/entr%C3%BCmpeln`, altEn: `${BASE}/en/services/decluttering` },
       { loc: `${BASE}/en/services/estate-clearance`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/verlassenschaft-ankauf`, altEn: `${BASE}/en/services/estate-clearance` },
+      { loc: `${BASE}/en/services/household-clearance`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/haushaltsaufloesung`, altEn: `${BASE}/en/services/household-clearance` },
       { loc: `${BASE}/en/services/moving`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/umzug`, altEn: `${BASE}/en/services/moving` },
+      { loc: `${BASE}/en/services/office-clearing`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/bueroraeumung`, altEn: `${BASE}/en/services/office-clearing` },
+      { loc: `${BASE}/en/services/bulky-waste`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/sperrgut`, altEn: `${BASE}/en/services/bulky-waste` },
+      { loc: `${BASE}/en/services/attic-clearing`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/dachbodenraeumung`, altEn: `${BASE}/en/services/attic-clearing` },
+      { loc: `${BASE}/en/services/garage-clearing`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/garageraeumung`, altEn: `${BASE}/en/services/garage-clearing` },
       // Services overview
       { loc: `${BASE}/de/leistungen`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen`, altEn: `${BASE}/en/services` },
       { loc: `${BASE}/en/services`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen`, altEn: `${BASE}/en/services` },
       // Contact + Info pages
       { loc: `${BASE}/de/kontakt`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/kontakt`, altEn: `${BASE}/en/contact` },
       { loc: `${BASE}/en/contact`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/kontakt`, altEn: `${BASE}/en/contact` },
-      { loc: `${BASE}/de/faq`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/faq` },
-      { loc: `${BASE}/de/datenschutz`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/datenschutz` },
-      { loc: `${BASE}/de/impressum`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/impressum` },
-      { loc: `${BASE}/de/agb`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/agb` },
+      // FAQ
+      { loc: `${BASE}/de/faq`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/faq`, altEn: `${BASE}/en/faq` },
+      { loc: `${BASE}/en/faq`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/faq`, altEn: `${BASE}/en/faq` },
+      // Legal pages
+      { loc: `${BASE}/de/datenschutz`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/datenschutz`, altEn: `${BASE}/en/privacy-policy` },
+      { loc: `${BASE}/en/privacy-policy`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/datenschutz`, altEn: `${BASE}/en/privacy-policy` },
+      { loc: `${BASE}/de/impressum`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/impressum`, altEn: `${BASE}/en/imprint` },
+      { loc: `${BASE}/en/imprint`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/impressum`, altEn: `${BASE}/en/imprint` },
+      { loc: `${BASE}/de/agb`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/agb`, altEn: `${BASE}/en/terms` },
+      { loc: `${BASE}/en/terms`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/agb`, altEn: `${BASE}/en/terms` },
       // Blog index
       { loc: `${BASE}/de/blog`, priority: '0.9', changefreq: 'daily', altDe: `${BASE}/de/blog`, altEn: `${BASE}/en/blog` },
       { loc: `${BASE}/en/blog`, priority: '0.8', changefreq: 'daily', altDe: `${BASE}/de/blog`, altEn: `${BASE}/en/blog` },
@@ -434,35 +446,67 @@ export async function registerRoutes(app: Express): Promise<Server> {
       { loc: `${BASE}/en/packages/clearance-package-s`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-s`, altEn: `${BASE}/en/packages/clearance-package-s` },
       { loc: `${BASE}/en/packages/clearance-package-m`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-m`, altEn: `${BASE}/en/packages/clearance-package-m` },
       { loc: `${BASE}/en/packages/clearance-package-l`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-l`, altEn: `${BASE}/en/packages/clearance-package-l` },
-      // Districts overview
-      { loc: `${BASE}/de/bezirke`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bezirke` },
-      // Bundeslaender overview
-      { loc: `${BASE}/de/bundeslaender`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bundeslaender` },
+      // Districts overview (DE + EN)
+      { loc: `${BASE}/de/bezirke`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bezirke`, altEn: `${BASE}/en/districts` },
+      { loc: `${BASE}/en/districts`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/bezirke`, altEn: `${BASE}/en/districts` },
+      // Bundeslaender overview (DE + EN)
+      { loc: `${BASE}/de/bundeslaender`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bundeslaender`, altEn: `${BASE}/en/federal-states` },
+      { loc: `${BASE}/en/federal-states`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/bundeslaender`, altEn: `${BASE}/en/federal-states` },
     ];
 
-    // Vienna district pages (23 districts)
-    const districtUrls: SitemapEntry[] = districtSlugs.map((slug) => ({
-      loc: `${BASE}/de/bezirke/${slug}`,
-      priority: '0.75',
-      changefreq: 'monthly',
-      altDe: `${BASE}/de/bezirke/${slug}`,
-    }));
+    // Vienna district pages (23 districts) — DE + EN
+    const districtUrls: SitemapEntry[] = districtSlugs.flatMap((slug) => ([
+      {
+        loc: `${BASE}/de/bezirke/${slug}`,
+        priority: '0.75',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bezirke/${slug}`,
+        altEn: `${BASE}/en/districts/${slug}`,
+      },
+      {
+        loc: `${BASE}/en/districts/${slug}`,
+        priority: '0.7',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bezirke/${slug}`,
+        altEn: `${BASE}/en/districts/${slug}`,
+      },
+    ]));
 
-    // Austrian state pages (9 states)
-    const stateUrls: SitemapEntry[] = stateSlugs.map((slug) => ({
-      loc: `${BASE}/de/bundeslaender/${slug}`,
-      priority: '0.75',
-      changefreq: 'monthly',
-      altDe: `${BASE}/de/bundeslaender/${slug}`,
-    }));
+    // Austrian state pages (9 states) — DE + EN
+    const stateUrls: SitemapEntry[] = stateSlugs.flatMap((slug) => ([
+      {
+        loc: `${BASE}/de/bundeslaender/${slug}`,
+        priority: '0.75',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bundeslaender/${slug}`,
+        altEn: `${BASE}/en/federal-states/${slug}`,
+      },
+      {
+        loc: `${BASE}/en/federal-states/${slug}`,
+        priority: '0.7',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bundeslaender/${slug}`,
+        altEn: `${BASE}/en/federal-states/${slug}`,
+      },
+    ]));
 
-    // Austrian city pages under states
-    const cityUrls: SitemapEntry[] = cityStatePairs.map(({ state, city }) => ({
-      loc: `${BASE}/de/bundeslaender/${state}/${city}`,
-      priority: '0.7',
-      changefreq: 'monthly',
-      altDe: `${BASE}/de/bundeslaender/${state}/${city}`,
-    }));
+    // Austrian city pages under states — DE + EN
+    const cityUrls: SitemapEntry[] = cityStatePairs.flatMap(({ state, city }) => ([
+      {
+        loc: `${BASE}/de/bundeslaender/${state}/${city}`,
+        priority: '0.7',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bundeslaender/${state}/${city}`,
+        altEn: `${BASE}/en/federal-states/${state}/${city}`,
+      },
+      {
+        loc: `${BASE}/en/federal-states/${state}/${city}`,
+        priority: '0.65',
+        changefreq: 'monthly',
+        altDe: `${BASE}/de/bundeslaender/${state}/${city}`,
+        altEn: `${BASE}/en/federal-states/${state}/${city}`,
+      },
+    ]));
 
     // Fetch all blog posts from storage
     let blogUrlsDe: string[] = [];

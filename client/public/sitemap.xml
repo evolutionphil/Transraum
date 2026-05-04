@@ -67,6 +67,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/entr%C3%BCmpeln</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/decluttering"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -84,6 +85,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/haushaltsaufloesung</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/household-clearance"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -101,6 +103,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/bueroraeumung</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/bueroraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/office-clearing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/bueroraeumung"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -109,6 +112,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/sperrgut</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/sperrgut"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/bulky-waste"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/sperrgut"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -117,6 +121,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/dachbodenraeumung</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/attic-clearing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -125,6 +130,7 @@
   <url>
     <loc>https://transraum.com/de/leistungen/garageraeumung</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/garageraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/garage-clearing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/garageraeumung"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -167,10 +173,28 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/services/decluttering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/decluttering"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/en/services/estate-clearance</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/estate-clearance"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/household-clearance</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/household-clearance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -183,6 +207,42 @@
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/office-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/bueroraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/office-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/bueroraeumung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/bulky-waste</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/sperrgut"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/bulky-waste"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/sperrgut"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/attic-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/attic-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/garage-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/garageraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/garage-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/garageraeumung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://transraum.com/de/leistungen</loc>
@@ -223,6 +283,16 @@
   <url>
     <loc>https://transraum.com/de/faq</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/faq"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/faq"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/faq"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -231,6 +301,16 @@
   <url>
     <loc>https://transraum.com/de/datenschutz</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/datenschutz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/datenschutz"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
@@ -239,6 +319,16 @@
   <url>
     <loc>https://transraum.com/de/impressum</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/imprint"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/impressum"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/imprint</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/imprint"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/impressum"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
@@ -247,6 +337,16 @@
   <url>
     <loc>https://transraum.com/de/agb</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/agb"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/agb"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
@@ -399,522 +499,1172 @@
   <url>
     <loc>https://transraum.com/de/bezirke</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1010-wien-innere-stadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1010-wien-innere-stadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1010-wien-innere-stadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1010-wien-innere-stadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1020-wien-leopoldstadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1020-wien-leopoldstadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1020-wien-leopoldstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1020-wien-leopoldstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1030-wien-landstrasse</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1030-wien-landstrasse"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1030-wien-landstrasse</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1030-wien-landstrasse"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1040-wien-wieden</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1040-wien-wieden"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1040-wien-wieden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1040-wien-wieden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1050-wien-margareten</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1050-wien-margareten"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1050-wien-margareten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1050-wien-margareten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1060-wien-mariahilf</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1060-wien-mariahilf"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1060-wien-mariahilf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1060-wien-mariahilf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1070-wien-neubau</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1070-wien-neubau"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1070-wien-neubau</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1070-wien-neubau"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1080-wien-josefstadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1080-wien-josefstadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1080-wien-josefstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1080-wien-josefstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1090-wien-alsergrund</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1090-wien-alsergrund"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1090-wien-alsergrund</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1090-wien-alsergrund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1100-wien-favoriten</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1100-wien-favoriten"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1100-wien-favoriten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1100-wien-favoriten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1110-wien-simmering</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1110-wien-simmering"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1110-wien-simmering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1110-wien-simmering"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1120-wien-meidling</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1120-wien-meidling"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1120-wien-meidling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1120-wien-meidling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1130-wien-hietzing</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1130-wien-hietzing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1130-wien-hietzing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1130-wien-hietzing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1140-wien-penzing</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1140-wien-penzing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1140-wien-penzing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1140-wien-penzing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1150-wien-rudolfsheim-fuenfhaus"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1150-wien-rudolfsheim-fuenfhaus</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1150-wien-rudolfsheim-fuenfhaus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1160-wien-ottakring</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1160-wien-ottakring"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1160-wien-ottakring</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1160-wien-ottakring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1170-wien-hernals</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1170-wien-hernals"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1170-wien-hernals</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1170-wien-hernals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1180-wien-waehring</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1180-wien-waehring"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1180-wien-waehring</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1180-wien-waehring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1190-wien-doebling</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1190-wien-doebling"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1190-wien-doebling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1190-wien-doebling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1200-wien-brigittenau</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1200-wien-brigittenau"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1200-wien-brigittenau</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1200-wien-brigittenau"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1210-wien-floridsdorf</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1210-wien-floridsdorf"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1210-wien-floridsdorf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1210-wien-floridsdorf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1220-wien-donaustadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1220-wien-donaustadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1220-wien-donaustadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1220-wien-donaustadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bezirke/1230-wien-liesing</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1230-wien-liesing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/districts/1230-wien-liesing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/districts/1230-wien-liesing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/wien</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/wien"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/wien"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/wien"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/wien</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/wien"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/wien"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/wien"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/oberoesterreich</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/oberoesterreich</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/salzburg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/salzburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/tirol</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/tirol</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/vorarlberg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/vorarlberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/kaernten</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/kaernten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/steiermark</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/steiermark</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/burgenland</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/burgenland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/st-poelten"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/st-poelten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/st-poelten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/wiener-neustadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/wiener-neustadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/wiener-neustadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/baden</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/baden"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/baden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/baden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/klosterneuburg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/klosterneuburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/klosterneuburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/moedling</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/moedling"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/moedling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/moedling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/krems</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/krems"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/krems</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/krems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/amstetten</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/amstetten"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/amstetten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/amstetten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/traiskirchen"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/niederoesterreich/traiskirchen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/niederoesterreich/traiskirchen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/burgenland/eisenstadt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/eisenstadt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/burgenland/eisenstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/eisenstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/burgenland/rust</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/rust"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/burgenland/rust</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/rust"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/neusiedl-am-see"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/burgenland/neusiedl-am-see</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/neusiedl-am-see"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/burgenland/oberwart</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/oberwart"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/burgenland/oberwart</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/burgenland/oberwart"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/oberoesterreich/linz</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/linz"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/oberoesterreich/linz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/linz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/oberoesterreich/wels</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/wels"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/oberoesterreich/wels</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/wels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/oberoesterreich/steyr</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/steyr"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/oberoesterreich/steyr</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/steyr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/oberoesterreich/leonding</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/leonding"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/oberoesterreich/leonding</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/oberoesterreich/leonding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/salzburg/salzburg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/salzburg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/salzburg/salzburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/salzburg/hallein</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/hallein"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/salzburg/hallein</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/hallein"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/salzburg/saalfelden</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/saalfelden"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/salzburg/saalfelden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/salzburg/saalfelden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/tirol/innsbruck</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/innsbruck"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/tirol/innsbruck</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/innsbruck"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/tirol/kufstein</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/kufstein"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/tirol/kufstein</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/kufstein"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/tirol/woergl</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/woergl"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/tirol/woergl</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/tirol/woergl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/vorarlberg/bregenz</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/bregenz"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/vorarlberg/bregenz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/bregenz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/vorarlberg/dornbirn</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/dornbirn"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/vorarlberg/dornbirn</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/dornbirn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/vorarlberg/feldkirch</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/feldkirch"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/vorarlberg/feldkirch</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/vorarlberg/feldkirch"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/kaernten/klagenfurt</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/klagenfurt"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/kaernten/klagenfurt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/klagenfurt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/kaernten/villach</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/villach"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/kaernten/villach</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/villach"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/kaernten/wolfsberg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/wolfsberg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/kaernten/wolfsberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/kaernten/wolfsberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/steiermark/graz</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/graz"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/steiermark/graz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/graz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/steiermark/leoben</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/leoben"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://transraum.com/en/federal-states/steiermark/leoben</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/leoben"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://transraum.com/de/bundeslaender/steiermark/kapfenberg</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/kapfenberg"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/federal-states/steiermark/kapfenberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/federal-states/steiermark/kapfenberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://transraum.com/de/blog/transport-wien-17-bezirk-hernals-moebel-sperrgut-1777902896986</loc>
