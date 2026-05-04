@@ -1,1015 +1,1600 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- ============================================ -->
-  <!-- Homepage (Highest Priority) -->
-  <!-- ============================================ -->
   <url>
-    <loc>https://flaechenfrei.at/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flaechenfrei.at/" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://flaechenfrei.at/" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- ============================================ -->
-  <!-- Services Overview -->
-  <!-- ============================================ -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/leistungen/wohnungsraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/wohnungsraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/apartment-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/wohnungsraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/hausraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/hausraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/house-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/hausraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ============================================ -->
-  <!-- Service Detail Pages (17 Services x 2 Languages = 34 URLs) -->
-  <!-- ============================================ -->
-
-  <!-- Wohnungsräumung / Apartment Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/wohnungsraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/wohnungsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/apartment-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/transportservice</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/transportservice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/transport-service"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/transportservice"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/apartment-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/wohnungsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/apartment-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/kellerraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/kellerraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/basement-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/kellerraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Haushaltsauflösung / Estate Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/haushaltsaufloesungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/haushaltsaufloesungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/estate-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/entr%C3%BCmpeln</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/entr%C3%BCmpeln"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/estate-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/haushaltsaufloesungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/estate-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/verlassenschaft-ankauf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/estate-clearance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Kellerräumung / Basement Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/kellerraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/kellerraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/basement-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/haushaltsaufloesung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/haushaltsaufloesung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/leistungen/umzug</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/umzug"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/moving"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/umzug"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/leistungen/bueroraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/bueroraeumung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/bueroraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/basement-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/kellerraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/basement-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/sperrgut</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/sperrgut"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/sperrgut"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Dachbodenräumung / Attic Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/dachbodenraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/dachbodenraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/attic-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/dachbodenraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/dachbodenraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/attic-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/dachbodenraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/attic-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/leistungen/garageraeumung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/garageraeumung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/garageraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Geschäftsräumung / Office Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/geschaeftsraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/geschaeftsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/office-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/en/services/apartment-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/wohnungsraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/apartment-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/wohnungsraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/office-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/geschaeftsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/office-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/en/services/house-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/hausraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/house-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/hausraeumung"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Messie-Räumung / Hoarding Clearing -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/messieraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/messieraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/hoarding-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/en/services/transport-service</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/transportservice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/transport-service"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/transportservice"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/basement-clearing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/kellerraeumung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/basement-clearing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/kellerraeumung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/estate-clearance</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/estate-clearance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/verlassenschaft-ankauf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services/moving</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen/umzug"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services/moving"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen/umzug"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/leistungen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/leistungen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/leistungen"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/kontakt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/kontakt"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/hoarding-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/messieraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/hoarding-clearing" />
-    <lastmod>2025-11-12</lastmod>
+    <loc>https://transraum.com/de/faq</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/faq"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Sperrmüllabholung / Bulky Waste Collection -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/sperrmullabholung</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/sperrmullabholung" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/bulky-waste-collection" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/bulky-waste-collection</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/sperrmullabholung" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/bulky-waste-collection" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Umzugsservice / Moving Service -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/umzugsservice</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/umzugsservice" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/moving-service" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/moving-service</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/umzugsservice" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/moving-service" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Garagenräumung / Garage Clearing -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/garageraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/garageraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/garage-clearing" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/garage-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/garageraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/garage-clearing" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Büroauflösung / Office Dissolution -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/buroaufloesungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/buroaufloesungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/office-dissolution" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/office-dissolution</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/buroaufloesungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/office-dissolution" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Verlassenschaftsräumung / Probate Estate Clearing -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/verlassenschaftsraeumungen</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/verlassenschaftsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/probate-estate-clearing" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/probate-estate-clearing</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/verlassenschaftsraeumungen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/probate-estate-clearing" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Containerservice / Container Service -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/containerservice</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/containerservice" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/container-service" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/container-service</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/containerservice" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/container-service" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Erbstücksankauf / Heirloom Purchase -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/erbstuecksankauf</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/erbstuecksankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/heirloom-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/heirloom-purchase</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/erbstuecksankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/heirloom-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Goldankauf / Gold Purchase -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/goldankauf</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/goldankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/gold-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/gold-purchase</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/goldankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/gold-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Teppichankauf / Carpet Purchase -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/teppichankauf</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/teppichankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/carpet-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://transraum.com/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/datenschutz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-
   <url>
-    <loc>https://flaechenfrei.at/en/services/carpet-purchase</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/teppichankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/carpet-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://transraum.com/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/impressum"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Bilderankauf / Painting Purchase -->
   <url>
-    <loc>https://flaechenfrei.at/leistungen/bilderankauf</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/bilderankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/painting-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://transraum.com/de/agb</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/agb"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/painting-purchase</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/bilderankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/painting-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Antikwarenankauf / Antiques Purchase -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/antikwarenankauf</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/antikwarenankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/antiques-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/services/antiques-purchase</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/leistungen/antikwarenankauf" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/services/antiques-purchase" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Districts Overview -->
-  <!-- ============================================ -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bezirke" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/districts" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/districts</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bezirke" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/districts" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- District Detail Pages (23 Vienna Districts) -->
-  <!-- Note: Only DE versions as districts are Vienna-specific -->
-  <!-- ============================================ -->
-
-  <!-- 1010 Innere Stadt -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1010-wien-innere-stadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 1020 Leopoldstadt -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1020-wien-leopoldstadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 1030 Landstraße -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1030-wien-landstrasse</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 1040 Wieden -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1040-wien-wieden</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1050 Margareten -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1050-wien-margareten</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1060 Mariahilf -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1060-wien-mariahilf</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1070 Neubau -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1070-wien-neubau</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1080 Josefstadt -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1080-wien-josefstadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1090 Alsergrund -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1090-wien-alsergrund</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1100 Favoriten -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1100-wien-favoriten</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1110 Simmering -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1110-wien-simmering</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1120 Meidling -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1120-wien-meidling</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1130 Hietzing -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1130-wien-hietzing</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1140 Penzing -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1140-wien-penzing</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1150 Rudolfsheim-Fünfhaus -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1150-wien-rudolfsheim-funfhaus</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1160 Ottakring -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1160-wien-ottakring</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1170 Hernals -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1170-wien-hernals</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1180 Währing -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1180-wien-wahring</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1190 Döbling -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1190-wien-dobling</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1200 Brigittenau -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1200-wien-brigittenau</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1210 Floridsdorf -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1210-wien-floridsdorf</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1220 Donaustadt -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1220-wien-donaustadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 1230 Liesing -->
-  <url>
-    <loc>https://flaechenfrei.at/bezirke/1230-wien-liesing</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Federal States Overview -->
-  <!-- ============================================ -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Federal State Detail Pages (9 States x 2 Languages = 18 URLs) -->
-  <!-- ============================================ -->
-
-  <!-- Wien / Vienna -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/wien</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/wien" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/vienna" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/vienna</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/wien" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/vienna" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Niederösterreich / Lower Austria -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/niederoesterreich</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/niederoesterreich" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/lower-austria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/lower-austria</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/niederoesterreich" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/lower-austria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Oberösterreich / Upper Austria -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/oberoesterreich</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/oberoesterreich" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/upper-austria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/upper-austria</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/oberoesterreich" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/upper-austria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Steiermark / Styria -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/steiermark</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/steiermark" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/styria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/styria</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/steiermark" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/styria" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Salzburg -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/salzburg</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/salzburg" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/salzburg" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/salzburg</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/salzburg" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/salzburg" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tirol / Tyrol -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/tirol</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/tirol" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/tyrol" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/tyrol</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/tirol" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/tyrol" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Kärnten / Carinthia -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/kaernten</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/kaernten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/carinthia" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/carinthia</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/kaernten" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/carinthia" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Vorarlberg -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/vorarlberg</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/vorarlberg" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/vorarlberg" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/vorarlberg</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/vorarlberg" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/vorarlberg" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Burgenland -->
-  <url>
-    <loc>https://flaechenfrei.at/bundeslaender/burgenland</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/burgenland" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/burgenland" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/federal-states/burgenland</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/bundeslaender/burgenland" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/federal-states/burgenland" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- FAQ Page -->
-  <!-- ============================================ -->
-  <url>
-    <loc>https://flaechenfrei.at/faq</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/faq" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/faq</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/faq" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Contact Page -->
-  <!-- ============================================ -->
-  <url>
-    <loc>https://flaechenfrei.at/kontakt</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/kontakt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/contact" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/kontakt" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/contact" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Legal Pages -->
-  <!-- ============================================ -->
-
-  <!-- Datenschutz / Privacy -->
-  <url>
-    <loc>https://flaechenfrei.at/datenschutz</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/privacy" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/privacy" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Impressum / Imprint -->
-  <url>
-    <loc>https://flaechenfrei.at/impressum</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/impressum" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/imprint" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/imprint</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/impressum" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/imprint" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- AGB / Terms -->
-  <url>
-    <loc>https://flaechenfrei.at/agb</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/agb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/terms" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/en/terms</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://flaechenfrei.at/agb" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://flaechenfrei.at/en/terms" />
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- ============================================ -->
-  <!-- Sample Service+Region Pages (1000+ total exist) -->
-  <!-- Only showing top priority examples -->
-  <!-- ============================================ -->
-
-  <!-- Wohnungsräumung + Top Districts -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/wohnungsraeumungen/bezirk/innere-stadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/wohnungsraeumungen/bezirk/leopoldstadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Haushaltsauflösung + Top Districts -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/haushaltsaufloesungen/bezirk/innere-stadt</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Kellerräumung + Niederösterreich -->
-  <url>
-    <loc>https://flaechenfrei.at/leistungen/kellerraeumungen/bundesland/niederoesterreich</loc>
-    <lastmod>2025-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Note: The website has 1000+ programmatic Service+Region pages -->
-  <!-- Format: /leistungen/{service}/{type}/{region} -->
-  <!-- where type = bezirk | bundesland | stadt -->
-  <!-- These are dynamically generated with unique content -->
-  <!-- Complete listing available on request -->
-
-  <!-- ============================================ -->
-  <!-- Blog & Ratgeber -->
-  <!-- ============================================ -->
   <url>
     <loc>https://transraum.com/de/blog</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog" />
-    <lastmod>2025-04-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://transraum.com/en/blog</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog" />
-    <lastmod>2025-04-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Posts (DE) – auto-generated daily, listed below are seed articles -->
+  <url>
+    <loc>https://transraum.com/de/pakete</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/transport-paket-s</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-s"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-s"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/transport-paket-m</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-m"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-m"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-m"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/transport-paket-l</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-l"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-l"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-l"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/raeumung-paket-s</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-s"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-s"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/raeumung-paket-m</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-m"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-m"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-m"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/pakete/raeumung-paket-l</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-l"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-l"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-l"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/transport-package-s</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-s"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-s"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/transport-package-m</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-m"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-m"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-m"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/transport-package-l</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/transport-paket-l"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/transport-package-l"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/transport-paket-l"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/clearance-package-s</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-s"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-s"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/clearance-package-m</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-m"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-m"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-m"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/packages/clearance-package-l</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/pakete/raeumung-paket-l"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/packages/clearance-package-l"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/pakete/raeumung-paket-l"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1010-wien-innere-stadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1010-wien-innere-stadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1020-wien-leopoldstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1020-wien-leopoldstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1030-wien-landstrasse</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1030-wien-landstrasse"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1040-wien-wieden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1040-wien-wieden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1050-wien-margareten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1050-wien-margareten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1060-wien-mariahilf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1060-wien-mariahilf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1070-wien-neubau</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1070-wien-neubau"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1080-wien-josefstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1080-wien-josefstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1090-wien-alsergrund</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1090-wien-alsergrund"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1100-wien-favoriten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1100-wien-favoriten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1110-wien-simmering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1110-wien-simmering"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1120-wien-meidling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1120-wien-meidling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1130-wien-hietzing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1130-wien-hietzing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1140-wien-penzing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1140-wien-penzing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1150-wien-rudolfsheim-fuenfhaus"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1160-wien-ottakring</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1160-wien-ottakring"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1170-wien-hernals</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1170-wien-hernals"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1180-wien-waehring</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1180-wien-waehring"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1190-wien-doebling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1190-wien-doebling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1200-wien-brigittenau</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1200-wien-brigittenau"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1210-wien-floridsdorf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1210-wien-floridsdorf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1220-wien-donaustadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1220-wien-donaustadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bezirke/1230-wien-liesing</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bezirke/1230-wien-liesing"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/wien</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/wien"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/wien"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/oberoesterreich</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/salzburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/tirol</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/vorarlberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/kaernten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/steiermark</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/burgenland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/st-poelten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/wiener-neustadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/baden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/baden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/klosterneuburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/moedling</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/moedling"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/krems</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/krems"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/amstetten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/amstetten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/niederoesterreich/traiskirchen"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/burgenland/eisenstadt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/eisenstadt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/burgenland/rust</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/rust"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/neusiedl-am-see"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/burgenland/oberwart</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/burgenland/oberwart"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/oberoesterreich/linz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/linz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/oberoesterreich/wels</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/wels"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/oberoesterreich/steyr</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/steyr"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/oberoesterreich/leonding</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/oberoesterreich/leonding"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/salzburg/salzburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/salzburg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/salzburg/hallein</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/hallein"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/salzburg/saalfelden</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/salzburg/saalfelden"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/tirol/innsbruck</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/innsbruck"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/tirol/kufstein</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/kufstein"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/tirol/woergl</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/tirol/woergl"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/vorarlberg/bregenz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/bregenz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/vorarlberg/dornbirn</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/dornbirn"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/vorarlberg/feldkirch</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/vorarlberg/feldkirch"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/kaernten/klagenfurt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/klagenfurt"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/kaernten/villach</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/villach"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/kaernten/wolfsberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/kaernten/wolfsberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/steiermark/graz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/graz"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/steiermark/leoben</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/leoben"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/bundeslaender/steiermark/kapfenberg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/bundeslaender/steiermark/kapfenberg"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-wien-17-bezirk-hernals-moebel-sperrgut-1777902896986</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-wien-17-bezirk-hernals-moebel-sperrgut-1777902896986"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-wien-17-bezirk-hernals-moebel-sperrgut-1777902896986"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-1-bezirk-innere-stadt-tipps-kosten-1777896665970</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/wohnungsraeumung-wien-1-bezirk-innere-stadt-tipps-kosten-1777896665970"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/wohnungsraeumung-wien-1-bezirk-innere-stadt-tipps-kosten-1777896665970"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896629052</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896629052"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896629052"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896660428</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896660428"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896660428"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/moebel-spenden-wien-caritas-vinzirast-co-1777896620170</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/moebel-spenden-wien-caritas-vinzirast-co-1777896620170"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/moebel-spenden-wien-caritas-vinzirast-co-1777896620170"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-wien-10-bezirk-favoriten-ablauf-preise-1777896630074</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-wien-10-bezirk-favoriten-ablauf-preise-1777896630074"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-wien-10-bezirk-favoriten-ablauf-preise-1777896630074"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896549489</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896549489"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896549489"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-2-bezirk-leopoldstadt-professionell-1777896585151</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-2-bezirk-leopoldstadt-professionell-1777896585151"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-2-bezirk-leopoldstadt-professionell-1777896585151"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/dachbodenraeumung-wien-verborgene-schaetze-und-kosten-2025-1777896591462</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/dachbodenraeumung-wien-verborgene-schaetze-und-kosten-2025-1777896591462"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/dachbodenraeumung-wien-verborgene-schaetze-und-kosten-2025-1777896591462"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896586852</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896586852"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-wien-4-bezirk-wieden-ablauf-festpreis-1777896586852"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-korneuburg-noerdliches-niederoesterreich-1777896582614</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-korneuburg-noerdliches-niederoesterreich-1777896582614"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-korneuburg-noerdliches-niederoesterreich-1777896582614"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-18-bezirk-waehring-anbieter-tipps-1777896513284</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-18-bezirk-waehring-anbieter-tipps-1777896513284"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-18-bezirk-waehring-anbieter-tipps-1777896513284"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/festpreis-oder-stundenpreis-transport-wien-im-vergleich-1777896506906</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/festpreis-oder-stundenpreis-transport-wien-im-vergleich-1777896506906"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/festpreis-oder-stundenpreis-transport-wien-im-vergleich-1777896506906"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-bregenz-vorarlberg-moebel-entruempelung-1777896505075</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-bregenz-vorarlberg-moebel-entruempelung-1777896505075"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-bregenz-vorarlberg-moebel-entruempelung-1777896505075"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-kosten-oesterreich-2025-preistabelle-1777896512450</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-kosten-oesterreich-2025-preistabelle-1777896512450"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-kosten-oesterreich-2025-preistabelle-1777896512450"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wiener-neustadt-anbieter-kosten-1777896513366</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/wohnungsraeumung-wiener-neustadt-anbieter-kosten-1777896513366"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/wohnungsraeumung-wiener-neustadt-anbieter-kosten-1777896513366"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/moebeltransport-wien-kosten-anbieter-und-vorbereitung-1777896440293</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/moebeltransport-wien-kosten-anbieter-und-vorbereitung-1777896440293"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/moebeltransport-wien-kosten-anbieter-und-vorbereitung-1777896440293"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-5-bezirk-margareten-tipps-2025-1777896436174</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/wohnungsraeumung-wien-5-bezirk-margareten-tipps-2025-1777896436174"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/wohnungsraeumung-wien-5-bezirk-margareten-tipps-2025-1777896436174"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896416176</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896416176"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-9-bezirk-alsergrund-professionell-und-guenstig-1777896416176"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/moebeltransport-gaenserndorf-schnell-sicher-1777896412416</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/moebeltransport-gaenserndorf-schnell-sicher-1777896412416"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/moebeltransport-gaenserndorf-schnell-sicher-1777896412416"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/kellerraeumung-wien-was-kostet-sie-wirklich-preise-2025-1777896403153</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/kellerraeumung-wien-was-kostet-sie-wirklich-preise-2025-1777896403153"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/kellerraeumung-wien-was-kostet-sie-wirklich-preise-2025-1777896403153"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/verlassenschaft-abwicklung-wien-transraum-hilft-1777896358537</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/verlassenschaft-abwicklung-wien-transraum-hilft-1777896358537"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/verlassenschaft-abwicklung-wien-transraum-hilft-1777896358537"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896350360</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896350360"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-moedling-und-umgebung-kosten-tipps-1777896350360"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/bueroaufloesung-wien-dsgvo-konform-und-schnell-1777896336154</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/bueroaufloesung-wien-dsgvo-konform-und-schnell-1777896336154"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/bueroaufloesung-wien-dsgvo-konform-und-schnell-1777896336154"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/haushaltsaufloesung-wien-3-bezirk-landstrasse-professionell-guenstig-1777896330742</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/haushaltsaufloesung-wien-3-bezirk-landstrasse-professionell-guenstig-1777896330742"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/haushaltsaufloesung-wien-3-bezirk-landstrasse-professionell-guenstig-1777896330742"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-kapfenberg-muerz-mur-region-professionell-guenstig-1777896314682</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-kapfenberg-muerz-mur-region-professionell-guenstig-1777896314682"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-kapfenberg-muerz-mur-region-professionell-guenstig-1777896314682"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-wolfsberg-lavanttal-kaernten-raeumung-leicht-gemacht-1777896243281</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-wolfsberg-lavanttal-kaernten-raeumung-leicht-gemacht-1777896243281"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-wolfsberg-lavanttal-kaernten-raeumung-leicht-gemacht-1777896243281"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/firmenumzug-wien-buerouebersiedlung-professionell-planen-1777896242085</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/firmenumzug-wien-buerouebersiedlung-professionell-planen-1777896242085"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/firmenumzug-wien-buerouebersiedlung-professionell-planen-1777896242085"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/garageraeumung-wien-oldtimer-werkzeug-und-sperrgut-1777896235866</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/garageraeumung-wien-oldtimer-werkzeug-und-sperrgut-1777896235866"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/garageraeumung-wien-oldtimer-werkzeug-und-sperrgut-1777896235866"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/nachlassraeumung-niederoesterreich-erbschaft-abholung-1777896250109</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/nachlassraeumung-niederoesterreich-erbschaft-abholung-1777896250109"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/nachlassraeumung-niederoesterreich-erbschaft-abholung-1777896250109"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/dachbodenraeumung-wien-altbau-was-darf-man-wegschmeissen-1777896245313</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/dachbodenraeumung-wien-altbau-was-darf-man-wegschmeissen-1777896245313"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/dachbodenraeumung-wien-altbau-was-darf-man-wegschmeissen-1777896245313"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/transport-wien-20-bezirk-brigittenau-kosten-festpreis-1777896119898</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transport-wien-20-bezirk-brigittenau-kosten-festpreis-1777896119898"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transport-wien-20-bezirk-brigittenau-kosten-festpreis-1777896119898"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-hallein-tennengau-salzburg-tipps-fuer-2025-1777896040526</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-hallein-tennengau-salzburg-tipps-fuer-2025-1777896040526"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-hallein-tennengau-salzburg-tipps-fuer-2025-1777896040526"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/nachlassraeumung-wien-wohnung-nach-todesfall-raeumen-1777895969152</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/nachlassraeumung-wien-wohnung-nach-todesfall-raeumen-1777895969152"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/nachlassraeumung-wien-wohnung-nach-todesfall-raeumen-1777895969152"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-16-bezirk-ottakring-guenstig-schnell-1777895559337</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-16-bezirk-ottakring-guenstig-schnell-1777895559337"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-16-bezirk-ottakring-guenstig-schnell-1777895559337"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-21-bezirk-floridsdorf-professionell-und-guenstig-1777895494679</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/wohnungsraeumung-wien-21-bezirk-floridsdorf-professionell-und-guenstig-1777895494679"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/wohnungsraeumung-wien-21-bezirk-floridsdorf-professionell-und-guenstig-1777895494679"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/hausraeumung-wien-15-bezirk-rudolfsheim-ablauf-kosten-1777895437554</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/hausraeumung-wien-15-bezirk-rudolfsheim-ablauf-kosten-1777895437554"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/hausraeumung-wien-15-bezirk-rudolfsheim-ablauf-kosten-1777895437554"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/dachbodenraeumung-wien-kosten-tipps</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/dachbodenraeumung-wien-kosten-tipps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/dachbodenraeumung-wien-kosten-tipps"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/antike-moebel-erbstuecke-wien-wert</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/antike-moebel-erbstuecke-wien-wert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/antike-moebel-erbstuecke-wien-wert"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/buroaufloesung-wien-professionell</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/buroaufloesung-wien-professionell"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/buroaufloesung-wien-professionell"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/umzug-wien-checkliste-tipps</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/umzug-wien-checkliste-tipps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/umzug-wien-checkliste-tipps"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/entruempelung-wien-preise-checkliste</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/entruempelung-wien-preise-checkliste"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/entruempelung-wien-preise-checkliste"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/sperrmull-wien-abholung-kosten-regeln</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/sperrmull-wien-abholung-kosten-regeln"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/sperrmull-wien-abholung-kosten-regeln"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/kellerraeumung-wien-tipps-kosten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/kellerraeumung-wien-tipps-kosten"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/kellerraeumung-wien-tipps-kosten"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-anleitung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/wohnungsraeumung-wien-anleitung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/wohnungsraeumung-wien-anleitung"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/haushaltsaufloesung-wien-kosten-ablauf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/haushaltsaufloesung-wien-kosten-ablauf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/haushaltsaufloesung-wien-kosten-ablauf"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/de/blog/moebeltransport-wien-profi-umzug-tipps</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/moebeltransport-wien-profi-umzug-tipps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/moebeltransport-wien-profi-umzug-tipps"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://transraum.com/de/blog/transportservice-wien-preise-ablauf-tipps</loc>
-    <lastmod>2025-04-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/de/blog/transportservice-wien-preise-ablauf-tipps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/de/blog/transportservice-wien-preise-ablauf-tipps"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/transraum-vienna-reviews-customer-experiences-2025-1777896619251</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/transraum-vienna-reviews-customer-experiences-2025-1777896619251"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/transraum-vienna-reviews-customer-experiences-2025-1777896619251"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/transraum-vienna-reviews-customer-experiences-2025-1777896619251"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/moebeltransport-wien-umzug-sicher-guenstig</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/apartment-clearance-vienna-14th-district-penzing-your-complete-guide-1777896642099</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/apartment-clearance-vienna-14th-district-penzing-your-complete-guide-1777896642099"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/apartment-clearance-vienna-14th-district-penzing-your-complete-guide-1777896642099"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/apartment-clearance-vienna-14th-district-penzing-your-complete-guide-1777896642099"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/haushaltsaufloesung-wien-kosten-ablauf-tipps</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/bulky-waste-vienna-private-service-vs-ma48-comparison-1777896627017</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/bulky-waste-vienna-private-service-vs-ma48-comparison-1777896627017"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/bulky-waste-vienna-private-service-vs-ma48-comparison-1777896627017"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/bulky-waste-vienna-private-service-vs-ma48-comparison-1777896627017"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/wohnungsraeumung-wien-schritt-fuer-schritt</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/getting-rid-of-bulky-waste-vienna-5-affordable-options-1777896615370</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/getting-rid-of-bulky-waste-vienna-5-affordable-options-1777896615370"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/getting-rid-of-bulky-waste-vienna-5-affordable-options-1777896615370"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/getting-rid-of-bulky-waste-vienna-5-affordable-options-1777896615370"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/kellerraeumung-wien-kosten-ablauf-tipps</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-1777896593823</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-1777896593823"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-1777896593823"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-1777896593823"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/sperrmüll-wien-abholung-kosten-regeln</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/donating-furniture-vienna-caritas-vinzirast-more-1777896581201</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/donating-furniture-vienna-caritas-vinzirast-more-1777896581201"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/donating-furniture-vienna-caritas-vinzirast-more-1777896581201"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/donating-furniture-vienna-caritas-vinzirast-more-1777896581201"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/entruempelung-wien-preise-checkliste-tipps</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/clearance-vienna-2nd-district-leopoldstadt-professional-guide-1777896567606</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/clearance-vienna-2nd-district-leopoldstadt-professional-guide-1777896567606"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/clearance-vienna-2nd-district-leopoldstadt-professional-guide-1777896567606"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/clearance-vienna-2nd-district-leopoldstadt-professional-guide-1777896567606"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/umzug-wien-ultimative-checkliste</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/estate-clearance-graz-costs-and-process-2025-1777896562246</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/estate-clearance-graz-costs-and-process-2025-1777896562246"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/estate-clearance-graz-costs-and-process-2025-1777896562246"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/estate-clearance-graz-costs-and-process-2025-1777896562246"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/bueroaufloesung-wien-professionell-diskret</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/clearing-a-vienna-old-building-apartment-what-to-know-1777896531299</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/clearing-a-vienna-old-building-apartment-what-to-know-1777896531299"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/clearing-a-vienna-old-building-apartment-what-to-know-1777896531299"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/clearing-a-vienna-old-building-apartment-what-to-know-1777896531299"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/antike-moebel-wien-erben-verkaufen-wert</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/furniture-transport-wels-and-surroundings-upper-austria-1777896559282</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-wels-and-surroundings-upper-austria-1777896559282"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-wels-and-surroundings-upper-austria-1777896559282"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-wels-and-surroundings-upper-austria-1777896559282"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://transraum.com/de/blog/dachbodenraeumung-wien-kosten-ablauf</loc>
-    <lastmod>2025-04-28</lastmod>
+    <loc>https://transraum.com/en/blog/clearance-tulln-district-what-does-the-service-cost-1777896506953</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/clearance-tulln-district-what-does-the-service-cost-1777896506953"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/clearance-tulln-district-what-does-the-service-cost-1777896506953"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/clearance-tulln-district-what-does-the-service-cost-1777896506953"/>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://transraum.com/en/blog/moving-from-vienna-to-lower-austria-tips-fixed-prices-1777896501635</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/moving-from-vienna-to-lower-austria-tips-fixed-prices-1777896501635"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/moving-from-vienna-to-lower-austria-tips-fixed-prices-1777896501635"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/moving-from-vienna-to-lower-austria-tips-fixed-prices-1777896501635"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/vienna-moving-permit-halteverbotszone-step-by-step-guide-1777896501738</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/vienna-moving-permit-halteverbotszone-step-by-step-guide-1777896501738"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/vienna-moving-permit-halteverbotszone-step-by-step-guide-1777896501738"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/vienna-moving-permit-halteverbotszone-step-by-step-guide-1777896501738"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/attic-clearance-vienna-hidden-treasures-costs-2025-1777896506913</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/attic-clearance-vienna-hidden-treasures-costs-2025-1777896506913"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/attic-clearance-vienna-hidden-treasures-costs-2025-1777896506913"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/attic-clearance-vienna-hidden-treasures-costs-2025-1777896506913"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/household-clearance-costs-austria-complete-price-guide-1777896500585</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/household-clearance-costs-austria-complete-price-guide-1777896500585"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/household-clearance-costs-austria-complete-price-guide-1777896500585"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/household-clearance-costs-austria-complete-price-guide-1777896500585"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896369365</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896369365"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896369365"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896369365"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/furniture-transport-salzburg-surroundings-affordable-solutions-1777896359179</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-salzburg-surroundings-affordable-solutions-1777896359179"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-salzburg-surroundings-affordable-solutions-1777896359179"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-salzburg-surroundings-affordable-solutions-1777896359179"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/apartment-clearance-wiener-neustadt-providers-costs-1777896356840</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/apartment-clearance-wiener-neustadt-providers-costs-1777896356840"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/apartment-clearance-wiener-neustadt-providers-costs-1777896356840"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/apartment-clearance-wiener-neustadt-providers-costs-1777896356840"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/small-transport-vienna-available-immediately-from-1-item-1777896358484</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/small-transport-vienna-available-immediately-from-1-item-1777896358484"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/small-transport-vienna-available-immediately-from-1-item-1777896358484"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/small-transport-vienna-available-immediately-from-1-item-1777896358484"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896355599</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896355599"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896355599"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-gaenserndorf-fast-safe-services-1777896355599"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/apartment-clearance-eisenstadt-burgenland-tips-costs-1777896300141</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/apartment-clearance-eisenstadt-burgenland-tips-costs-1777896300141"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/apartment-clearance-eisenstadt-burgenland-tips-costs-1777896300141"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/apartment-clearance-eisenstadt-burgenland-tips-costs-1777896300141"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/basement-clearance-villach-fast-reliable-service-1777896291048</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/basement-clearance-villach-fast-reliable-service-1777896291048"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/basement-clearance-villach-fast-reliable-service-1777896291048"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/basement-clearance-villach-fast-reliable-service-1777896291048"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/basement-clearance-vienna-real-costs-revealed-2025-1777896297742</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/basement-clearance-vienna-real-costs-revealed-2025-1777896297742"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/basement-clearance-vienna-real-costs-revealed-2025-1777896297742"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/basement-clearance-vienna-real-costs-revealed-2025-1777896297742"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/apartment-clearance-voecklabruck-salzkammergut-affordable-services-1777896281765</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/apartment-clearance-voecklabruck-salzkammergut-affordable-services-1777896281765"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/apartment-clearance-voecklabruck-salzkammergut-affordable-services-1777896281765"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/apartment-clearance-voecklabruck-salzkammergut-affordable-services-1777896281765"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/basement-clearance-steyr-upper-austria-prices-2025-1777896295364</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/basement-clearance-steyr-upper-austria-prices-2025-1777896295364"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/basement-clearance-steyr-upper-austria-prices-2025-1777896295364"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/basement-clearance-steyr-upper-austria-prices-2025-1777896295364"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/furniture-transport-klosterneuburg-professional-affordable-1777896229938</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-klosterneuburg-professional-affordable-1777896229938"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-klosterneuburg-professional-affordable-1777896229938"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-klosterneuburg-professional-affordable-1777896229938"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/transport-hollabrunn-weinviertel-affordable-reliable-1777896226721</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/transport-hollabrunn-weinviertel-affordable-reliable-1777896226721"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/transport-hollabrunn-weinviertel-affordable-reliable-1777896226721"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/transport-hollabrunn-weinviertel-affordable-reliable-1777896226721"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/corporate-relocation-vienna-office-move-planning-guide-1777896226135</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/corporate-relocation-vienna-office-move-planning-guide-1777896226135"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/corporate-relocation-vienna-office-move-planning-guide-1777896226135"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/corporate-relocation-vienna-office-move-planning-guide-1777896226135"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/transport-wolfsberg-lavanttal-carinthia-clearance-services-1777896221375</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/transport-wolfsberg-lavanttal-carinthia-clearance-services-1777896221375"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/transport-wolfsberg-lavanttal-carinthia-clearance-services-1777896221375"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/transport-wolfsberg-lavanttal-carinthia-clearance-services-1777896221375"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-for-your-treasures-1777896230955</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-for-your-treasures-1777896230955"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-for-your-treasures-1777896230955"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/antiques-transport-vienna-safe-insured-service-for-your-treasures-1777896230955"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/transport-salzburg-furniture-clearance-service-you-can-trust-1777895867754</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/transport-salzburg-furniture-clearance-service-you-can-trust-1777895867754"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/transport-salzburg-furniture-clearance-service-you-can-trust-1777895867754"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/transport-salzburg-furniture-clearance-service-you-can-trust-1777895867754"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/transport-vienna-13th-district-hietzing-furniture-bulky-items-1777895813583</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/transport-vienna-13th-district-hietzing-furniture-bulky-items-1777895813583"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/transport-vienna-13th-district-hietzing-furniture-bulky-items-1777895813583"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/transport-vienna-13th-district-hietzing-furniture-bulky-items-1777895813583"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://transraum.com/en/blog/furniture-transport-vienna-costs-and-what-to-expect-1777895770340</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://transraum.com/en/blog/furniture-transport-vienna-costs-and-what-to-expect-1777895770340"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://transraum.com/en/blog/furniture-transport-vienna-costs-and-what-to-expect-1777895770340"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://transraum.com/en/blog/furniture-transport-vienna-costs-and-what-to-expect-1777895770340"/>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
