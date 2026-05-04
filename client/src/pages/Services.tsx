@@ -57,7 +57,7 @@ export default function Services() {
 
   useEffect(() => {
     const title = language === 'de' 
-      ? 'Unsere Leistungen - Räumung & Räumung in Wien | Transraum'
+      ? 'Leistungen – Transport & Räumung Wien | Transraum'
       : 'Our Services - Clearing & Removal in Vienna | Transraum';
     
     const description = language === 'de'

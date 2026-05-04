@@ -28,7 +28,7 @@ export default function Home() {
 
     const description = language === 'de'
       ? 'Professionelle Räumung in Wien & Österreich seit 1998. Faire Festpreise, 24h-Service, kostenlose Besichtigung. ☎ +43 660 6926375'
-      : 'Professional clearing company in Vienna & throughout Austria ⭐ 26+ years experience ⚡ Fair fixed prices with no surprises ✓ Free on-site consultation ✓ Fast appointments within 24h ✓ Guaranteed broom-clean handover. Get your free quote now!';
+      : 'Professional clearing & transport in Vienna since 1998. Fair fixed prices, free on-site consultation, 24h service. ☎ +43 660 6926375';
 
     const keywords = language === 'de'
       ? 'Räumung Wien, Wohnungsräumung, Haushaltsauflösung, Kellerräumung, Räumung Österreich, Räumung Wien, Messie-Räumung, Verlassenschaftsräumung, Geschäftsräumung, Räumungsfirma Wien'

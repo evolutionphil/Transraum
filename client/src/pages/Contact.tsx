@@ -19,8 +19,8 @@ export default function Contact() {
 
   useEffect(() => {
     const title = language === 'de' 
-      ? `Kontakt - Transraum | Räumung Wien und Umgebung ☎ ${CONTACT_INFO.phone}`
-      : `Contact - Transraum | Clearing Services Vienna ☎ ${CONTACT_INFO.phone}`;
+      ? 'Kontakt – Transraum | Räumung & Transport Wien'
+      : 'Contact – Transraum | Clearing & Transport Vienna';
     
     const description = language === 'de'
       ? `Kontaktieren Sie Transraum für professionelle Räumung in Wien und ganz Österreich ✓ Kostenlose Beratung ✓ Schnelle Termine ✓ 24/7 Erreichbar ☎ ${CONTACT_INFO.phone}`

@@ -308,58 +308,161 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const BASE = 'https://transraum.at';
     const now = new Date().toISOString().split('T')[0];
 
-    const staticUrls = [
-      // Homepage + language roots
-      { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly' },
-      { loc: `${BASE}/de`, priority: '1.0', changefreq: 'weekly' },
-      { loc: `${BASE}/en`, priority: '0.9', changefreq: 'weekly' },
-      // DE Service pages
-      { loc: `${BASE}/de/leistungen/wohnungsraeumung`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/hausraeumung`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/transportservice`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/kellerraeumung`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/entrümpeln`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/verlassenschaft-ankauf`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/haushaltsaufloesung`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/umzug`, priority: '0.9', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/bueroraeumung`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/sperrgut`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/dachbodenraeumung`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/de/leistungen/garageraeumung`, priority: '0.8', changefreq: 'monthly' },
-      // EN Service pages
-      { loc: `${BASE}/en/services/apartment-clearing`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/services/house-clearing`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/services/transport-service`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/services/basement-clearing`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/services/estate-clearance`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/services/moving`, priority: '0.8', changefreq: 'monthly' },
-      // Contact + Info pages
-      { loc: `${BASE}/de/kontakt`, priority: '0.8', changefreq: 'monthly' },
-      { loc: `${BASE}/en/contact`, priority: '0.7', changefreq: 'monthly' },
-      { loc: `${BASE}/de/ueber-uns`, priority: '0.7', changefreq: 'monthly' },
-      { loc: `${BASE}/de/faq`, priority: '0.7', changefreq: 'monthly' },
-      { loc: `${BASE}/de/datenschutz`, priority: '0.5', changefreq: 'yearly' },
-      { loc: `${BASE}/de/impressum`, priority: '0.5', changefreq: 'yearly' },
-      { loc: `${BASE}/de/agb`, priority: '0.5', changefreq: 'yearly' },
-      // Blog index
-      { loc: `${BASE}/de/blog`, priority: '0.9', changefreq: 'daily' },
-      { loc: `${BASE}/en/blog`, priority: '0.8', changefreq: 'daily' },
-      // Shop / Pakete
-      { loc: `${BASE}/de/pakete`, priority: '0.95', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/transport-paket-s`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/transport-paket-m`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/transport-paket-l`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/raeumung-paket-s`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/raeumung-paket-m`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/de/pakete/raeumung-paket-l`, priority: '0.9', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/transport-package-s`, priority: '0.85', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/transport-package-m`, priority: '0.85', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/transport-package-l`, priority: '0.85', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/clearance-package-s`, priority: '0.85', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/clearance-package-m`, priority: '0.85', changefreq: 'weekly' },
-      { loc: `${BASE}/en/packages/clearance-package-l`, priority: '0.85', changefreq: 'weekly' },
+    interface SitemapEntry {
+      loc: string;
+      priority: string;
+      changefreq: string;
+      altDe?: string;
+      altEn?: string;
+    }
+
+    // Helper: build <xhtml:link> hreflang tags
+    const hreflangTags = (entry: SitemapEntry): string => {
+      if (!entry.altDe && !entry.altEn) return '';
+      const de = entry.altDe || entry.loc;
+      const en = entry.altEn;
+      const lines: string[] = [];
+      lines.push(`    <xhtml:link rel="alternate" hreflang="de" href="${de}"/>`);
+      if (en) lines.push(`    <xhtml:link rel="alternate" hreflang="en" href="${en}"/>`);
+      lines.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${de}"/>`);
+      return '\n' + lines.join('\n');
+    };
+
+    // Vienna district slugs (23 districts)
+    const districtSlugs = [
+      '1010-wien-innere-stadt', '1020-wien-leopoldstadt', '1030-wien-landstrasse',
+      '1040-wien-wieden', '1050-wien-margareten', '1060-wien-mariahilf',
+      '1070-wien-neubau', '1080-wien-josefstadt', '1090-wien-alsergrund',
+      '1100-wien-favoriten', '1110-wien-simmering', '1120-wien-meidling',
+      '1130-wien-hietzing', '1140-wien-penzing', '1150-wien-rudolfsheim-fuenfhaus',
+      '1160-wien-ottakring', '1170-wien-hernals', '1180-wien-waehring',
+      '1190-wien-doebling', '1200-wien-brigittenau', '1210-wien-floridsdorf',
+      '1220-wien-donaustadt', '1230-wien-liesing',
     ];
+
+    // Austrian state slugs (9 Bundesländer)
+    const stateSlugs = [
+      'wien', 'niederoesterreich', 'oberoesterreich', 'salzburg',
+      'tirol', 'vorarlberg', 'kaernten', 'steiermark', 'burgenland',
+    ];
+
+    // City-state relationships
+    const cityStatePairs: { state: string; city: string }[] = [
+      { state: 'niederoesterreich', city: 'st-poelten' },
+      { state: 'niederoesterreich', city: 'wiener-neustadt' },
+      { state: 'niederoesterreich', city: 'baden' },
+      { state: 'niederoesterreich', city: 'klosterneuburg' },
+      { state: 'niederoesterreich', city: 'moedling' },
+      { state: 'niederoesterreich', city: 'krems' },
+      { state: 'niederoesterreich', city: 'amstetten' },
+      { state: 'niederoesterreich', city: 'traiskirchen' },
+      { state: 'burgenland', city: 'eisenstadt' },
+      { state: 'burgenland', city: 'rust' },
+      { state: 'burgenland', city: 'neusiedl-am-see' },
+      { state: 'burgenland', city: 'oberwart' },
+      { state: 'oberoesterreich', city: 'linz' },
+      { state: 'oberoesterreich', city: 'wels' },
+      { state: 'oberoesterreich', city: 'steyr' },
+      { state: 'oberoesterreich', city: 'leonding' },
+      { state: 'salzburg', city: 'salzburg' },
+      { state: 'salzburg', city: 'hallein' },
+      { state: 'salzburg', city: 'saalfelden' },
+      { state: 'tirol', city: 'innsbruck' },
+      { state: 'tirol', city: 'kufstein' },
+      { state: 'tirol', city: 'woergl' },
+      { state: 'vorarlberg', city: 'bregenz' },
+      { state: 'vorarlberg', city: 'dornbirn' },
+      { state: 'vorarlberg', city: 'feldkirch' },
+      { state: 'kaernten', city: 'klagenfurt' },
+      { state: 'kaernten', city: 'villach' },
+      { state: 'kaernten', city: 'wolfsberg' },
+      { state: 'steiermark', city: 'graz' },
+      { state: 'steiermark', city: 'leoben' },
+      { state: 'steiermark', city: 'kapfenberg' },
+    ];
+
+    const staticUrls: SitemapEntry[] = [
+      // Homepage + language roots
+      { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
+      { loc: `${BASE}/de`, priority: '1.0', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
+      { loc: `${BASE}/en`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de`, altEn: `${BASE}/en` },
+      // DE Service pages
+      { loc: `${BASE}/de/leistungen/wohnungsraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/wohnungsraeumung`, altEn: `${BASE}/en/services/apartment-clearing` },
+      { loc: `${BASE}/de/leistungen/hausraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/hausraeumung`, altEn: `${BASE}/en/services/house-clearing` },
+      { loc: `${BASE}/de/leistungen/transportservice`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/transportservice`, altEn: `${BASE}/en/services/transport-service` },
+      { loc: `${BASE}/de/leistungen/kellerraeumung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/kellerraeumung`, altEn: `${BASE}/en/services/basement-clearing` },
+      { loc: `${BASE}/de/leistungen/entr%C3%BCmpeln`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/entr%C3%BCmpeln` },
+      { loc: `${BASE}/de/leistungen/verlassenschaft-ankauf`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/verlassenschaft-ankauf`, altEn: `${BASE}/en/services/estate-clearance` },
+      { loc: `${BASE}/de/leistungen/haushaltsaufloesung`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/haushaltsaufloesung` },
+      { loc: `${BASE}/de/leistungen/umzug`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/umzug`, altEn: `${BASE}/en/services/moving` },
+      { loc: `${BASE}/de/leistungen/bueroraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/bueroraeumung` },
+      { loc: `${BASE}/de/leistungen/sperrgut`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/sperrgut` },
+      { loc: `${BASE}/de/leistungen/dachbodenraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/dachbodenraeumung` },
+      { loc: `${BASE}/de/leistungen/garageraeumung`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/garageraeumung` },
+      // EN Service pages
+      { loc: `${BASE}/en/services/apartment-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/wohnungsraeumung`, altEn: `${BASE}/en/services/apartment-clearing` },
+      { loc: `${BASE}/en/services/house-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/hausraeumung`, altEn: `${BASE}/en/services/house-clearing` },
+      { loc: `${BASE}/en/services/transport-service`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/transportservice`, altEn: `${BASE}/en/services/transport-service` },
+      { loc: `${BASE}/en/services/basement-clearing`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/kellerraeumung`, altEn: `${BASE}/en/services/basement-clearing` },
+      { loc: `${BASE}/en/services/estate-clearance`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/verlassenschaft-ankauf`, altEn: `${BASE}/en/services/estate-clearance` },
+      { loc: `${BASE}/en/services/moving`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen/umzug`, altEn: `${BASE}/en/services/moving` },
+      // Services overview
+      { loc: `${BASE}/de/leistungen`, priority: '0.9', changefreq: 'monthly', altDe: `${BASE}/de/leistungen`, altEn: `${BASE}/en/services` },
+      { loc: `${BASE}/en/services`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/leistungen`, altEn: `${BASE}/en/services` },
+      // Contact + Info pages
+      { loc: `${BASE}/de/kontakt`, priority: '0.8', changefreq: 'monthly', altDe: `${BASE}/de/kontakt`, altEn: `${BASE}/en/contact` },
+      { loc: `${BASE}/en/contact`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/kontakt`, altEn: `${BASE}/en/contact` },
+      { loc: `${BASE}/de/faq`, priority: '0.7', changefreq: 'monthly', altDe: `${BASE}/de/faq` },
+      { loc: `${BASE}/de/datenschutz`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/datenschutz` },
+      { loc: `${BASE}/de/impressum`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/impressum` },
+      { loc: `${BASE}/de/agb`, priority: '0.5', changefreq: 'yearly', altDe: `${BASE}/de/agb` },
+      // Blog index
+      { loc: `${BASE}/de/blog`, priority: '0.9', changefreq: 'daily', altDe: `${BASE}/de/blog`, altEn: `${BASE}/en/blog` },
+      { loc: `${BASE}/en/blog`, priority: '0.8', changefreq: 'daily', altDe: `${BASE}/de/blog`, altEn: `${BASE}/en/blog` },
+      // Shop / Pakete
+      { loc: `${BASE}/de/pakete`, priority: '0.95', changefreq: 'weekly', altDe: `${BASE}/de/pakete`, altEn: `${BASE}/en/packages` },
+      { loc: `${BASE}/en/packages`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete`, altEn: `${BASE}/en/packages` },
+      { loc: `${BASE}/de/pakete/transport-paket-s`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-s`, altEn: `${BASE}/en/packages/transport-package-s` },
+      { loc: `${BASE}/de/pakete/transport-paket-m`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-m`, altEn: `${BASE}/en/packages/transport-package-m` },
+      { loc: `${BASE}/de/pakete/transport-paket-l`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-l`, altEn: `${BASE}/en/packages/transport-package-l` },
+      { loc: `${BASE}/de/pakete/raeumung-paket-s`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-s`, altEn: `${BASE}/en/packages/clearance-package-s` },
+      { loc: `${BASE}/de/pakete/raeumung-paket-m`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-m`, altEn: `${BASE}/en/packages/clearance-package-m` },
+      { loc: `${BASE}/de/pakete/raeumung-paket-l`, priority: '0.9', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-l`, altEn: `${BASE}/en/packages/clearance-package-l` },
+      { loc: `${BASE}/en/packages/transport-package-s`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-s`, altEn: `${BASE}/en/packages/transport-package-s` },
+      { loc: `${BASE}/en/packages/transport-package-m`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-m`, altEn: `${BASE}/en/packages/transport-package-m` },
+      { loc: `${BASE}/en/packages/transport-package-l`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/transport-paket-l`, altEn: `${BASE}/en/packages/transport-package-l` },
+      { loc: `${BASE}/en/packages/clearance-package-s`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-s`, altEn: `${BASE}/en/packages/clearance-package-s` },
+      { loc: `${BASE}/en/packages/clearance-package-m`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-m`, altEn: `${BASE}/en/packages/clearance-package-m` },
+      { loc: `${BASE}/en/packages/clearance-package-l`, priority: '0.85', changefreq: 'weekly', altDe: `${BASE}/de/pakete/raeumung-paket-l`, altEn: `${BASE}/en/packages/clearance-package-l` },
+      // Districts overview
+      { loc: `${BASE}/de/bezirke`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bezirke` },
+      // Bundeslaender overview
+      { loc: `${BASE}/de/bundeslaender`, priority: '0.85', changefreq: 'monthly', altDe: `${BASE}/de/bundeslaender` },
+    ];
+
+    // Vienna district pages (23 districts)
+    const districtUrls: SitemapEntry[] = districtSlugs.map((slug) => ({
+      loc: `${BASE}/de/bezirke/${slug}`,
+      priority: '0.75',
+      changefreq: 'monthly',
+      altDe: `${BASE}/de/bezirke/${slug}`,
+    }));
+
+    // Austrian state pages (9 states)
+    const stateUrls: SitemapEntry[] = stateSlugs.map((slug) => ({
+      loc: `${BASE}/de/bundeslaender/${slug}`,
+      priority: '0.75',
+      changefreq: 'monthly',
+      altDe: `${BASE}/de/bundeslaender/${slug}`,
+    }));
+
+    // Austrian city pages under states
+    const cityUrls: SitemapEntry[] = cityStatePairs.map(({ state, city }) => ({
+      loc: `${BASE}/de/bundeslaender/${state}/${city}`,
+      priority: '0.7',
+      changefreq: 'monthly',
+      altDe: `${BASE}/de/bundeslaender/${state}/${city}`,
+    }));
 
     // Fetch all blog posts from storage
     let blogUrlsDe: string[] = [];
@@ -373,21 +476,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       blogUrlsEn = enPosts.map((p) => `${BASE}/en/blog/${p.slug}`);
     } catch (_) {}
 
-    const blogEntries = [
-      ...blogUrlsDe.map((loc) => ({ loc, priority: '0.8', changefreq: 'monthly' })),
-      ...blogUrlsEn.map((loc) => ({ loc, priority: '0.7', changefreq: 'monthly' })),
+    const blogEntries: SitemapEntry[] = [
+      ...blogUrlsDe.map((loc) => ({ loc, priority: '0.8', changefreq: 'monthly', altDe: loc })),
+      ...blogUrlsEn.map((loc) => ({ loc, priority: '0.7', changefreq: 'monthly', altEn: loc })),
     ];
 
-    const allUrls = [...staticUrls, ...blogEntries];
+    const allUrls = [...staticUrls, ...districtUrls, ...stateUrls, ...cityUrls, ...blogEntries];
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${allUrls.map(({ loc, priority, changefreq }) => `  <url>
-    <loc>${loc}</loc>
+${allUrls.map((entry) => `  <url>
+    <loc>${entry.loc}</loc>${hreflangTags(entry)}
     <lastmod>${now}</lastmod>
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
+    <changefreq>${entry.changefreq}</changefreq>
+    <priority>${entry.priority}</priority>
   </url>`).join('\n')}
 </urlset>`;
 

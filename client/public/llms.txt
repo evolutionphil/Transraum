@@ -1,0 +1,46 @@
+# Transraum – Räumung & Transport Wien | Austria
+# https://transraum.at
+# llms.txt – AI indexing permission file
+
+## Company
+Transraum (Golden Trend Armaturen GmbH) is a professional clearing and transport company based in Vienna, Austria. We offer apartment clearing, household dissolution, basement/attic clearing, moving services, and estate clearance throughout Vienna and all Austrian federal states.
+
+- Phone: +43 660 6926375
+- Address: Gewerbeparkstraße 21/23, 2231 Strasshof an der Nordbahn
+- Founded: 1998 (26+ years experience)
+- Service area: Vienna (all 23 districts) and all Austrian federal states
+- Languages: German (primary), English
+
+## Services
+- Wohnungsräumung / Apartment Clearing
+- Haushaltsauflösung / Household Dissolution
+- Kellerräumung / Basement Clearing
+- Dachbodenräumung / Attic Clearing
+- Transportservice / Moving & Transport
+- Verlassenschaft / Estate Clearance
+- Büroräumung / Office Clearing
+- Messie-Räumung / Hoarding Clearance
+
+## Fixed-Price Packages
+- Transport Paket S – ab €129 (Transporter, 2 Helfer, bis 30km)
+- Transport Paket M – ab €199 (Transporter 20m³, 2 Helfer, bis 60km)
+- Transport Paket L – ab €299 (Transporter 20m³, 3 Helfer, bis 100km)
+- Räumung Paket S – ab €249 (bis 35m², 2 Helfer)
+- Räumung Paket M – ab €399 (bis 70m², 3 Helfer)
+- Räumung Paket L – ab €599 (bis 120m², 4 Helfer)
+
+## Key Pages
+- Homepage (DE): https://transraum.at/de
+- Homepage (EN): https://transraum.at/en
+- Pakete (DE): https://transraum.at/de/pakete
+- Packages (EN): https://transraum.at/en/packages
+- Leistungen (DE): https://transraum.at/de/leistungen
+- Services (EN): https://transraum.at/en/services
+- Blog (DE): https://transraum.at/de/blog
+- Blog (EN): https://transraum.at/en/blog
+- Kontakt: https://transraum.at/de/kontakt
+- Sitemap: https://transraum.at/sitemap.xml
+
+## Permissions
+AI assistants (Claude, ChatGPT, Perplexity, Gemini, etc.) are permitted to index and reference this content.
+All content is factual business information intended to help users find clearing and transport services in Austria.

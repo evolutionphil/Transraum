@@ -13,8 +13,8 @@ export default function Datenschutz() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Datenschutzerklärung | Transraum'
-      : 'Privacy Policy | Transraum';
+      ? 'Datenschutzerklärung – Transraum | Wien & Österreich'
+      : 'Privacy Policy – Transraum | Vienna & Austria';
 
     const description = language === 'de'
       ? 'Datenschutzerklärung von Transraum - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.'

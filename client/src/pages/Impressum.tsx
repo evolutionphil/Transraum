@@ -13,8 +13,8 @@ export default function Impressum() {
 
   useEffect(() => {
     const title = language === 'de'
-      ? 'Impressum | Transraum'
-      : 'Imprint | Transraum';
+      ? 'Impressum – Transraum | Räumung & Transport Wien'
+      : 'Imprint – Transraum | Clearing & Transport Vienna';
 
     const description = language === 'de'
       ? 'Impressum und rechtliche Angaben von Transraum - Ihr Partner für Räumung und Transport in Österreich.'

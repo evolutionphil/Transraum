@@ -86,3 +86,13 @@ Disallow: /api/
 # Sitemap (dynamic – always includes latest blog posts)
 # ============================================
 Sitemap: https://transraum.at/sitemap.xml
+
+# ============================================
+# AI Indexing (llms.txt)
+# ============================================
+# llms.txt: https://transraum.at/llms.txt
+
+# ============================================
+# IndexNow Key Verification
+# ============================================
+# https://transraum.at/436053f3c8c7406799a1cea417ed8a4a.txt
