@@ -45,6 +45,11 @@ export default function Footer() {
               <li><Link href={servicesPath} className="hover:text-primary-foreground">{language === 'de' ? 'Verlassenschaft' : 'Estate Clearing'}</Link></li>
               <li><Link href={`${servicesPath}/${language === 'de' ? 'transportservice' : 'transport-service'}`} className="hover:text-primary-foreground">{language === 'de' ? 'Transportservice' : 'Transport Service'}</Link></li>
               <li className="pt-2 border-t border-primary-foreground/20">
+                <Link href={language === 'de' ? '/de/pakete' : '/en/packages'} className="hover:text-primary-foreground">
+                  {language === 'de' ? 'Pakete & Preise' : 'Packages & Prices'}
+                </Link>
+              </li>
+              <li>
                 <Link href={blogPath} className="hover:text-primary-foreground flex items-center gap-1.5">
                   <BookOpen className="w-3.5 h-3.5" />
                   {language === 'de' ? 'Blog & Ratgeber' : 'Blog & Guide'}
