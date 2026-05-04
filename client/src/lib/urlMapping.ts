@@ -17,6 +17,8 @@ export const routeMapping: Record<string, RouteConfig> = {
   impressum: { de: '/de/impressum', en: '/en/imprint' },
   agb: { de: '/de/agb', en: '/en/terms' },
   faq: { de: '/de/faq', en: '/en/faq' },
+  shop: { de: '/de/pakete', en: '/en/packages' },
+  blog: { de: '/de/blog', en: '/en/blog' },
 };
 
 const serviceSlugMap: Record<string, string> = {
@@ -78,6 +80,9 @@ export function getLocalizedPath(basePath: string, language: Language): string {
     '/agb': routeMapping.agb,
     '/terms': routeMapping.agb,
     '/faq': routeMapping.faq,
+    '/pakete': routeMapping.shop,
+    '/packages': routeMapping.shop,
+    '/blog': routeMapping.blog,
   };
 
   for (const [path, config] of Object.entries(pathMappings)) {

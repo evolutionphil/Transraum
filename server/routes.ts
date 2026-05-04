@@ -8,7 +8,7 @@ import { submitUrlToIndexNow, submitUrlsToIndexNow, submitSitemapToIndexNow, log
 import { generateMultipleBlogPosts, generateShopProductImage } from "./openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // WWW redirect - redirect www.flaechenfrei.at to flaechenfrei.at (SEO best practice)
+  // WWW redirect - redirect www.transraum.at to transraum.at (SEO best practice)
   app.use((req, res, next) => {
     const host = req.headers.host || '';
     if (host.startsWith('www.')) {
@@ -72,10 +72,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Validate URL belongs to this domain
-      if (!url.startsWith('https://flaechenfrei.at')) {
+      if (!url.startsWith('https://transraum.at')) {
         return res.status(422).json({ 
           success: false, 
-          message: "URL must belong to flaechenfrei.at domain" 
+          message: "URL must belong to transraum.at domain" 
         });
       }
 
@@ -107,11 +107,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Validate all URLs belong to this domain
-      const invalidUrls = urls.filter(url => !url.startsWith('https://flaechenfrei.at'));
+      const invalidUrls = urls.filter(url => !url.startsWith('https://transraum.at'));
       if (invalidUrls.length > 0) {
         return res.status(422).json({ 
           success: false, 
-          message: `${invalidUrls.length} URL(s) do not belong to flaechenfrei.at domain` 
+          message: `${invalidUrls.length} URL(s) do not belong to transraum.at domain` 
         });
       }
 
@@ -191,8 +191,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Simple admin key guard for AI generation endpoints
+  const requireAdminKey = (req: any, res: any, next: any) => {
+    const adminKey = process.env.ADMIN_SECRET;
+    const providedKey = req.headers['x-admin-key'] || req.body?.adminKey;
+    if (adminKey && providedKey !== adminKey) {
+      return res.status(401).json({ success: false, message: 'Unauthorized' });
+    }
+    next();
+  };
+
   // POST /api/blog/generate - trigger AI generation (requires OPENAI_API_KEY)
-  app.post("/api/blog/generate", async (req, res) => {
+  app.post("/api/blog/generate", requireAdminKey, async (req, res) => {
     try {
       const { language, count, topic } = blogGenerateSchema.parse(req.body);
 
@@ -231,7 +241,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // POST /api/blog/generate-async - fire and forget (returns immediately)
-  app.post("/api/blog/generate-async", async (req, res) => {
+  app.post("/api/blog/generate-async", requireAdminKey, async (req, res) => {
     try {
       const { language, count, topic } = blogGenerateSchema.parse(req.body);
 
@@ -267,7 +277,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // =====================
   // SHOP IMAGE GENERATION
   // =====================
-  app.post("/api/shop/generate-images-async", async (req, res) => {
+  app.post("/api/shop/generate-images-async", requireAdminKey, async (req, res) => {
     if (!process.env.OPENAI_API_KEY) {
       return res.status(503).json({ success: false, message: 'OPENAI_API_KEY not configured.' });
     }

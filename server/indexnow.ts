@@ -10,8 +10,8 @@
 
 export const INDEXNOW_CONFIG = {
   apiKey: '4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32',
-  host: 'flaechenfrei.at',
-  keyLocation: 'https://flaechenfrei.at/4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32.txt',
+  host: 'transraum.at',
+  keyLocation: 'https://transraum.at/4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32.txt',
   endpoint: 'https://api.indexnow.org/indexnow',
   // Alternative Bing-specific endpoint: 'https://www.bing.com/indexnow'
 };
@@ -38,7 +38,7 @@ export async function submitUrlToIndexNow(url: string): Promise<IndexNowResponse
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'User-Agent': 'FlaechenFrei-IndexNow/1.0',
+        'User-Agent': 'Transraum-IndexNow/1.0',
       },
       body: JSON.stringify(payload),
     });
@@ -89,7 +89,7 @@ export async function submitUrlsToIndexNow(urls: string[]): Promise<IndexNowResp
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'User-Agent': 'FlaechenFrei-IndexNow/1.0',
+        'User-Agent': 'Transraum-IndexNow/1.0',
       },
       body: JSON.stringify(payload),
     });

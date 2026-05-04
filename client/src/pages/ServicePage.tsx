@@ -84,14 +84,14 @@ export default function ServicePage() {
       const serviceSchema = {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        '@id': `https://flaechenfrei.at${location}#service`,
+        '@id': `https://transraum.at${location}#service`,
         name: content.name,
         description: content.description,
         image: serviceImages[service.id],
-        url: `https://flaechenfrei.at${location}`,
+        url: `https://transraum.at${location}`,
         provider: {
           '@type': 'MovingCompany',
-          '@id': 'https://flaechenfrei.at/#organization',
+          '@id': 'https://transraum.at/#organization',
           name: 'Transraum',
           telephone: CONTACT_INFO.phone,
           address: {
@@ -101,7 +101,7 @@ export default function ServicePage() {
             postalCode: '1100',
             addressCountry: 'AT',
           },
-          url: 'https://flaechenfrei.at',
+          url: 'https://transraum.at',
         },
         areaServed: [
           {
@@ -128,7 +128,7 @@ export default function ServicePage() {
             '@type': 'ContactAction',
             target: {
               '@type': 'EntryPoint',
-              urlTemplate: `https://flaechenfrei.at${language === 'de' ? '/kontakt' : '/en/contact'}`,
+              urlTemplate: `https://transraum.at${language === 'de' ? '/kontakt' : '/en/contact'}`,
               actionPlatform: [
                 'http://schema.org/DesktopWebPlatform',
                 'http://schema.org/MobileWebPlatform'

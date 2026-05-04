@@ -135,13 +135,13 @@ export default function ServiceRegionPage() {
     const serviceSchema = {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      '@id': `https://flaechenfrei.at${location}#service`,
+      '@id': `https://transraum.at${location}#service`,
       name: locContent.headline,
       description: locContent.intro,
       serviceType: serviceContent.name,
       provider: {
         '@type': 'MovingCompany',
-        '@id': 'https://flaechenfrei.at/#organization',
+        '@id': 'https://transraum.at/#organization',
         name: 'Transraum',
       },
       areaServed: {
