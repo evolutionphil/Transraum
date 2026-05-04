@@ -122,24 +122,38 @@ app.use((req, res, next) => {
     reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
-    // Start daily blog auto-generation cron job
+    // Daily blog auto-generation cron job
     // Runs every day at 07:00 UTC (09:00 Vienna time)
+    // Generates 3 DE + 2 EN posts with DALL-E 3 images (5 total per day)
     cron.schedule('0 7 * * *', async () => {
       if (!process.env.OPENAI_API_KEY) {
         log('[Cron] Skipping blog generation – OPENAI_API_KEY not set');
         return;
       }
-      log('[Cron] Starting daily blog post generation (5 posts)...');
+      log('[Cron] Starting daily blog post generation (3 DE + 2 EN with images)...');
       try {
-        const posts = await generateMultipleBlogPosts(5, 'de');
-        for (const post of posts) {
+        // Generate 3 German posts
+        const dePosts = await generateMultipleBlogPosts(3, 'de', undefined, true);
+        for (const post of dePosts) {
           await storage.createBlogPost(post);
+          log(`[Cron] Saved DE post: "${post.title}" (image: ${post.imageUrl ?? 'none'})`);
         }
-        log(`[Cron] Generated and saved ${posts.length} blog posts`);
+
+        // Small pause between language batches
+        await new Promise((r) => setTimeout(r, 2000));
+
+        // Generate 2 English posts
+        const enPosts = await generateMultipleBlogPosts(2, 'en', undefined, true);
+        for (const post of enPosts) {
+          await storage.createBlogPost(post);
+          log(`[Cron] Saved EN post: "${post.title}" (image: ${post.imageUrl ?? 'none'})`);
+        }
+
+        log(`[Cron] Done: ${dePosts.length} DE + ${enPosts.length} EN posts generated`);
       } catch (err) {
         log(`[Cron] Blog generation failed: ${err}`);
       }
     });
-    log('[Cron] Daily blog generation scheduled at 07:00 UTC');
+    log('[Cron] Daily blog generation scheduled at 07:00 UTC (3 DE + 2 EN with DALL-E images)');
   });
 })();

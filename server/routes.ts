@@ -203,8 +203,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      console.log(`[Blog] Generating ${count} posts in ${language}...`);
-      const generated = await generateMultipleBlogPosts(count, language, topic);
+      // Pass existing titles to avoid duplicates
+      const existingPosts = await storage.getAllBlogPosts(language);
+      const usedTitles = existingPosts.map(p => p.title);
+
+      console.log(`[Blog] Generating ${count} posts in ${language} with images... (${usedTitles.length} existing)`);
+      const generated = await generateMultipleBlogPosts(count, language, topic, true, usedTitles);
 
       const saved = [];
       for (const post of generated) {
@@ -224,6 +228,120 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.error('[Blog] Generation error:', err);
       res.status(500).json({ success: false, message: 'Generation failed' });
     }
+  });
+
+  // POST /api/blog/generate-async - fire and forget (returns immediately)
+  app.post("/api/blog/generate-async", async (req, res) => {
+    try {
+      const { language, count, topic } = blogGenerateSchema.parse(req.body);
+
+      if (!process.env.OPENAI_API_KEY) {
+        return res.status(503).json({ success: false, message: 'OPENAI_API_KEY not configured.' });
+      }
+
+      // Return immediately
+      res.json({ success: true, message: `Background generation of ${count} ${language} posts started.` });
+
+      // Generate in background (non-blocking)
+      setImmediate(async () => {
+        try {
+          const existingPosts = await storage.getAllBlogPosts(language);
+          const usedTitles = existingPosts.map(p => p.title);
+          console.log(`[Blog-Async] Generating ${count} posts in ${language}... (${usedTitles.length} existing)`);
+          const generated = await generateMultipleBlogPosts(count, language, topic, true, usedTitles);
+          for (const post of generated) {
+            await storage.createBlogPost(post);
+          }
+          console.log(`[Blog-Async] Done: saved ${generated.length} ${language} posts`);
+        } catch (e) {
+          console.error('[Blog-Async] Error:', e);
+        }
+      });
+    } catch (err) {
+      if (err instanceof z.ZodError) return res.status(400).json({ success: false, errors: err.errors });
+      console.error('[Blog] Async generate error:', err);
+      res.status(500).json({ success: false, message: 'Failed to start generation' });
+    }
+  });
+
+  // =====================
+  // DYNAMIC SITEMAP.XML  (overrides static file — always up-to-date with blog posts)
+  // =====================
+  app.get('/sitemap.xml', async (req, res) => {
+    const BASE = 'https://transraum.at';
+    const now = new Date().toISOString().split('T')[0];
+
+    const staticUrls = [
+      // Homepage + language roots
+      { loc: `${BASE}/`, priority: '1.0', changefreq: 'weekly' },
+      { loc: `${BASE}/de`, priority: '1.0', changefreq: 'weekly' },
+      { loc: `${BASE}/en`, priority: '0.9', changefreq: 'weekly' },
+      // DE Service pages
+      { loc: `${BASE}/de/leistungen/wohnungsraeumung`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/hausraeumung`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/transportservice`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/kellerraeumung`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/entrümpeln`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/verlassenschaft-ankauf`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/haushaltsaufloesung`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/umzug`, priority: '0.9', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/bueroraeumung`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/sperrgut`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/dachbodenraeumung`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/de/leistungen/garageraeumung`, priority: '0.8', changefreq: 'monthly' },
+      // EN Service pages
+      { loc: `${BASE}/en/services/apartment-clearing`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/services/house-clearing`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/services/transport-service`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/services/basement-clearing`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/services/estate-clearance`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/services/moving`, priority: '0.8', changefreq: 'monthly' },
+      // Contact + Info pages
+      { loc: `${BASE}/de/kontakt`, priority: '0.8', changefreq: 'monthly' },
+      { loc: `${BASE}/en/contact`, priority: '0.7', changefreq: 'monthly' },
+      { loc: `${BASE}/de/ueber-uns`, priority: '0.7', changefreq: 'monthly' },
+      { loc: `${BASE}/de/faq`, priority: '0.7', changefreq: 'monthly' },
+      { loc: `${BASE}/de/datenschutz`, priority: '0.5', changefreq: 'yearly' },
+      { loc: `${BASE}/de/impressum`, priority: '0.5', changefreq: 'yearly' },
+      { loc: `${BASE}/de/agb`, priority: '0.5', changefreq: 'yearly' },
+      // Blog index
+      { loc: `${BASE}/de/blog`, priority: '0.9', changefreq: 'daily' },
+      { loc: `${BASE}/en/blog`, priority: '0.8', changefreq: 'daily' },
+    ];
+
+    // Fetch all blog posts from storage
+    let blogUrlsDe: string[] = [];
+    let blogUrlsEn: string[] = [];
+    try {
+      const [dePosts, enPosts] = await Promise.all([
+        storage.getAllBlogPosts('de'),
+        storage.getAllBlogPosts('en'),
+      ]);
+      blogUrlsDe = dePosts.map((p) => `${BASE}/de/blog/${p.slug}`);
+      blogUrlsEn = enPosts.map((p) => `${BASE}/en/blog/${p.slug}`);
+    } catch (_) {}
+
+    const blogEntries = [
+      ...blogUrlsDe.map((loc) => ({ loc, priority: '0.8', changefreq: 'monthly' })),
+      ...blogUrlsEn.map((loc) => ({ loc, priority: '0.7', changefreq: 'monthly' })),
+    ];
+
+    const allUrls = [...staticUrls, ...blogEntries];
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${allUrls.map(({ loc, priority, changefreq }) => `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`).join('\n')}
+</urlset>`;
+
+    res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+    res.setHeader('Cache-Control', 'public, max-age=3600');
+    res.send(xml);
   });
 
   const httpServer = createServer(app);

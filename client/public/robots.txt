@@ -1,29 +1,19 @@
-# robots.txt - Flächen Frei
-# AI-Crawler Konfiguration für ChatGPT, Claude, Perplexity, Gemini, etc.
+# robots.txt – Transraum (Golden Trend Armaturen GmbH)
+# https://transraum.at
+# Last updated: 2025
 
 # ============================================
-# OpenAI (ChatGPT) - CRITICAL für AI Indexierung
+# Google (Standard + Gemini AI Training)
 # ============================================
-
-# ChatGPT Search - Indexiert für Live-Zitate in ChatGPT
-User-agent: OAI-SearchBot
+User-agent: Googlebot
 Allow: /
 
-# GPTBot - Trainiert AI-Modelle (GPT-4, GPT-5, etc.)
-User-agent: GPTBot
-Allow: /
-
-# ChatGPT User-Browsing - Holt Inhalte wenn User auf Links klicken
-User-agent: ChatGPT-User
-Allow: /
-
-# ChatGPT User v2.0
-User-agent: ChatGPT-User/2.0
+User-agent: Google-Extended
 Allow: /
 
 # ============================================
-# Microsoft Bing - ABSOLUT KRITISCH!
-# ChatGPT nutzt Bing's Index als primäre Datenquelle
+# Microsoft Bing – KRITISCH für ChatGPT!
+# ChatGPT nutzt Bings Index als primäre Datenquelle
 # ============================================
 User-agent: Bingbot
 Allow: /
@@ -31,126 +21,68 @@ Allow: /
 User-agent: bingbot
 Allow: /
 
-# Microsoft Copilot
 User-agent: MSNBot
 Allow: /
 
 # ============================================
-# Google (Gemini, Search)
+# OpenAI (ChatGPT Search + Training)
 # ============================================
-
-# Google Standard Crawler
-User-agent: Googlebot
+User-agent: OAI-SearchBot
 Allow: /
 
-# Google Extended - Für Gemini AI Training
-User-agent: Google-Extended
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 # ============================================
 # Anthropic (Claude AI)
 # ============================================
-
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: claude-web
-Allow: /
-
 # ============================================
 # Perplexity AI
 # ============================================
-
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Perplexity-User
+# ============================================
+# Other Search Engines & AI Crawlers
+# ============================================
+User-agent: Yandex
 Allow: /
 
-# ============================================
-# Other AI Crawlers
-# ============================================
+User-agent: DuckDuckBot
+Allow: /
 
-# Meta (Facebook/Instagram AI)
+User-agent: Applebot
+Allow: /
+
 User-agent: FacebookBot
 Allow: /
 
 User-agent: meta-externalagent
 Allow: /
 
-# Amazon Alexa
 User-agent: Amazonbot
 Allow: /
 
-# Apple (Siri, Spotlight)
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# ByteDance (TikTok)
 User-agent: Bytespider
 Allow: /
 
-# Yandex (Russian search engine)
-User-agent: Yandex
-Allow: /
-
-# Baidu (Chinese search engine)
-User-agent: Baiduspider
-Allow: /
-
-# DuckDuckGo
-User-agent: DuckDuckBot
-Allow: /
-
 # ============================================
-# Standard Crawlers (Allow All)
+# All other crawlers – allow everything
 # ============================================
-
 User-agent: *
 Allow: /
+Disallow: /api/
 
 # ============================================
-# Sitemap Location
+# Sitemap (dynamic – always includes latest blog posts)
 # ============================================
-
-Sitemap: https://flaechenfrei.at/sitemap.xml
-
-# ============================================
-# IndexNow Protocol (Instant Search Engine Indexing)
-# ============================================
-
-# IndexNow API Key Location for Bing, Yandex, DuckDuckGo
-# Allows instant notification when content is updated
-# Key: https://flaechenfrei.at/4360887d417651be8e892bc97ab0625dce0349081491ae37c119b83258d0df32.txt
-
-# ============================================
-# Crawl-delay (optional - prevent server overload)
-# ============================================
-
-# Uncomment if needed:
-# Crawl-delay: 1
-
-# ============================================
-# Notes for Webmasters
-# ============================================
-
-# This robots.txt explicitly allows all major AI crawlers including:
-# - ChatGPT (OAI-SearchBot, GPTBot, ChatGPT-User)
-# - Claude (ClaudeBot)
-# - Perplexity (PerplexityBot)
-# - Gemini (Google-Extended)
-# - Bing/Copilot (Bingbot - CRITICAL for ChatGPT!)
-#
-# Why allow all AI crawlers?
-# - Schema.org structured data is optimized for AI understanding
-# - FAQPage schemas increase citation likelihood
-# - Service + Location pages target long-tail AI queries
-# - Bilingual content reaches broader AI-powered search audience
-#
-# Last updated: 2025-11-12
+Sitemap: https://transraum.at/sitemap.xml

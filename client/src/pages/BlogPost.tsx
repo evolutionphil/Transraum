@@ -58,7 +58,7 @@ const TRANSLATIONS = {
 };
 
 function ArticleSchema({ post, lang }: { post: BlogPostType; lang: string }) {
-  const schema = {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
@@ -66,26 +66,35 @@ function ArticleSchema({ post, lang }: { post: BlogPostType; lang: string }) {
     author: {
       '@type': 'Organization',
       name: 'Transraum',
-      url: 'https://flaechenfrei.at',
+      url: 'https://transraum.at',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Transraum',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://flaechenfrei.at/logo.png',
+        url: 'https://transraum.at/logo.png',
       },
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://flaechenfrei.at/${lang}/blog/${post.slug}`,
+      '@id': `https://transraum.at/${lang}/blog/${post.slug}`,
     },
     keywords: post.tags.join(', '),
     articleSection: post.category,
     inLanguage: lang === 'de' ? 'de-AT' : 'en',
   };
+
+  if (post.imageUrl) {
+    schema.image = {
+      '@type': 'ImageObject',
+      url: post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.at${post.imageUrl}`,
+      width: 1792,
+      height: 1024,
+    };
+  }
 
   useEffect(() => {
     const existing = document.querySelectorAll('script[data-blog-schema]');
@@ -101,14 +110,56 @@ function ArticleSchema({ post, lang }: { post: BlogPostType; lang: string }) {
   return null;
 }
 
+function FAQSchema({ post }: { post: BlogPostType }) {
+  const faqItems: Array<{ question: string; answer: string }> = [];
+  try {
+    const faqSectionMatch = post.content.match(/<h2[^>]*>[^<]*([Ff][Aa][Qq]|[Ff]ragen|[Ff]requently)[^<]*<\/h2>([\s\S]*?)(?=<h2|$)/i);
+    if (faqSectionMatch) {
+      const faqSection = faqSectionMatch[2];
+      const qaRegex = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/gi;
+      let m;
+      while ((m = qaRegex.exec(faqSection)) !== null && faqItems.length < 5) {
+        const question = m[1].replace(/<[^>]+>/g, '').trim();
+        const answer = m[2].replace(/<[^>]+>/g, '').trim();
+        if (question && answer) faqItems.push({ question, answer });
+      }
+    }
+  } catch (_) {}
+
+  if (faqItems.length === 0) return null;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: { '@type': 'Answer', text: answer },
+    })),
+  };
+
+  useEffect(() => {
+    const existing = document.querySelectorAll('script[data-blog-faq]');
+    existing.forEach((el) => el.remove());
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-blog-faq', 'true');
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+    return () => { script.remove(); };
+  }, [post.slug]);
+
+  return null;
+}
+
 function BreadcrumbSchema({ post, lang }: { post: BlogPostType; lang: string }) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Startseite' : 'Home', item: `https://flaechenfrei.at/${lang}` },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://flaechenfrei.at/${lang}/blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `https://flaechenfrei.at/${lang}/blog/${post.slug}` },
+      { '@type': 'ListItem', position: 1, name: lang === 'de' ? 'Startseite' : 'Home', item: `https://transraum.at/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://transraum.at/${lang}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://transraum.at/${lang}/blog/${post.slug}` },
     ],
   };
 
@@ -185,18 +236,27 @@ export default function BlogPost() {
     <>
       <title>{post.metaTitle}</title>
       <meta name="description" content={post.metaDescription} />
-      <link rel="canonical" href={`https://flaechenfrei.at/${lang}/blog/${post.slug}`} />
-      <link rel="alternate" hrefLang="de" href={`https://flaechenfrei.at/de/blog/${post.slug}`} />
+      <link rel="canonical" href={`https://transraum.at/${lang}/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="de" href={`https://transraum.at/de/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="en" href={`https://transraum.at/en/blog/${post.slug}`} />
+      <link rel="alternate" hrefLang="x-default" href={`https://transraum.at/de/blog/${post.slug}`} />
       <meta property="og:title" content={post.metaTitle} />
       <meta property="og:description" content={post.metaDescription} />
       <meta property="og:type" content="article" />
+      <meta property="og:url" content={`https://transraum.at/${lang}/blog/${post.slug}`} />
+      <meta property="og:site_name" content="Transraum" />
+      {post.imageUrl && (
+        <meta property="og:image" content={post.imageUrl.startsWith('http') ? post.imageUrl : `https://transraum.at${post.imageUrl}`} />
+      )}
       <meta property="article:published_time" content={post.publishedAt} />
+      <meta property="article:modified_time" content={post.updatedAt} />
       <meta property="article:section" content={post.category} />
       <meta property="article:tag" content={post.tags.join(', ')} />
       <meta name="robots" content="index, follow" />
 
       <ArticleSchema post={post} lang={lang} />
       <BreadcrumbSchema post={post} lang={lang} />
+      <FAQSchema post={post} />
 
       <Header />
 
@@ -267,6 +327,21 @@ export default function BlogPost() {
                   {t.share}
                 </button>
               </div>
+
+              {/* Hero Image */}
+              {post.imageUrl && (
+                <div className="mb-8 rounded-md overflow-hidden" data-testid="div-hero-image">
+                  <img
+                    src={post.imageUrl}
+                    alt={post.title}
+                    className="w-full h-auto max-h-80 object-cover"
+                    loading="eager"
+                    width={1792}
+                    height={1024}
+                    data-testid="img-hero"
+                  />
+                </div>
+              )}
 
               {/* Article Content */}
               <div

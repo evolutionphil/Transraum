@@ -81,10 +81,31 @@ function BlogCard({ post, lang }: { post: BlogPost; lang: 'de' | 'en' }) {
 
   return (
     <article
-      className="bg-card rounded-md border flex flex-col hover-elevate transition-all"
+      className="bg-card rounded-md border flex flex-col hover-elevate transition-all overflow-hidden"
       data-testid={`blog-card-${post.id}`}
     >
-      <div className="p-6 flex flex-col flex-1 gap-4">
+      {/* Cover image */}
+      <Link href={postUrl} className="block shrink-0">
+        {post.imageUrl ? (
+          <div className="w-full aspect-video bg-muted/30 overflow-hidden">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+              width={400}
+              height={225}
+              data-testid={`img-post-${post.id}`}
+            />
+          </div>
+        ) : (
+          <div className="w-full aspect-video bg-gradient-to-br from-primary/10 to-muted/30 flex items-center justify-center" data-testid={`img-placeholder-${post.id}`}>
+            <BookOpen className="w-10 h-10 text-primary/30" />
+          </div>
+        )}
+      </Link>
+
+      <div className="p-5 flex flex-col flex-1 gap-3">
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="secondary" data-testid={`badge-category-${post.id}`}>
             {post.category}
@@ -98,18 +119,18 @@ function BlogCard({ post, lang }: { post: BlogPost; lang: 'de' | 'en' }) {
 
         <Link href={postUrl}>
           <h2
-            className="text-xl font-bold text-foreground leading-snug hover:text-primary cursor-pointer transition-colors"
+            className="text-base font-bold text-foreground leading-snug hover:text-primary cursor-pointer transition-colors"
             data-testid={`heading-post-${post.id}`}
           >
             {post.title}
           </h2>
         </Link>
 
-        <p className="text-muted-foreground text-sm leading-relaxed flex-1" data-testid={`text-excerpt-${post.id}`}>
+        <p className="text-muted-foreground text-sm leading-relaxed flex-1 line-clamp-2" data-testid={`text-excerpt-${post.id}`}>
           {post.excerpt}
         </p>
 
-        <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5" data-testid={`text-date-${post.id}`}>
             <Calendar className="w-3.5 h-3.5" />
             {formattedDate}
@@ -121,7 +142,7 @@ function BlogCard({ post, lang }: { post: BlogPost; lang: 'de' | 'en' }) {
         </div>
 
         <Link href={postUrl}>
-          <Button variant="outline" size="sm" className="w-full mt-2" data-testid={`link-read-more-${post.id}`}>
+          <Button variant="outline" size="sm" className="w-full mt-1" data-testid={`link-read-more-${post.id}`}>
             {t.readMore}
             <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
           </Button>

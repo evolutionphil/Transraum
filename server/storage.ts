@@ -1,5 +1,35 @@
 import { type User, type InsertUser, type BlogPost, type InsertBlogPost } from "@shared/schema";
 import { randomUUID } from "crypto";
+import fs from "fs";
+import path from "path";
+
+const BLOG_POSTS_FILE = path.resolve(process.cwd(), 'data', 'blog-posts.json');
+
+function ensureDataDir() {
+  const dir = path.dirname(BLOG_POSTS_FILE);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
+
+function loadPersistedPosts(): BlogPost[] {
+  try {
+    ensureDataDir();
+    if (!fs.existsSync(BLOG_POSTS_FILE)) return [];
+    const raw = fs.readFileSync(BLOG_POSTS_FILE, 'utf-8');
+    const posts = JSON.parse(raw);
+    return Array.isArray(posts) ? posts : [];
+  } catch {
+    return [];
+  }
+}
+
+function persistPosts(posts: BlogPost[]) {
+  try {
+    ensureDataDir();
+    fs.writeFileSync(BLOG_POSTS_FILE, JSON.stringify(posts, null, 2));
+  } catch (err) {
+    console.error('[Storage] Failed to persist blog posts:', err);
+  }
+}
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
@@ -29,6 +59,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-01-15T08:00:00Z',
     readingTime: 7,
     featured: true,
+    imageUrl: '/blog-images/transportservice-wien-seed.png',
     content: `
 <h2>Was kostet ein Transportservice in Wien?</h2>
 <p>Ein professioneller Transportservice in Wien kostet durchschnittlich zwischen <strong>150 € und 600 €</strong> – je nach Umfang, Entfernung und Art der transportierten Güter. Die genauen Preise hängen von verschiedenen Faktoren ab, die wir in diesem Artikel detailliert erläutern.</p>
@@ -110,6 +141,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-01-20T08:00:00Z',
     readingTime: 6,
     featured: true,
+    imageUrl: '/blog-images/moebeltransport-wien-seed.png',
     content: `
 <h2>Möbeltransport Wien – Warum ein Profi sinnvoll ist</h2>
 <p>Wer einmal versucht hat, ein schweres Sofa über eine enge Wiener Altbautreppe zu tragen, weiß: Möbeltransport ist körperlich anspruchsvoll, zeitaufwendig und birgt ein erhebliches Verletzungs- und Schadensrisiko. Ein professioneller Möbeltransport in Wien lohnt sich daher für fast jeden Haushalt.</p>
@@ -175,6 +207,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-01-25T08:00:00Z',
     readingTime: 8,
     featured: true,
+    imageUrl: '/blog-images/haushaltsaufloesung-wien-seed.png',
     content: `
 <h2>Was ist eine Haushaltsauflösung?</h2>
 <p>Eine <strong>Haushaltsauflösung</strong> (auch: Wohnungsauflösung) bezeichnet die vollständige Räumung einer Wohnung oder eines Hauses – inklusive aller Möbel, persönlicher Gegenstände, Elektrogeräte und sonstiger Haushaltsgüter. Sie ist häufig notwendig bei:</p>
@@ -245,6 +278,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-02-01T08:00:00Z',
     readingTime: 7,
     featured: false,
+    imageUrl: '/blog-images/wohnungsraeumung-wien-seed.png',
     content: `
 <h2>Wohnungsräumung Wien – wann ist sie nötig?</h2>
 <p>Eine professionelle Wohnungsräumung in Wien wird in vielen Situationen benötigt:</p>
@@ -319,6 +353,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-02-10T08:00:00Z',
     readingTime: 5,
     featured: false,
+    imageUrl: '/blog-images/kellerraeumung-wien-seed.png',
     content: `
 <h2>Kellerräumung Wien – wann lohnt sich ein Profi?</h2>
 <p>Ein überfüllter Keller ist ein häufiges Problem in Wiener Altbauten und Mehrfamilienhäusern. Jahrzehntelang angesammelter Hausrat, alte Möbel, kaputte Elektrogeräte und vergessene Kartons machen die Kellerräumung oft zur Mammutaufgabe.</p>
@@ -383,6 +418,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-02-15T08:00:00Z',
     readingTime: 6,
     featured: false,
+    imageUrl: '/blog-images/sperrmüll-wien-seed.png',
     content: `
 <h2>Sperrmüll Wien – Ihre Optionen im Überblick</h2>
 <p>In Wien haben Sie grundsätzlich zwei Möglichkeiten, Sperrmüll zu entsorgen:</p>
@@ -460,6 +496,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-02-20T08:00:00Z',
     readingTime: 6,
     featured: false,
+    imageUrl: '/blog-images/entruempelung-wien-seed.png',
     content: `
 <h2>Entrümpelung Wien – Was ist gemeint?</h2>
 <p>Unter <strong>Entrümpelung</strong> versteht man das systematische Aussortieren und Entfernen nicht mehr benötigter Gegenstände aus einer Wohnung, einem Haus, Keller oder Dachboden. Im Gegensatz zur Haushaltsauflösung muss bei einer Entrümpelung nicht zwingend die gesamte Wohnung geräumt werden – oft geht es nur um einzelne Bereiche oder übervolle Räume.</p>
@@ -528,6 +565,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-03-01T08:00:00Z',
     readingTime: 9,
     featured: true,
+    imageUrl: '/blog-images/umzug-wien-seed.png',
     content: `
 <h2>Der Wiener Umzug – worauf es ankommt</h2>
 <p>Wien ist eine der beliebtesten Städte Europas – und entsprechend viele Menschen ziehen jedes Jahr in Wien um. Ob innerhalb des gleichen Bezirks oder von der Josefstadt in die Donaustadt: Ein Umzug in Wien stellt besondere Herausforderungen dar – Parkplatzmangel, enge Treppenhäuser und Behördengänge machen gute Planung unabdingbar.</p>
@@ -618,6 +656,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-03-10T08:00:00Z',
     readingTime: 6,
     featured: false,
+    imageUrl: '/blog-images/bueroraeumung-wien-seed.png',
     content: `
 <h2>Büroauflösung Wien – wann wird sie nötig?</h2>
 <p>Eine Büroauflösung in Wien ist immer dann erforderlich, wenn:</p>
@@ -684,6 +723,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-03-20T08:00:00Z',
     readingTime: 7,
     featured: false,
+    imageUrl: '/blog-images/haushaltsaufloesung-wien-seed.png',
     content: `
 <h2>Antike Möbel und Erbstücke – mehr wert als gedacht</h2>
 <p>Viele Menschen unterschätzen den Wert von geerbten Möbeln, Gemälden, Schmuck und anderen Gegenständen. Was auf den ersten Blick wie altmodischer Hausrat wirkt, kann im Einzelfall tausende Euro wert sein. Gleichzeitig überschätzen manche Erben den Wert von Dingen, die sentimental bedeutsam, aber am Markt kaum gefragt sind.</p>
@@ -752,6 +792,7 @@ const SEED_POSTS: BlogPost[] = [
     updatedAt: '2025-04-01T08:00:00Z',
     readingTime: 6,
     featured: false,
+    imageUrl: '/blog-images/dachbodenraeumung-wien-seed.png',
     content: `
 <h2>Dachbodenräumung Wien – besondere Herausforderungen</h2>
 <p>Dachböden in Wiener Altbauten sind oft wahre Fundgruben – aber auch echte Herausforderungen beim Räumen. Enge Treppen, niedrige Decken, extremer Hitze im Sommer und Dunkelheit machen die Räumung aufwendiger als einen normalen Keller oder eine Wohnung.</p>
@@ -809,10 +850,20 @@ export class MemStorage implements IStorage {
   constructor() {
     this.users = new Map();
     this.blogPosts = new Map();
-    // Seed initial blog posts
+
+    // Load persisted AI-generated posts first
+    const persisted = loadPersistedPosts();
+    persisted.forEach((post) => this.blogPosts.set(post.id, post));
+
+    // Seed initial blog posts (only if not already in persisted data by slug)
+    const persistedSlugs = new Set(persisted.map(p => p.slug));
     SEED_POSTS.forEach((post) => {
-      this.blogPosts.set(post.id, post);
+      if (!persistedSlugs.has(post.slug)) {
+        this.blogPosts.set(post.id, post);
+      }
     });
+
+    console.log(`[Storage] Loaded ${persisted.length} persisted + ${SEED_POSTS.length} seed posts`);
   }
 
   async getUser(id: string): Promise<User | undefined> {
@@ -854,6 +905,10 @@ export class MemStorage implements IStorage {
     const id = randomUUID();
     const post: BlogPost = { ...insertPost, id };
     this.blogPosts.set(id, post);
+    // Persist only AI-generated posts (those with timestamp slugs)
+    const allPosts = Array.from(this.blogPosts.values());
+    const aiGenerated = allPosts.filter(p => /\-\d{13}$/.test(p.slug));
+    persistPosts(aiGenerated);
     return post;
   }
 

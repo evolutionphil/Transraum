@@ -1,0 +1,68 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "9pIXdkeZ7BcppTFc_Ixtr"
+uri = "file://client/public/blog-images/transportservice-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "did5Nu7C7qcetcw4P5LKV"
+uri = "file://client/public/blog-images/moebeltransport-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "cZaejhkg0ckdhj9I1PuIK"
+uri = "file://client/public/blog-images/wohnungsraeumung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "goU72mqw6REYf7f1axypF"
+uri = "file://client/public/blog-images/kellerraeumung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "znyrN8llzdYPHXXmOyDLF"
+uri = "file://client/public/blog-images/entruempelung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "KidtH2X8ysnmbCxklqY7F"
+uri = "file://client/public/blog-images/dachbodenraeumung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QwOkP8Djkwjm8PdfduNEq"
+uri = "file://client/public/blog-images/bueroraeumung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DfgA55jdRIWtrH2rM19SJ"
+uri = "file://client/public/blog-images/haushaltsaufloesung-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "AoANrqRZ5oDp4gwJTDu0y"
+uri = "file://client/public/blog-images/umzug-wien-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "y8HXS28wFncAsAUHVapyR"
+uri = "file://client/public/blog-images/kellerraeumung-tipps-seed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DRwh7DyfZExcMtI7y976j"
+uri = "file://client/public/blog-images/sperrmüll-wien-seed.png"
+type = "image"
+title = "generated_image"
